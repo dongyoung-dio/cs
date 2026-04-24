@@ -178,9 +178,20 @@ function scheduleAutoRefresh(){
 }
 function buildMonthSel(){const s=document.getElementById('selMonth');s.innerHTML='';MK.slice().reverse().forEach(k=>{const o=document.createElement('option');o.value=k;o.textContent=MONTHS[k].label;if(k===cur)o.selected=true;s.appendChild(o);});s.onchange=()=>{cur=s.value;render();};}
 function buildTabs(){const c=document.getElementById('tabBar');c.innerHTML='';VIEWS.forEach((v,i)=>{const d=document.createElement('div');d.className='tab'+(i===0?' on':'');d.textContent=v.label;d.onclick=()=>{c.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));d.classList.add('on');view=v.id;render();};c.appendChild(d);});}
-async function doRefresh(){await loadData();buildMonthSel();updateSync();render();}
+async function doRefresh(){
+  const btn=document.querySelector('button');
+  const orig=btn.textContent;
+  btn.textContent='⏳ 불러오는 중...';btn.disabled=true;
+  await loadData();buildMonthSel();updateSync();render();
+  btn.textContent='✅ 완료!';
+  setTimeout(()=>{btn.textContent=orig;btn.disabled=false;},1500);
+}
 function updateSync(){
-  const genTs=generatedAt?generatedAt.replace('T',' ').slice(0,16):'알 수 없음';
+  let genTs='알 수 없음';
+  if(generatedAt){
+    try{const d=new Date(generatedAt);genTs=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');}
+    catch(e){genTs=generatedAt.replace('T',' ').slice(0,16);}
+  }
   document.getElementById('syncInfo').textContent=src==='live'?`데이터 기준 : ${genTs} | 30분 자동 갱신`:`데이터 없음`;
   const li=document.getElementById('liveInd');
   li.className=src==='live'?'live on':'live off';
