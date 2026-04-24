@@ -2,7 +2,7 @@ name: CS Dashboard 자동 갱신
 
 on:
   schedule:
-    - cron: '0 * * * *'  # 매시 정각 실행 (UTC)
+    - cron: '*/30 * * * *'  # 30분마다 실행 (UTC)
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:

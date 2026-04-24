@@ -61,7 +61,6 @@ td{padding:8px 10px;border-bottom:1px solid #f3f3f6}.tr{text-align:right}
   <div><h1>병원비환급 CS Dashboard</h1><div class="sub" id="syncInfo">로딩 중...</div></div>
   <div class="ctrl">
     <select id="selMonth"></select>
-    <button onclick="doRefresh()">↻ 새로고침</button>
     <span style="font-size:10px;color:#999" id="nextRefresh"></span>
     <span class="live on" id="liveInd">Live</span>
   </div>
@@ -156,19 +155,23 @@ function transform(j){
 }
 
 // ============ INIT ============
-async function init(){await loadData();buildMonthSel();buildTabs();updateSync();render();scheduleHourlyRefresh();}
+async function init(){await loadData();buildMonthSel();buildTabs();updateSync();render();scheduleAutoRefresh();}
 
-function scheduleHourlyRefresh(){
-  // 매시 정각에 자동 새로고침
+function scheduleAutoRefresh(){
+  // 매 30분 + 5분 오프셋 (:05, :35에 갱신 → Actions 완료 후 로드)
   const now=new Date();
+  const min=now.getMinutes();
   const next=new Date(now);
-  next.setHours(next.getHours()+1,0,0,0);
+  if(min<5){next.setMinutes(5,0,0);}
+  else if(min<35){next.setMinutes(35,0,0);}
+  else{next.setHours(next.getHours()+1,5,0,0);}
   const ms=next-now;
   const hh=String(next.getHours()).padStart(2,'0');
-  document.getElementById('nextRefresh').textContent=`다음 갱신 ${hh}:00`;
+  const mm=String(next.getMinutes()).padStart(2,'0');
+  document.getElementById('nextRefresh').textContent=`다음 갱신 ${hh}:${mm}`;
   setTimeout(async()=>{
     await doRefresh();
-    scheduleHourlyRefresh(); // 다음 정각 예약
+    scheduleAutoRefresh();
   },ms);
 }
 function buildMonthSel(){const s=document.getElementById('selMonth');s.innerHTML='';MK.slice().reverse().forEach(k=>{const o=document.createElement('option');o.value=k;o.textContent=MONTHS[k].label;if(k===cur)o.selected=true;s.appendChild(o);});s.onchange=()=>{cur=s.value;render();};}
