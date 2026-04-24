@@ -6,8 +6,9 @@
 """
 
 # ===== 채널톡 API 인증 =====
-CHANNEL_ACCESS_KEY = "69dcad774fcaa3de57af"
-CHANNEL_ACCESS_SECRET = "56cc8ddd7a87b28b1cd84dfd32ad8c05"
+import os
+CHANNEL_ACCESS_KEY = os.environ.get("CHANNEL_ACCESS_KEY", "69dcad774fcaa3de57af")
+CHANNEL_ACCESS_SECRET = os.environ.get("CHANNEL_ACCESS_SECRET", "56cc8ddd7a87b28b1cd84dfd32ad8c05")
 
 # ===== 수집 설정 =====
 BASE_URL = "https://api.channel.io"
