@@ -61,6 +61,7 @@ td{padding:8px 10px;border-bottom:1px solid #f3f3f6}.tr{text-align:right}
   <div><h1>병원비환급 CS Dashboard</h1><div class="sub" id="syncInfo">로딩 중...</div></div>
   <div class="ctrl">
     <select id="selMonth"></select>
+    <button onclick="doRefresh()" style="font-size:11px;padding:5px 10px;border:1px solid #e0e0e8;border-radius:6px;background:#fff;cursor:pointer;color:#5046e5;font-weight:600">↻ 새로고침</button>
     <span style="font-size:10px;color:#999" id="nextRefresh"></span>
     <span class="live on" id="liveInd">Live</span>
   </div>
@@ -77,7 +78,7 @@ const pct=(a,b)=>b?((a-b)/b*100).toFixed(1):null;
 const G='#f1f5f9';
 const DL_OFF={datalabels:{display:false}};
 
-let MONTHS={},MK=[],cur='',view='overview',charts={},src='loading';
+let MONTHS={},MK=[],cur='',view='overview',charts={},src='loading',generatedAt='';
 
 // ============ DATA ============
 async function loadData(){
@@ -86,6 +87,7 @@ async function loadData(){
     if(!r.ok)throw new Error();
     const j=await r.json();
     MONTHS=transform(j);
+    generatedAt=j.generated_at||'';
     src=Object.keys(MONTHS).length>0?'live':'none';
   }catch(e){MONTHS={};src='error';}
   MK=Object.keys(MONTHS).sort();
@@ -177,7 +179,13 @@ function scheduleAutoRefresh(){
 function buildMonthSel(){const s=document.getElementById('selMonth');s.innerHTML='';MK.slice().reverse().forEach(k=>{const o=document.createElement('option');o.value=k;o.textContent=MONTHS[k].label;if(k===cur)o.selected=true;s.appendChild(o);});s.onchange=()=>{cur=s.value;render();};}
 function buildTabs(){const c=document.getElementById('tabBar');c.innerHTML='';VIEWS.forEach((v,i)=>{const d=document.createElement('div');d.className='tab'+(i===0?' on':'');d.textContent=v.label;d.onclick=()=>{c.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));d.classList.add('on');view=v.id;render();};c.appendChild(d);});}
 async function doRefresh(){await loadData();buildMonthSel();updateSync();render();}
-function updateSync(){const n=new Date();const ts=`${n.getFullYear()}-${String(n.getMonth()+1).padStart(2,'0')}-${String(n.getDate()).padStart(2,'0')} ${String(n.getHours()).padStart(2,'0')}:${String(n.getMinutes()).padStart(2,'0')}`;document.getElementById('syncInfo').textContent=src==='live'?`채널톡 API 실시간 연동 | 동기화: ${ts} | collector.py 실행 시 갱신`:`데이터 없음`;const li=document.getElementById('liveInd');li.className=src==='live'?'live on':'live off';li.textContent=src==='live'?'Live':'Offline';}
+function updateSync(){
+  const genTs=generatedAt?generatedAt.replace('T',' ').slice(0,16):'알 수 없음';
+  document.getElementById('syncInfo').textContent=src==='live'?`데이터 기준 : ${genTs} | 30분 자동 갱신`:`데이터 없음`;
+  const li=document.getElementById('liveInd');
+  li.className=src==='live'?'live on':'live off';
+  li.textContent=src==='live'?'Live':'Offline';
+}
 function destroyAll(){Object.values(charts).forEach(c=>{try{c.destroy();}catch(e){}});charts={};}
 
 // ============ RENDER ============
