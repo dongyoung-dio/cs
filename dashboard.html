@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>병원비환급 CS Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans KR',sans-serif;background:#f5f6fa;color:#1a1a2e;font-size:13px}
+.hdr{background:#fff;border-bottom:1px solid #e8e8ef;padding:10px 24px;height:48px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.hdr h1{font-size:16px;font-weight:700}.hdr .sub{font-size:10px;color:#999;margin-top:2px}
+.ctrl{display:flex;align-items:center;gap:8px}
+.ctrl select,.ctrl button{font-size:11px;padding:5px 10px;border:1px solid #e0e0e8;border-radius:6px;background:#fff;cursor:pointer}
+.ctrl button{color:#5046e5;font-weight:600}.ctrl button:hover{background:#f0eeff}
+.live{font-size:10px;font-weight:600;display:flex;align-items:center;gap:4px}
+.live.on{color:#22c55e}.live.off{color:#f59e0b}
+.live::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor}
+.tabs{display:flex;gap:8px;padding:10px 24px;background:#fff;border-bottom:1px solid #e8e8ef;position:sticky;top:48px;z-index:99}
+.tab{padding:8px 18px;border-radius:8px;font-size:12px;font-weight:500;cursor:pointer;color:#888;background:#f5f6fa;border:1px solid #ececf0;transition:.15s}
+.tab.on{background:#5046e5;color:#fff;border-color:#5046e5;font-weight:600}.tab:hover:not(.on){background:#eee;color:#555}
+.main{padding:16px 24px 40px;max-width:1400px;margin:0 auto}
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+.kpi{background:#fff;border-radius:8px;padding:14px 16px;border:1px solid #ececf0}
+.kpi .lb{font-size:12px;color:#666;font-weight:600;display:flex;align-items:center;gap:4px}
+.kpi .lb .tip{width:14px;height:14px;border-radius:50%;background:#e0e0e8;color:#888;font-size:9px;display:inline-flex;align-items:center;justify-content:center;cursor:help;position:relative;font-weight:700;font-style:normal}
+.kpi .lb .tip:hover::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:6px 10px;border-radius:6px;font-size:10px;font-weight:400;white-space:nowrap;z-index:200;line-height:1.4}
+.kpi .vl{font-size:22px;font-weight:700;margin-top:2px}
+.kpi .sm{font-size:12px;color:#555;margin-top:3px;font-weight:500}
+.kpi .tr{font-size:11px;margin-top:3px;font-weight:600}.kpi .tr.up{color:#22c55e}.kpi .tr.dn{color:#ef4444}
+.row{display:grid;gap:12px;margin-bottom:12px}
+.r2{grid-template-columns:1fr 1fr}.r1{grid-template-columns:1fr}
+.box{background:#fff;border-radius:8px;padding:14px 16px;border:1px solid #ececf0}
+.box h3{font-size:12px;font-weight:600;color:#444;margin-bottom:10px}
+.cw{position:relative;height:240px}.cw.sm{height:180px}.cw.lg{height:300px}
+.sbar{display:flex;gap:12px;padding:10px 14px;background:#f8f9fb;border-radius:6px;margin-top:8px;flex-wrap:wrap}
+.sbar .it{font-size:10px;color:#888}.sbar .it b{color:#333;font-size:12px;margin-left:3px}
+.rcard{background:#fff;border-radius:8px;padding:22px;border:1px solid #ececf0;margin-bottom:12px}
+.rcard h3{font-size:17px;font-weight:700;margin-bottom:18px}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}
+.si{text-align:center;padding:16px;border-radius:8px}
+.si.c1{background:#eef2ff;color:#4338ca}.si.c2{background:#fef2f2;color:#dc2626}
+.si.c3{background:#f0fdf4;color:#16a34a}.si.c4{background:#fffbeb;color:#d97706}
+.si .v{font-size:26px;font-weight:700}.si .l{font-size:12px;color:#888;margin-top:4px}
+.ins{display:flex;gap:10px;padding:12px 16px;background:#f9fafb;border-radius:8px;margin-bottom:6px}
+.ins .ic{font-size:20px;flex-shrink:0}.ins .tt{font-size:13px;font-weight:600;color:#333}
+.ins .ds{font-size:12px;color:#666;margin-top:2px;line-height:1.6}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;padding:8px 10px;color:#999;font-weight:500;border-bottom:1px solid #e8e8ef;font-size:11px}
+td{padding:8px 10px;border-bottom:1px solid #f3f3f6}.tr{text-align:right}
+.badge{font-size:9px;padding:2px 7px;border-radius:12px;font-weight:500}
+.badge.up{background:#fef2f2;color:#dc2626}.badge.dn{background:#f0fdf4;color:#16a34a}
+.badge.st{background:#f3f4f6;color:#888}.badge.nw{background:#fffbeb;color:#d97706}
+.hidden{display:none}
+@media(max-width:900px){.kpi-row,.r2{grid-template-columns:1fr}.sgrid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="hdr">
+  <div><h1>병원비환급 CS Dashboard</h1><div class="sub" id="syncInfo">로딩 중...</div></div>
+  <div class="ctrl">
+    <select id="selMonth"></select>
+    <button onclick="doRefresh()">↻ 새로고침</button>
+    <span style="font-size:10px;color:#999" id="nextRefresh"></span>
+    <span class="live on" id="liveInd">Live</span>
+  </div>
+</div>
+<div class="tabs" id="tabBar"></div>
+<div class="main" id="main"></div>
+
+<script>
+Chart.register(ChartDataLabels);
+const AC={Randy:'#3b82f6',Summer:'#ef4444',Lily:'#f59e0b',Allie:'#8b5cf6',Jiu:'#10b981',Unknown:'#94a3b8','미배정':'#94a3b8'};
+const VIEWS=[{id:'overview',label:'CS Overview'},{id:'tags',label:'상담태그 분석'},{id:'refund',label:'환불 분석'},{id:'report',label:'월간 리포트'}];
+const fmt=n=>n==null||isNaN(n)?'-':Number(n).toLocaleString();
+const pct=(a,b)=>b?((a-b)/b*100).toFixed(1):null;
+const G='#f1f5f9';
+const DL_OFF={datalabels:{display:false}};
+
+let MONTHS={},MK=[],cur='',view='overview',charts={},src='loading';
+
+// ============ DATA ============
+async function loadData(){
+  try{
+    const r=await fetch('./data/dashboard.json?t='+Date.now());
+    if(!r.ok)throw new Error();
+    const j=await r.json();
+    MONTHS=transform(j);
+    src=Object.keys(MONTHS).length>0?'live':'none';
+  }catch(e){MONTHS={};src='error';}
+  MK=Object.keys(MONTHS).sort();
+  if(MK.length>0&&(!cur||!MONTHS[cur]))cur=MK[MK.length-1];
+}
+
+function transform(j){
+  const res={};
+  const months=Object.keys(j.monthly_summary||{}).sort();
+  const appInfo=j.monthly_applications||{};
+  const appData=appInfo.apps||appInfo;
+  const refDb=appInfo.refunds_db||{};
+  const cohortData=appInfo.cohort||{};
+
+  months.forEach(m=>{
+    const sum=j.monthly_summary[m];
+    const tt=j.monthly_tag_top[m]||{};
+    const rf=j.monthly_refund[m]||{};
+    const cats=j.tag_categories[m]||{};
+    const ad=j.daily_agent_counts||{};
+    const apps=typeof appData==='object'?(appData[m]||0):0;
+    const rdb=refDb[m]||{};
+    const cohort=cohortData[m]||{};
+    const yr=m.slice(2,4),mo=parseInt(m.slice(5));
+    const label=yr+'년 '+mo+'월';
+    const dim=new Date(parseInt(m.slice(0,4)),mo,0).getDate();
+
+    const daily=[];const agentTotals={};
+    for(let d=1;d<=dim;d++){
+      const ds=m+'-'+String(d).padStart(2,'0');
+      const dd=ad[ds];const entry={d};
+      if(dd&&dd.agents){
+        Object.entries(dd.agents).forEach(([n,c])=>{entry[n]=(entry[n]||0)+c;agentTotals[n]=(agentTotals[n]||0)+c;});
+        entry._total=dd.total||Object.values(dd.agents).reduce((a,b)=>a+b,0);
+      }else{entry._total=0;}
+      daily.push(entry);
+    }
+    const agents=Object.entries(agentTotals).sort((a,b)=>b[1]-a[1]).map(([n,c])=>({name:n,count:c}));
+    const totalAgents=agents.reduce((s,a)=>s+a.count,0);
+    const tags=(tt.top||[]).slice(0,10).map(t=>({n:t.tag,c:t.count}));
+    const refR=(rf.refund_reasons||[]).slice(0,5).map(r=>({n:r.reason,c:r.count}));
+    const cons=sum.total_consultations;
+
+    res[m]={
+      label,cons,avg:sum.daily_avg,days:sum.num_days,
+      apps,rate:apps>0?(cons/apps*100):null,
+      daily,agents,agentTotals,totalAgents,
+      tags:tags.length?tags:[{n:'-',c:0}],
+      cats,
+      ref:{
+        req:rf.refund_request||0,reqP:rf.refund_request_pct||0,
+        hold:rf.refund_hold||0,holdP:rf.refund_hold_pct||0,
+        def:rf.refund_defense||0,defP:rf.refund_defense_pct||0
+      },
+      refR:refR.length?refR:[{n:'-',c:0}],
+      refundsDb:rdb,cohort,
+      insights:[
+        `${label} 누적 ${fmt(cons)}건, 일평균 ${sum.daily_avg.toFixed(1)}건 처리.`,
+        `환불 요청 비율 ${(rf.refund_request_pct||0).toFixed(1)}%.`,
+        tags[0]?`Top 태그: ${tags[0].n} (${fmt(tags[0].c)}건, ${cons?(tags[0].c/cons*100).toFixed(1):'0'}%)`:'',
+        `상담원 ${agents.length}명, 영업일 ${sum.num_days}일.`,
+        apps?`신청수 ${fmt(apps)}건, 상담비율 ${(cons/apps*100).toFixed(1)}%`:''
+      ].filter(Boolean)
+    };
+  });
+  return res;
+}
+
+// ============ INIT ============
+async function init(){await loadData();buildMonthSel();buildTabs();updateSync();render();scheduleHourlyRefresh();}
+
+function scheduleHourlyRefresh(){
+  // 매시 정각에 자동 새로고침
+  const now=new Date();
+  const next=new Date(now);
+  next.setHours(next.getHours()+1,0,0,0);
+  const ms=next-now;
+  const hh=String(next.getHours()).padStart(2,'0');
+  document.getElementById('nextRefresh').textContent=`다음 갱신 ${hh}:00`;
+  setTimeout(async()=>{
+    await doRefresh();
+    scheduleHourlyRefresh(); // 다음 정각 예약
+  },ms);
+}
+function buildMonthSel(){const s=document.getElementById('selMonth');s.innerHTML='';MK.slice().reverse().forEach(k=>{const o=document.createElement('option');o.value=k;o.textContent=MONTHS[k].label;if(k===cur)o.selected=true;s.appendChild(o);});s.onchange=()=>{cur=s.value;render();};}
+function buildTabs(){const c=document.getElementById('tabBar');c.innerHTML='';VIEWS.forEach((v,i)=>{const d=document.createElement('div');d.className='tab'+(i===0?' on':'');d.textContent=v.label;d.onclick=()=>{c.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));d.classList.add('on');view=v.id;render();};c.appendChild(d);});}
+async function doRefresh(){await loadData();buildMonthSel();updateSync();render();}
+function updateSync(){const n=new Date();const ts=`${n.getFullYear()}-${String(n.getMonth()+1).padStart(2,'0')}-${String(n.getDate()).padStart(2,'0')} ${String(n.getHours()).padStart(2,'0')}:${String(n.getMinutes()).padStart(2,'0')}`;document.getElementById('syncInfo').textContent=src==='live'?`채널톡 API 실시간 연동 | 동기화: ${ts} | collector.py 실행 시 갱신`:`데이터 없음`;const li=document.getElementById('liveInd');li.className=src==='live'?'live on':'live off';li.textContent=src==='live'?'Live':'Offline';}
+function destroyAll(){Object.values(charts).forEach(c=>{try{c.destroy();}catch(e){}});charts={};}
+
+// ============ RENDER ============
+function render(){
+  destroyAll();const m=MONTHS[cur];if(!m)return;
+  const pi=MK.indexOf(cur);const p=pi>0?MONTHS[MK[pi-1]]:null;
+  const el=document.getElementById('main');
+  if(view==='overview')el.innerHTML=vOverview(m,p);
+  else if(view==='tags')el.innerHTML=vTags(m,p);
+  else if(view==='refund')el.innerHTML=vRefund(m,p);
+  else if(view==='report')el.innerHTML=vReport(m,p);
+  requestAnimationFrame(()=>drawCharts(m,p));
+}
+
+// ============ OVERVIEW ============
+function vOverview(m,p){
+  const pc=p?pct(m.cons,p.cons):null;
+  const pa=p?pct(m.avg,p.avg):null;
+  const daily=m.daily||[];
+  const mx=daily.reduce((a,b)=>a._total>b._total?a:b,daily[0]||{d:0,_total:0});
+  const agSum=m.agents.map(a=>`<div class="it">${a.name}<b>${fmt(a.count)}건</b></div>`).join('');
+
+  return `
+    <div class="kpi-row">
+      <div class="kpi"><div class="lb">${m.label} 누적 상담 <i class="tip" data-tip="채널톡 closed 기준 당월 상담 총 건수">?</i></div><div class="vl">${fmt(m.cons)}</div>
+        <div class="tr ${pc>0?'dn':'up'}">${pc?'전월 대비 '+(pc>0?'▲':'▼')+Math.abs(pc)+'%':''}</div></div>
+      <div class="kpi"><div class="lb">일평균 상담 <i class="tip" data-tip="누적 상담 ÷ 영업일 수">?</i></div><div class="vl">${m.avg.toFixed(1)}건</div>
+        <div class="tr ${pa>0?'dn':'up'}">${pa?'전월 대비 '+(pa>0?'▲':'▼')+Math.abs(pa)+'%':''}</div></div>
+      <div class="kpi"><div class="lb">신청수 <i class="tip" data-tip="병원비환급 신청 건수 (instead_request)">?</i></div><div class="vl">${fmt(m.apps)}건</div>
+        <div class="sm">${m.rate?'상담비율 '+m.rate.toFixed(1)+'%':''}</div></div>
+      <div class="kpi"><div class="lb">영업일 / 최고일 <i class="tip" data-tip="상담이 15건 이상인 날 기준">?</i></div><div class="vl">${m.days}일</div>
+        <div class="sm">최고 : ${mx.d}일 (${fmt(mx._total)}건)</div></div>
+    </div>
+    <div class="row r2">
+      <div class="box"><h3>월별 상담수 vs 신청수</h3><div class="cw"><canvas id="cTrend"></canvas></div></div>
+      <div class="box"><h3>상담원별 비중 (${m.label}) — 합계 ${fmt(m.totalAgents)}건</h3><div class="cw"><canvas id="cAgentPie"></canvas></div></div>
+    </div>
+    <div class="row r1">
+      <div class="box"><h3>상담비율 추이 (상담수/신청수) — 서비스 건강도 지표</h3><div class="cw" style="height:200px"><canvas id="cRateT"></canvas></div></div>
+    </div>
+    <div class="row r1">
+      <div class="box"><h3>${m.label} 일별 상담원별 처리량</h3>
+        <div class="cw lg"><canvas id="cDaily"></canvas></div>
+        <div class="sbar">
+          <div class="it">영업일<b>${m.days}일</b></div>
+          <div class="it">총 처리<b>${fmt(m.totalAgents)}건</b></div>
+          ${agSum}
+        </div>
+      </div>
+    </div>`;
+}
+
+// ============ TAGS ============
+function vTags(m,p){
+  const t1=m.tags[0]||{n:'-',c:0};
+  const t1pct=m.cons?(t1.c/m.cons*100).toFixed(1):'0';
+  const catTotal=Object.values(m.cats).reduce((s,v)=>s+v,0);
+
+  return `
+    <div class="kpi-row">
+      <div class="kpi"><div class="lb">총 문의수 <i class="tip" data-tip="당월 전체 상담 건수">?</i></div><div class="vl">${fmt(m.cons)}건</div>
+        <div class="sm">태그 합계 ${fmt(catTotal)}건</div></div>
+      <div class="kpi"><div class="lb">Top 1 태그 <i class="tip" data-tip="가장 많이 사용된 상담 태그">?</i></div><div class="vl" style="font-size:16px">${t1.n}</div>
+        <div class="sm">${fmt(t1.c)}건 (${t1pct}%)</div></div>
+      <div class="kpi"><div class="lb">환불요청 비율 <i class="tip" data-tip="Q6_환불요청 태그가 달린 상담 비율">?</i></div><div class="vl">${m.ref.reqP.toFixed(1)}%</div>
+        <div class="sm">${fmt(m.ref.req)}건</div></div>
+      <div class="kpi"><div class="lb">카테고리 <i class="tip" data-tip="문의(Q), 처리(M), 안내(A), 환불(R), 특성(E) 등">?</i></div><div class="vl">${Object.keys(m.cats).length}개</div>
+        <div class="sm">${Object.keys(m.cats).join(', ')}</div></div>
+    </div>
+    <div class="row r2">
+      <div class="box"><h3>상담태그 Top 10</h3><div class="cw lg"><canvas id="cTagBar"></canvas></div></div>
+      <div class="box"><h3>태그 카테고리 분포 (합계 ${fmt(catTotal)})</h3><div class="cw"><canvas id="cCatDonut"></canvas></div></div>
+    </div>
+    <div class="row r1">
+      <div class="box"><h3>월별 Top 태그 추이</h3><div class="cw"><canvas id="cTagTrend"></canvas></div></div>
+    </div>`;
+}
+
+// ============ REFUND ============
+function vRefund(m,p){
+  const r=m.ref;const pr=p?p.ref:null;
+  const rdb=m.refundsDb||{};
+  const prdb=p?(p.refundsDb||{}):{};
+  const dbRefunds=rdb.total||0;
+  const pDbRefunds=prdb.total||0;
+  const dbPct=dbRefunds&&m.apps?(dbRefunds/m.apps*100).toFixed(1):null;
+
+  return `
+    <div class="kpi-row">
+      <div class="kpi"><div class="lb">전체 환불 (DB) <i class="tip" data-tip="당월 처리된 환불 전체 (이전 월 신청건 포함)">?</i></div><div class="vl">${fmt(dbRefunds)}건</div>
+        <div class="tr ${pDbRefunds&&dbRefunds>pDbRefunds?'dn':'up'}">${pDbRefunds?'전월 대비 '+(dbRefunds>pDbRefunds?'▲':'▼')+Math.abs(pct(dbRefunds,pDbRefunds))+'%':''}</div></div>
+      <div class="kpi"><div class="lb">직접취소 <i class="tip" data-tip="고객취소 + 자동환불 (CS 개입 없음)">?</i></div><div class="vl">${fmt(rdb.direct||0)}건</div>
+        <div class="sm">${dbRefunds?'전체의 '+((rdb.direct||0)/dbRefunds*100).toFixed(1)+'%':''}</div></div>
+      <div class="kpi"><div class="lb">CS 경유 환불 <i class="tip" data-tip="고객요청, 중복신청, 정책, 실손미가입 등 CS 처리">?</i></div><div class="vl">${fmt(rdb.cs||0)}건</div>
+        <div class="sm">${dbRefunds?'전체의 '+((rdb.cs||0)/dbRefunds*100).toFixed(1)+'%':''}</div></div>
+      <div class="kpi"><div class="lb">당월 신청 환불률 <i class="tip" data-tip="당월 신청건 중 환불된 비율 (코호트 기준)">?</i></div><div class="vl">${(m.cohort&&m.cohort.rate)?m.cohort.rate.toFixed(1)+'%':'-'}</div>
+        <div class="sm">${m.cohort?fmt(m.cohort.refunded)+' / '+fmt(m.cohort.apps):''}</div></div>
+    </div>
+    <div class="row r2">
+      <div class="box"><h3>환불사유 Top 5 (CS태그 기준)</h3><div class="cw"><canvas id="cRefBar"></canvas></div></div>
+      <div class="box"><h3>월별 환불 추이 (상담태그 vs DB)</h3><div class="cw"><canvas id="cRefTrend"></canvas></div></div>
+    </div>
+    <div class="row r2">
+      <div class="box"><h3>환불 퍼널 (${m.label})</h3><div class="cw"><canvas id="cRefFunnel"></canvas></div></div>
+      <div class="box"><h3>월별 환불률 추이 (환불/신청)</h3><div class="cw"><canvas id="cRefRate"></canvas></div></div>
+    </div>`;
+}
+
+// ============ REPORT ============
+function vReport(m,p){
+  const r=m.ref;const rdb=m.refundsDb||{};
+  const insHtml=m.insights.map((t,i)=>{
+    const icons=['📊','💰','🏷️','👥','📋'];const titles=['주요 지표','환불 동향','태그 현황','운영 현황','신청 현황'];
+    return `<div class="ins"><span class="ic">${icons[i%5]}</span><div><div class="tt">${titles[i%5]}</div><div class="ds">${t}</div></div></div>`;
+  }).join('');
+
+  let tagTable='';
+  if(p){
+    const pm={};p.tags.forEach(t=>pm[t.n]=t.c);
+    const rows=m.tags.slice(0,8).map(t=>{
+      const pv=pm[t.n]||0;const chg=pv?((t.c-pv)/pv*100).toFixed(1):'NEW';const up=t.c>pv;
+      const cls=chg==='NEW'?'nw':Math.abs(chg)>20?(up?'up':'dn'):'st';
+      const lb=chg==='NEW'?'신규':Math.abs(chg)>20?(up?'급증':'급감'):(up?'증가':'안정');
+      return `<tr><td style="font-weight:600">${t.n}</td><td class="tr">${fmt(pv||'-')}</td><td class="tr">${fmt(t.c)}</td><td class="tr" style="color:${up?'#dc2626':'#16a34a'};font-weight:600">${chg==='NEW'?'NEW':(up?'+':'')+chg+'%'}</td><td><span class="badge ${cls}">${lb}</span></td></tr>`;
+    }).join('');
+    tagTable=`<div class="box"><h3>전월 대비 태그 변동</h3><table><thead><tr><th>태그</th><th class="tr">${p.label}</th><th class="tr">${m.label}</th><th class="tr">변동</th><th>상태</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+  // 전월 대비 변화
+  const pc2=p?pct(m.cons,p.cons):null;
+  const cohortRate=(m.cohort&&m.cohort.rate)?m.cohort.rate.toFixed(1)+'%':'-';
+
+  return `<div class="rcard"><h3>${cur.slice(0,4)}년 ${parseInt(cur.slice(5))}월 CS 월간 리포트</h3>
+    <div class="sgrid">
+      <div class="si c1"><div class="v">${fmt(m.cons)}</div><div class="l">총 문의 ${pc2?(pc2>0?'▲':'▼')+Math.abs(pc2)+'%':''}</div></div>
+      <div class="si c2"><div class="v">${r.reqP.toFixed(1)}%</div><div class="l">환불요청 비율</div></div>
+      <div class="si c3"><div class="v">${cohortRate}</div><div class="l">당월 신청 환불률</div></div>
+      <div class="si c4"><div class="v">${m.avg.toFixed(1)}</div><div class="l">일평균 상담</div></div>
+    </div>
+    <div class="sgrid">
+      <div class="si" style="background:#f5f3ff;color:#5046e5"><div class="v">${fmt(m.apps)}</div><div class="l">신청수</div></div>
+      <div class="si" style="background:#fef2f2;color:#dc2626"><div class="v">${fmt(rdb.total||0)}</div><div class="l">환불 처리 (전체)</div></div>
+      <div class="si" style="background:#fff7ed;color:#ea580c"><div class="v">${fmt(rdb.cs||0)}</div><div class="l">CS 경유 환불</div></div>
+      <div class="si" style="background:#f0fdf4;color:#16a34a"><div class="v">${m.agents.length}명</div><div class="l">상담원 (${m.days}영업일)</div></div>
+    </div>
+    <h4 style="font-size:14px;font-weight:600;margin:16px 0 10px">주요 인사이트</h4>
+    ${insHtml}</div>${tagTable}`;
+}
+
+// ============ DRAW CHARTS ============
+function drawCharts(m,p){
+  const TREND=MK.map(k=>({key:k,...MONTHS[k]}));
+
+  if(view==='overview'){
+    // 월별 추이: 신청수 막대 + 상담수 라인 with 숫자 표시
+    const cT=document.getElementById('cTrend');
+    if(cT){
+      charts.trend=new Chart(cT,{type:'bar',data:{labels:TREND.map(t=>t.label),datasets:[
+        {label:'신청수',data:TREND.map(t=>t.apps),backgroundColor:TREND.map(t=>t.key===cur?'#c4b5fd':'#ede9fe'),borderRadius:4,yAxisID:'y',order:2},
+        {label:'상담수',data:TREND.map(t=>t.cons),type:'line',borderColor:'#ef4444',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#ef4444',yAxisID:'y1',order:-1}
+      ]},options:{responsive:true,maintainAspectRatio:false,animation:false,
+        plugins:{legend:{position:'top',labels:{font:{size:10},usePointStyle:true,pointStyle:'line'}},
+          datalabels:{display:function(ctx){return ctx.datasetIndex===1;},color:'#ef4444',anchor:'top',align:'top',font:{size:10,weight:'bold'},formatter:v=>fmt(v)}},
+        scales:{y:{grid:{color:G},ticks:{callback:v=>v>=1000?(v/1000)+'k':v}},y1:{position:'right',grid:{display:false},ticks:{callback:v=>v>=1000?(v/1000)+'k':v}},x:{grid:{display:false}}}}});
+    }
+
+    // 상담비율 추이
+    const cRT2=document.getElementById('cRateT');
+    if(cRT2){
+      const rateData=TREND.map(t=>t.rate||0);
+      charts.rateT=new Chart(cRT2,{type:'line',data:{labels:TREND.map(t=>t.label),datasets:[
+        {label:'상담비율 (상담/신청 %)',data:rateData,borderColor:'#5046e5',backgroundColor:'#5046e520',fill:true,borderWidth:2,pointRadius:4,pointBackgroundColor:'#5046e5',tension:.3}
+      ]},options:{responsive:true,maintainAspectRatio:false,animation:false,
+        layout:{padding:{left:40,right:40,top:20}},
+        plugins:{legend:{display:false},datalabels:{display:true,color:'#1e1b4b',anchor:'top',align:'top',offset:4,font:{size:12,weight:'bold'},formatter:v=>v?v.toFixed(1)+'%':''}},
+        scales:{y:{grid:{color:G},suggestedMax:Math.max(...rateData)+3,suggestedMin:Math.max(0,Math.min(...rateData.filter(v=>v>0))-3),ticks:{callback:v=>v.toFixed(0)+'%',padding:10}},x:{grid:{display:false}}}}});
+    }
+
+    // 상담원 도넛
+    const cP=document.getElementById('cAgentPie');
+    if(cP&&m.agents.length){
+      charts.apie=new Chart(cP,{type:'doughnut',data:{
+        labels:m.agents.map(a=>a.name+' '+fmt(a.count)+'건'),
+        datasets:[{data:m.agents.map(a=>a.count),backgroundColor:m.agents.map(a=>AC[a.name]||'#94a3b8'),borderWidth:2,borderColor:'#fff'}]
+      },options:{responsive:true,maintainAspectRatio:false,animation:false,cutout:'50%',
+        plugins:{legend:{position:'right',labels:{padding:8,font:{size:11}}},
+          datalabels:{color:'#fff',font:{size:10,weight:'bold'},formatter:(v,ctx)=>{const t=ctx.dataset.data.reduce((a,b)=>a+b,0);return(v/t*100).toFixed(0)+'%';}}}}});
+    }
+
+    // 일별 처리량 - 합계 숫자 항상 표시
+    const cD=document.getElementById('cDaily');
+    if(cD&&m.daily.length){
+      const labels=m.daily.map(d=>d.d+'일');
+      const agentNames=m.agents.map(a=>a.name);
+      const datasets=agentNames.map((name,i)=>({
+        label:name,data:m.daily.map(d=>d[name]||0),
+        backgroundColor:AC[name]||'#94a3b8',stack:'a',
+        borderRadius:i===agentNames.length-1?{topLeft:2,topRight:2}:0
+      }));
+      // Total line - order:-1로 막대 앞에 표시
+      datasets.push({
+        label:'Total',data:m.daily.map(d=>d._total),type:'line',
+        borderColor:'rgba(100,116,139,0.45)',borderWidth:1.5,pointRadius:0,pointHoverRadius:3,order:-1
+      });
+      charts.daily=new Chart(cD,{type:'bar',data:{labels,datasets},options:{
+        responsive:true,maintainAspectRatio:false,animation:false,
+        plugins:{legend:{position:'top',labels:{font:{size:10},boxWidth:12}},
+          datalabels:{display:function(ctx){return ctx.datasetIndex===datasets.length-1&&ctx.dataset.data[ctx.dataIndex]>15;},
+            color:'#333',anchor:'end',align:'top',font:{size:8,weight:'600'},formatter:v=>v}},
+        scales:{y:{stacked:true,grid:{color:G}},x:{stacked:true,grid:{display:false},ticks:{font:{size:9},maxRotation:0}}}}});
+    }
+  }
+
+  if(view==='tags'){
+    const cTB=document.getElementById('cTagBar');
+    if(cTB){
+      const tc=m.tags.map((_,i)=>i===0?'#ef4444':i<3?'#8b5cf6':'#c4b5fd');
+      charts.tagBar=new Chart(cTB,{type:'bar',data:{labels:m.tags.map(t=>t.n),datasets:[{data:m.tags.map(t=>t.c),backgroundColor:tc,borderRadius:4}]},
+        options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,animation:false,
+          plugins:{legend:{display:false},datalabels:{anchor:'end',align:'right',color:'#555',font:{size:10,weight:'600'},formatter:v=>fmt(v)}},
+          scales:{x:{grid:{color:G}},y:{grid:{display:false},ticks:{font:{size:10}}}}}});
+    }
+    const cCD=document.getElementById('cCatDonut');
+    if(cCD&&Object.keys(m.cats).length){
+      charts.catD=new Chart(cCD,{type:'doughnut',data:{labels:Object.keys(m.cats).map(k=>k+' '+fmt(m.cats[k])),
+        datasets:[{data:Object.values(m.cats),backgroundColor:['#5046e5','#8b5cf6','#ef4444','#f59e0b','#10b981','#94a3b8'],borderWidth:2,borderColor:'#fff'}]},
+        options:{responsive:true,maintainAspectRatio:false,animation:false,cutout:'50%',
+          plugins:{legend:{position:'right',labels:{padding:8,font:{size:10}}},
+            datalabels:{color:'#fff',font:{size:10,weight:'bold'},formatter:(v,ctx)=>{const t=ctx.dataset.data.reduce((a,b)=>a+b,0);return(v/t*100).toFixed(0)+'%';}}}}});
+    }
+    // 월별 태그 추이
+    const cTT=document.getElementById('cTagTrend');
+    if(cTT){
+      const topTag=m.tags[0]?.n||'';
+      // 전체 월 통합 Top 5 (월 변경해도 고정)
+      const allTagCounts={};
+      MK.forEach(k=>{MONTHS[k].tags.forEach(t=>{allTagCounts[t.n]=(allTagCounts[t.n]||0)+t.c;});});
+      const top3=Object.entries(allTagCounts).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([n])=>n);
+      const colors=['#ef4444','#8b5cf6','#f59e0b','#10b981','#3b82f6'];
+      const ds=top3.map((tn,i)=>({
+        label:tn,
+        data:MK.map(k=>{const mt=MONTHS[k];const found=mt.tags.find(t=>t.n===tn);return found?found.c:0;}),
+        borderColor:colors[i],backgroundColor:colors[i]+'20',fill:false,borderWidth:2,pointRadius:3,tension:.3
+      }));
+      charts.tagTrend=new Chart(cTT,{type:'line',data:{labels:MK.map(k=>MONTHS[k].label),datasets:ds},
+        options:{responsive:true,maintainAspectRatio:false,animation:false,
+          plugins:{legend:{position:'top',labels:{font:{size:10}}},datalabels:{display:false}},
+          scales:{y:{grid:{color:G}},x:{grid:{display:false}}}}});
+    }
+  }
+
+  if(view==='refund'){
+    const cRB=document.getElementById('cRefBar');
+    if(cRB){
+      charts.refBar=new Chart(cRB,{type:'bar',data:{labels:m.refR.map(r=>r.n),
+        datasets:[{data:m.refR.map(r=>r.c),backgroundColor:['#ef4444','#f97316','#f59e0b','#eab308','#94a3b8'],borderRadius:4}]},
+        options:{responsive:true,maintainAspectRatio:false,animation:false,
+          plugins:{legend:{display:false},datalabels:{anchor:'end',align:'top',color:'#555',font:{size:10,weight:'600'},formatter:v=>fmt(v)}},
+          scales:{y:{grid:{color:G}},x:{grid:{display:false},ticks:{font:{size:9}}}}}});
+    }
+    const cRT=document.getElementById('cRefTrend');
+    if(cRT){
+      charts.refTrend=new Chart(cRT,{type:'bar',data:{labels:MK.map(k=>MONTHS[k].label),datasets:[
+        {label:'직접취소',data:MK.map(k=>(MONTHS[k].refundsDb||{}).direct||0),backgroundColor:'#fca5a5',borderRadius:3,stack:'a'},
+        {label:'CS 경유 환불',data:MK.map(k=>(MONTHS[k].refundsDb||{}).cs||0),backgroundColor:'#ef4444',borderRadius:3,stack:'a'},
+        {label:'환불요청 (상담태그)',data:MK.map(k=>MONTHS[k].ref.req),type:'line',borderColor:'#8b5cf6',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#8b5cf6',borderDash:[4,4],order:-1}
+      ]},options:{responsive:true,maintainAspectRatio:false,animation:false,
+        plugins:{legend:{position:'top',labels:{font:{size:10},usePointStyle:true}},datalabels:{display:false}},
+        scales:{y:{stacked:true,grid:{color:G}},x:{stacked:true,grid:{display:false}}}}});
+    }
+
+    // 환불 퍼널 - 당월/이전월 구분
+    const cFF=document.getElementById('cRefFunnel');
+    if(cFF){
+      const rdb=m.refundsDb||{};
+      const funnelLabels=['신청수','전체 환불 처리','직접취소','CS 경유'];
+      const funnelData=[m.apps||0, rdb.total||0, rdb.direct||0, rdb.cs||0];
+      const funnelColors=['#c4b5fd','#ef4444','#fca5a5','#f97316'];
+      charts.refFunnel=new Chart(cFF,{type:'bar',data:{labels:funnelLabels,datasets:[{data:funnelData,backgroundColor:funnelColors,borderRadius:4}]},
+        options:{responsive:true,maintainAspectRatio:false,animation:false,
+          plugins:{legend:{display:false},datalabels:{anchor:'end',align:'top',color:'#333',font:{size:11,weight:'bold'},
+            formatter:(v,ctx)=>{
+              const apps=funnelData[0];
+              if(ctx.dataIndex===0) return fmt(v);
+              return fmt(v)+' ('+(apps?(v/apps*100).toFixed(1)+'%':'')+')';
+            }}},
+          scales:{y:{grid:{color:G}},x:{grid:{display:false}}}}});
+    }
+
+    // 월별 환불률 추이
+    const cRR=document.getElementById('cRefRate');
+    if(cRR){
+      const cohortRate=MK.map(k=>{const c=MONTHS[k].cohort||{};return c.rate||0;});
+      const processedRate=MK.map(k=>{const mm=MONTHS[k];const rdb=mm.refundsDb||{};return mm.apps?(rdb.total||0)/mm.apps*100:0;});
+      charts.refRate=new Chart(cRR,{type:'line',data:{labels:MK.map(k=>MONTHS[k].label),datasets:[
+        {label:'당월 신청 환불률',data:cohortRate,borderColor:'#5046e5',borderWidth:2.5,pointRadius:5,pointBackgroundColor:'#5046e5',tension:.3},
+        {label:'당월 처리 환불률 (이전월 포함)',data:processedRate,borderColor:'#ef4444',borderWidth:2,pointRadius:4,pointBackgroundColor:'#ef4444',tension:.3,borderDash:[4,4]}
+      ]},options:{responsive:true,maintainAspectRatio:false,animation:false,
+        layout:{padding:{top:25,left:10,right:10}},
+        plugins:{legend:{position:'top',labels:{font:{size:10},usePointStyle:true}},
+          datalabels:{display:true,color:'#333',anchor:'top',align:'top',font:{size:10,weight:'600'},formatter:v=>v.toFixed(1)+'%'}},
+        scales:{y:{grid:{color:G},ticks:{callback:v=>v+'%'}},x:{grid:{display:false}}}}});
+    }
+  }
+}
+
+init();
+</script>
+</body>
+</html>
