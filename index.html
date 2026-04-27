@@ -125,7 +125,8 @@ function transform(j){
       }else{entry._total=0;}
       daily.push(entry);
     }
-    const agents=Object.entries(agentTotals).sort((a,b)=>b[1]-a[1]).map(([n,c])=>({name:n,count:c}));
+    const allAgents=Object.entries(agentTotals).sort((a,b)=>b[1]-a[1]).map(([n,c])=>({name:n,count:c}));
+    const agents=allAgents.filter(a=>a.name!=='미배정');
     const totalAgents=agents.reduce((s,a)=>s+a.count,0);
     const tags=(tt.top||[]).slice(0,10).map(t=>({n:t.tag,c:t.count}));
     const refR=(rf.refund_reasons||[]).slice(0,5).map(r=>({n:r.reason,c:r.count}));
@@ -134,7 +135,7 @@ function transform(j){
     res[m]={
       label,cons,avg:sum.daily_avg,days:sum.num_days,
       apps,rate:apps>0?(cons/apps*100):null,
-      daily,agents,agentTotals,totalAgents,
+      daily,agents,allAgents,agentTotals,totalAgents,
       tags:tags.length?tags:[{n:'-',c:0}],
       cats,
       ref:{
@@ -339,7 +340,7 @@ function vReport(m,p){
       <div class="si" style="background:#f5f3ff;color:#5046e5"><div class="v">${fmt(m.apps)}</div><div class="l">신청수</div></div>
       <div class="si" style="background:#fef2f2;color:#dc2626"><div class="v">${fmt(rdb.total||0)}</div><div class="l">환불 처리 (전체)</div></div>
       <div class="si" style="background:#fff7ed;color:#ea580c"><div class="v">${fmt(rdb.cs||0)}</div><div class="l">CS 경유 환불</div></div>
-      <div class="si" style="background:#f0fdf4;color:#16a34a"><div class="v">${m.agents.length}명</div><div class="l">상담원 (${m.days}영업일)</div></div>
+      <div class="si" style="background:#f0fdf4;color:#16a34a"><div class="v">${m.agents.length}명</div><div class="l">상담원 (${m.days}영업일)</div>${(()=>{const ua=m.allAgents&&m.allAgents.find(a=>a.name==='미배정');return ua?`<div style="font-size:10px;color:#999;margin-top:4px">미배정 ${fmt(ua.count)}건 <span class="tip" data-tip="담당자가 배정되지 않은 상담건">?</span></div>`:''})()}</div>
     </div>
     <h4 style="font-size:14px;font-weight:600;margin:16px 0 10px">주요 인사이트</h4>
     ${insHtml}</div>${tagTable}`;
