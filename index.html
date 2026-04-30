@@ -24,8 +24,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans KR',sans
 .kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
 .kpi{background:#fff;border-radius:8px;padding:14px 16px;border:1px solid #ececf0}
 .kpi .lb{font-size:12px;color:#666;font-weight:600;display:flex;align-items:center;gap:4px}
-.kpi .lb .tip,.si .tip{width:14px;height:14px;border-radius:50%;background:#e0e0e8;color:#888;font-size:9px;display:inline-flex;align-items:center;justify-content:center;cursor:help;position:relative;font-weight:700;font-style:normal}
-.kpi .lb .tip:hover::after,.si .tip:hover::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:6px 10px;border-radius:6px;font-size:10px;font-weight:400;white-space:nowrap;z-index:200;line-height:1.4}
+.kpi .lb .tip{width:14px;height:14px;border-radius:50%;background:#e0e0e8;color:#888;font-size:9px;display:inline-flex;align-items:center;justify-content:center;cursor:help;position:relative;font-weight:700;font-style:normal}
+.kpi .lb .tip:hover::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:6px 10px;border-radius:6px;font-size:10px;font-weight:400;white-space:nowrap;z-index:200;line-height:1.4}
 .kpi .vl{font-size:22px;font-weight:700;margin-top:2px}
 .kpi .sm{font-size:12px;color:#555;margin-top:3px;font-weight:500}
 .kpi .tr{font-size:11px;margin-top:3px;font-weight:600}.kpi .tr.up{color:#22c55e}.kpi .tr.dn{color:#ef4444}
@@ -190,8 +190,8 @@ async function doRefresh(){
 function updateSync(){
   let genTs='알 수 없음';
   if(generatedAt){
-    try{const d=new Date(generatedAt);genTs=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');}
-    catch(e){genTs=generatedAt.replace('T',' ').slice(0,16);}
+    if(generatedAt.includes('KST')){genTs=generatedAt.replace(' KST','');}
+    else{try{const d=new Date(generatedAt);const kst=new Date(d.getTime()+9*3600000);genTs=kst.getUTCFullYear()+'-'+String(kst.getUTCMonth()+1).padStart(2,'0')+'-'+String(kst.getUTCDate()).padStart(2,'0')+' '+String(kst.getUTCHours()).padStart(2,'0')+':'+String(kst.getUTCMinutes()).padStart(2,'0');}catch(e){genTs=generatedAt.replace('T',' ').slice(0,16);}}
   }
   document.getElementById('syncInfo').textContent=src==='live'?`데이터 기준 : ${genTs} | 30분 자동 갱신`:`데이터 없음`;
   const li=document.getElementById('liveInd');

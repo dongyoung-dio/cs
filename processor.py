@@ -12,7 +12,7 @@ CS 데이터 가공/집계 스크립트
 import json
 import os
 import sys
-from datetime import datetime, date
+from datetime import datetime, date, timezone, timedelta
 from collections import defaultdict, Counter
 from pathlib import Path
 
@@ -244,7 +244,7 @@ class DataProcessor:
         print("\n🔧 데이터 가공 시작...")
 
         dashboard = {
-            "generated_at": datetime.now().isoformat(),
+            "generated_at": datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d %H:%M:%S KST"),
             "daily_tag_counts": self.calc_daily_tag_counts(),
             "daily_complex_tag_counts": self.calc_daily_complex_tag_counts(),
             "daily_agent_counts": self.calc_daily_agent_counts(),
