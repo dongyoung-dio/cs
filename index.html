@@ -159,7 +159,9 @@ function transform(j){
 }
 
 // ============ INIT ============
-async function init(){await loadData();buildMonthSel();buildTabs();updateSync();render();scheduleAutoRefresh();}
+async function init(){await loadData();buildMonthSel();buildTabs();updateSync();render();scheduleAutoRefresh();
+document.addEventListener('visibilitychange',async()=>{if(document.hidden===false){const prev=generatedAt;await loadData();if(generatedAt!==prev){buildMonthSel();updateSync();render();}}});
+}
 
 function scheduleAutoRefresh(){
   // 매 30분 + 5분 오프셋 (:05, :35에 갱신 → Actions 완료 후 로드)
