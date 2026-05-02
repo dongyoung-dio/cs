@@ -86,14 +86,32 @@ class ChannelTalkCollector:
         return None
 
     # ============================================================
-    # 모드 1: 과거 데이터 수집 (전체 상태, firstOpenedAt 기준)
+    # 모드 1a: 과거 데이터 수집 (closed만, closedAt 기준) - 빠름
     # ============================================================
     def fetch_chats_for_period(self, start_date, end_date):
+        """과거 기간 closed 상담 수집 (closedAt 기준, 오래된 순 조회)"""
+        start_ts = int(datetime.combine(start_date, datetime.min.time()).timestamp() * 1000)
+        end_ts = int(datetime.combine(end_date + timedelta(days=1), datetime.min.time()).timestamp() * 1000)
+
+        print(f"\n📥 {start_date} ~ {end_date} closed 상담 수집 중...")
+
+        self.manager_cache = {}
+        chats = self._fetch_by_state_filtered(
+            "closed", start_ts, end_ts, date_field="closedAt",
+            sort_order="desc", miss_tolerance=10, max_pages=9999
+        )
+        print(f"  📊 총 {len(chats)}건 수집 완료")
+        return chats
+
+    # ============================================================
+    # 모드 1b: 과거 데이터 수집 (전체 상태, firstOpenedAt 기준) - 인입 기준
+    # ============================================================
+    def fetch_chats_for_period_by_inbound(self, start_date, end_date):
         """과거 기간 전체 상담 수집 (opened+snoozed+closed, firstOpenedAt 기준)"""
         start_ts = int(datetime.combine(start_date, datetime.min.time()).timestamp() * 1000)
         end_ts = int(datetime.combine(end_date + timedelta(days=1), datetime.min.time()).timestamp() * 1000)
 
-        print(f"\n📥 {start_date} ~ {end_date} 전체 상태 상담 수집 중...")
+        print(f"\n📥 {start_date} ~ {end_date} 인입 기준(전체 상태) 수집 중...")
 
         self.manager_cache = {}
         all_chats = []
@@ -102,7 +120,7 @@ class ChannelTalkCollector:
             if state in ("opened", "snoozed"):
                 chats = self._fetch_by_state_filtered(
                     state, start_ts, end_ts, date_field="firstOpenedAt",
-                    max_pages=500, miss_tolerance=999, sort_order="desc"
+                    max_pages=100, miss_tolerance=999
                 )
             else:
                 chats = self._fetch_by_state_filtered(
@@ -112,7 +130,7 @@ class ChannelTalkCollector:
             all_chats.extend(chats)
             print(f"  ✅ {state}: {len(chats)}건")
 
-        print(f"  📊 총 {len(all_chats)}건 수집 완료")
+        print(f"  📊 총 인입: {len(all_chats)}건 수집 완료")
         return all_chats
 
     # ============================================================
@@ -319,8 +337,11 @@ class ChannelTalkCollector:
         print(f"  💾 저장: {filepath}")
         return filepath
 
-    def collect(self, start_date, end_date=None):
-        """기간별 데이터 수집 (전체 상태, firstOpenedAt 기준)"""
+    def collect(self, start_date, end_date=None, inbound=False):
+        """기간별 데이터 수집
+        - inbound=False: closed/closedAt 기준 (기존 방식, 빠름)
+        - inbound=True: 전체 상태/firstOpenedAt 기준 (인입 기준, 정확)
+        """
         if end_date is None:
             end_date = start_date
 
@@ -328,14 +349,17 @@ class ChannelTalkCollector:
         if end_date > today:
             end_date = today
 
-        all_chats = self.fetch_chats_for_period(start_date, end_date)
+        if inbound:
+            all_chats = self.fetch_chats_for_period_by_inbound(start_date, end_date)
+        else:
+            all_chats = self.fetch_chats_for_period(start_date, end_date)
 
-        # 일별로 분류 (firstOpenedAt 기준 = 인입일)
+        # 일별로 분류 (firstOpenedAt 기준 = 인입일, 없으면 closedAt fallback)
         from collections import defaultdict
         daily_chats = defaultdict(list)
 
         for chat in all_chats:
-            ts = chat.get("firstOpenedAt") or chat.get("createdAt", 0)
+            ts = chat.get("firstOpenedAt") or chat.get("closedAt", 0)
             if not ts:
                 continue
             chat_date = datetime.fromtimestamp(ts / 1000).strftime("%Y-%m-%d")
@@ -375,6 +399,7 @@ def main():
     parser.add_argument("--range", nargs=2, metavar=("START", "END"), help="수집 기간")
     parser.add_argument("--month", help="수집할 월 (YYYY-MM)")
     parser.add_argument("--today", action="store_true", help="오늘 실시간 인입 수집 (전체 상태)")
+    parser.add_argument("--inbound", action="store_true", help="인입 기준 수집 (전체 상태, firstOpenedAt 기준)")
     args = parser.parse_args()
 
     # API Key 확인
@@ -396,25 +421,28 @@ def main():
             end = datetime(year + 1, 1, 1).date() - timedelta(days=1)
         else:
             end = datetime(year, month + 1, 1).date() - timedelta(days=1)
-        print(f"📅 {args.month} 월간 수집 - 전체 상태 기준 ({start} ~ {end})")
-        collector.collect(start, end)
+        mode = "인입 기준" if args.inbound else "closed 기준"
+        print(f"📅 {args.month} 월간 수집 - {mode} ({start} ~ {end})")
+        collector.collect(start, end, inbound=args.inbound)
 
     elif args.range:
         start = datetime.strptime(args.range[0], "%Y-%m-%d").date()
         end = datetime.strptime(args.range[1], "%Y-%m-%d").date()
-        print(f"📅 기간 수집 - 전체 상태 기준 ({start} ~ {end})")
-        collector.collect(start, end)
+        mode = "인입 기준" if args.inbound else "closed 기준"
+        print(f"📅 기간 수집 - {mode} ({start} ~ {end})")
+        collector.collect(start, end, inbound=args.inbound)
 
     elif args.date:
         target = datetime.strptime(args.date, "%Y-%m-%d").date()
-        print(f"📅 {target} 단일 수집 - 전체 상태 기준")
-        collector.collect(target)
+        mode = "인입 기준" if args.inbound else "closed 기준"
+        print(f"📅 {target} 단일 수집 - {mode}")
+        collector.collect(target, inbound=args.inbound)
 
     else:
-        # 기본: 어제(closed) + 오늘(실시간)
+        # 기본: 어제(인입 기준) + 오늘(실시간)
         yesterday = (datetime.now() - timedelta(days=1)).date()
-        print(f"📅 어제({yesterday}) 전체 상태 수집 + 오늘 실시간 인입 수집")
-        collector.collect(yesterday)
+        print(f"📅 어제({yesterday}) 인입 기준 수집 + 오늘 실시간 인입 수집")
+        collector.collect(yesterday, inbound=True)
         collector.collect_today()
 
     print("\n✅ 수집 완료!")

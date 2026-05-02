@@ -2,7 +2,8 @@ name: CS Dashboard 자동 갱신
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # 30분마다 실행 (UTC)
+    - cron: '*/30 * * * *'  # 30분마다 실행 (UTC) - 실시간 대시보드용
+    - cron: '55 22 * * *'   # 매일 07:55 KST (22:55 UTC) - 전일 인입 기준 재수집
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:
@@ -20,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: 채널톡 데이터 수집 (오늘 실시간 + 전일 closed)
+      - name: 채널톡 데이터 수집 (오늘 실시간 + 전일 인입 기준)
         env:
           CHANNEL_ACCESS_KEY: ${{ secrets.CHANNEL_ACCESS_KEY }}
           CHANNEL_ACCESS_SECRET: ${{ secrets.CHANNEL_ACCESS_SECRET }}
