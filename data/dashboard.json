@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05 09:48:42 KST",
+  "generated_at": "2026-05-05 10:18:36 KST",
   "daily_tag_counts": {
     "2026-01-01": {},
     "2026-01-02": {
@@ -4444,7 +4444,20 @@
       "문의/Q13_오류": 1,
       "특성/E2_불만": 1
     },
-    "2026-05-05": {}
+    "2026-05-05": {
+      "문의/Q6_환불요청": 8,
+      "환불/RT_전체환불": 6,
+      "환불/R3_변심": 3,
+      "환불/R5_지급불가항목": 2,
+      "처리/M10_재탐색": 1,
+      "처리/M3_보험사변경": 1,
+      "환불/R11_중복신청": 1,
+      "처리/M1_답변대기": 1,
+      "문의/Q3_진행상황": 1,
+      "안내/A3_진행상황": 1,
+      "문의/Q1_서비스신청": 1,
+      "안내/A1_서비스신청": 1
+    }
   },
   "daily_complex_tag_counts": {
     "2026-01-01": {},
@@ -26211,7 +26224,22 @@
       "환불/R3_변심 & 특성/E4_유선요청": 1,
       "환불/RT_전체환불 & 특성/E4_유선요청": 1
     },
-    "2026-05-05": {}
+    "2026-05-05": {
+      "문의/Q6_환불요청 & 환불/RT_전체환불": 6,
+      "문의/Q6_환불요청 & 환불/R3_변심": 3,
+      "환불/R3_변심 & 환불/RT_전체환불": 2,
+      "문의/Q6_환불요청 & 환불/R5_지급불가항목": 2,
+      "환불/R5_지급불가항목 & 환불/RT_전체환불": 2,
+      "환불/RT_전체환불 & 환불/R3_변심": 1,
+      "문의/Q6_환불요청 & 처리/M10_재탐색": 1,
+      "문의/Q6_환불요청 & 처리/M3_보험사변경": 1,
+      "처리/M10_재탐색 & 처리/M3_보험사변경": 1,
+      "문의/Q6_환불요청 & 환불/R11_중복신청": 1,
+      "환불/R11_중복신청 & 환불/RT_전체환불": 1,
+      "문의/Q6_환불요청 & 처리/M1_답변대기": 1,
+      "문의/Q3_진행상황 & 안내/A3_진행상황": 1,
+      "문의/Q1_서비스신청 & 안내/A1_서비스신청": 1
+    }
   },
   "daily_agent_counts": {
     "2026-01-01": {
@@ -27097,8 +27125,11 @@
       "total": 927
     },
     "2026-05-05": {
-      "agents": {},
-      "total": 0
+      "agents": {
+        "Summer": 7,
+        "Randy": 6
+      },
+      "total": 13
     }
   },
   "monthly_tag_top": {
@@ -28327,212 +28358,212 @@
       ]
     },
     "2026-05": {
-      "total_inquiries": 1346,
-      "total_tags": 3739,
+      "total_inquiries": 1359,
+      "total_tags": 3766,
       "top": [
         {
           "tag": "문의/Q6_환불요청",
-          "count": 941,
-          "tag_pct": 25.17,
-          "inquiry_pct": 69.91
+          "count": 949,
+          "tag_pct": 25.2,
+          "inquiry_pct": 69.83
         },
         {
           "tag": "처리/M1_답변대기",
-          "count": 356,
-          "tag_pct": 9.52,
-          "inquiry_pct": 26.45
+          "count": 357,
+          "tag_pct": 9.48,
+          "inquiry_pct": 26.27
         },
         {
           "tag": "환불/RT_전체환불",
-          "count": 349,
-          "tag_pct": 9.33,
-          "inquiry_pct": 25.93
+          "count": 355,
+          "tag_pct": 9.43,
+          "inquiry_pct": 26.12
         },
         {
           "tag": "환불/RP_부분환불",
           "count": 284,
-          "tag_pct": 7.6,
-          "inquiry_pct": 21.1
+          "tag_pct": 7.54,
+          "inquiry_pct": 20.9
         },
         {
           "tag": "환불/R11_중복신청",
-          "count": 257,
-          "tag_pct": 6.87,
-          "inquiry_pct": 19.09
+          "count": 258,
+          "tag_pct": 6.85,
+          "inquiry_pct": 18.98
         },
         {
           "tag": "처리/M10_재탐색",
-          "count": 223,
-          "tag_pct": 5.96,
-          "inquiry_pct": 16.57
+          "count": 224,
+          "tag_pct": 5.95,
+          "inquiry_pct": 16.48
         },
         {
           "tag": "환불/R10_정책",
           "count": 169,
-          "tag_pct": 4.52,
-          "inquiry_pct": 12.56
+          "tag_pct": 4.49,
+          "inquiry_pct": 12.44
         },
         {
           "tag": "문의/Q4_지급관련",
           "count": 117,
-          "tag_pct": 3.13,
-          "inquiry_pct": 8.69
+          "tag_pct": 3.11,
+          "inquiry_pct": 8.61
         },
         {
           "tag": "환불/R8_실손미가입",
           "count": 95,
-          "tag_pct": 2.54,
-          "inquiry_pct": 7.06
+          "tag_pct": 2.52,
+          "inquiry_pct": 6.99
         },
         {
           "tag": "특성/E3_중복고객",
           "count": 69,
-          "tag_pct": 1.85,
-          "inquiry_pct": 5.13
+          "tag_pct": 1.83,
+          "inquiry_pct": 5.08
         },
         {
           "tag": "처리/M8_재청구",
           "count": 64,
-          "tag_pct": 1.71,
-          "inquiry_pct": 4.75
+          "tag_pct": 1.7,
+          "inquiry_pct": 4.71
+        },
+        {
+          "tag": "환불/R5_지급불가항목",
+          "count": 63,
+          "tag_pct": 1.67,
+          "inquiry_pct": 4.64
         },
         {
           "tag": "안내/A4_지급관련",
           "count": 62,
-          "tag_pct": 1.66,
-          "inquiry_pct": 4.61
-        },
-        {
-          "tag": "환불/R5_지급불가항목",
-          "count": 61,
-          "tag_pct": 1.63,
-          "inquiry_pct": 4.53
+          "tag_pct": 1.65,
+          "inquiry_pct": 4.56
         },
         {
           "tag": "안내/A3_진행상황",
-          "count": 59,
-          "tag_pct": 1.58,
-          "inquiry_pct": 4.38
-        },
-        {
-          "tag": "처리/M3_보험사변경",
-          "count": 46,
-          "tag_pct": 1.23,
-          "inquiry_pct": 3.42
+          "count": 60,
+          "tag_pct": 1.59,
+          "inquiry_pct": 4.42
         },
         {
           "tag": "환불/R3_변심",
-          "count": 46,
-          "tag_pct": 1.23,
-          "inquiry_pct": 3.42
+          "count": 49,
+          "tag_pct": 1.3,
+          "inquiry_pct": 3.61
+        },
+        {
+          "tag": "처리/M3_보험사변경",
+          "count": 47,
+          "tag_pct": 1.25,
+          "inquiry_pct": 3.46
         },
         {
           "tag": "안내/A8_환불이후",
           "count": 45,
-          "tag_pct": 1.2,
-          "inquiry_pct": 3.34
+          "tag_pct": 1.19,
+          "inquiry_pct": 3.31
         },
         {
           "tag": "안내/A16_신청확인",
           "count": 36,
           "tag_pct": 0.96,
-          "inquiry_pct": 2.67
+          "inquiry_pct": 2.65
         },
         {
           "tag": "문의/Q9_보험사변경",
           "count": 36,
           "tag_pct": 0.96,
-          "inquiry_pct": 2.67
+          "inquiry_pct": 2.65
         },
         {
           "tag": "문의/Q8_환불이후",
           "count": 34,
-          "tag_pct": 0.91,
-          "inquiry_pct": 2.53
+          "tag_pct": 0.9,
+          "inquiry_pct": 2.5
         },
         {
           "tag": "문의/Q2_서비스",
           "count": 30,
           "tag_pct": 0.8,
-          "inquiry_pct": 2.23
+          "inquiry_pct": 2.21
         },
         {
           "tag": "문의/Q16_신청확인",
           "count": 29,
-          "tag_pct": 0.78,
-          "inquiry_pct": 2.15
+          "tag_pct": 0.77,
+          "inquiry_pct": 2.13
         },
         {
           "tag": "안내/A2_서비스",
           "count": 29,
-          "tag_pct": 0.78,
-          "inquiry_pct": 2.15
+          "tag_pct": 0.77,
+          "inquiry_pct": 2.13
         },
         {
           "tag": "환불/R6_서류보완",
           "count": 27,
           "tag_pct": 0.72,
-          "inquiry_pct": 2.01
+          "inquiry_pct": 1.99
         },
         {
           "tag": "안내/A7_환불정책",
           "count": 27,
           "tag_pct": 0.72,
-          "inquiry_pct": 2.01
+          "inquiry_pct": 1.99
         },
         {
           "tag": "문의/Q17_서류보완",
           "count": 26,
-          "tag_pct": 0.7,
-          "inquiry_pct": 1.93
+          "tag_pct": 0.69,
+          "inquiry_pct": 1.91
         },
         {
           "tag": "문의/Q3_진행상황",
-          "count": 22,
-          "tag_pct": 0.59,
-          "inquiry_pct": 1.63
+          "count": 23,
+          "tag_pct": 0.61,
+          "inquiry_pct": 1.69
         },
         {
           "tag": "환불/R1_기타",
           "count": 21,
           "tag_pct": 0.56,
-          "inquiry_pct": 1.56
+          "inquiry_pct": 1.55
         },
         {
           "tag": "문의/Q7_환불정책",
           "count": 20,
           "tag_pct": 0.53,
-          "inquiry_pct": 1.49
+          "inquiry_pct": 1.47
         },
         {
           "tag": "특성/E4_유선요청",
           "count": 19,
-          "tag_pct": 0.51,
-          "inquiry_pct": 1.41
+          "tag_pct": 0.5,
+          "inquiry_pct": 1.4
         },
         {
           "tag": "안내/A6_환불요청",
           "count": 18,
           "tag_pct": 0.48,
-          "inquiry_pct": 1.34
+          "inquiry_pct": 1.32
         },
         {
           "tag": "안내/A1_서비스신청",
-          "count": 15,
-          "tag_pct": 0.4,
-          "inquiry_pct": 1.11
+          "count": 16,
+          "tag_pct": 0.42,
+          "inquiry_pct": 1.18
         },
         {
           "tag": "문의/Q1_서비스신청",
-          "count": 14,
-          "tag_pct": 0.37,
-          "inquiry_pct": 1.04
+          "count": 15,
+          "tag_pct": 0.4,
+          "inquiry_pct": 1.1
         },
         {
           "tag": "문의/Q19_기타",
           "count": 13,
           "tag_pct": 0.35,
-          "inquiry_pct": 0.97
+          "inquiry_pct": 0.96
         },
         {
           "tag": "환불/R4_보험사오선택",
@@ -28562,13 +28593,13 @@
           "tag": "특성/E1_대외언급",
           "count": 6,
           "tag_pct": 0.16,
-          "inquiry_pct": 0.45
+          "inquiry_pct": 0.44
         },
         {
           "tag": "처리/M2_계좌변경",
           "count": 6,
           "tag_pct": 0.16,
-          "inquiry_pct": 0.45
+          "inquiry_pct": 0.44
         },
         {
           "tag": "안내/A18_타채널",
@@ -28580,31 +28611,31 @@
           "tag": "문의/Q13_오류",
           "count": 4,
           "tag_pct": 0.11,
-          "inquiry_pct": 0.3
+          "inquiry_pct": 0.29
         },
         {
           "tag": "문의/Q18_타채널",
           "count": 4,
           "tag_pct": 0.11,
-          "inquiry_pct": 0.3
+          "inquiry_pct": 0.29
         },
         {
           "tag": "처리/M9_응답대기",
           "count": 4,
           "tag_pct": 0.11,
-          "inquiry_pct": 0.3
+          "inquiry_pct": 0.29
         },
         {
           "tag": "환불/R9_유병자",
           "count": 4,
           "tag_pct": 0.11,
-          "inquiry_pct": 0.3
+          "inquiry_pct": 0.29
         },
         {
           "tag": "안내/A17_서류보완",
           "count": 4,
           "tag_pct": 0.11,
-          "inquiry_pct": 0.3
+          "inquiry_pct": 0.29
         },
         {
           "tag": "문의/Q12_기타변경",
@@ -28875,9 +28906,9 @@
       ]
     },
     "2026-05": {
-      "total_inquiries": 1346,
-      "refund_request": 941,
-      "refund_request_pct": 69.91,
+      "total_inquiries": 1359,
+      "refund_request": 949,
+      "refund_request_pct": 69.83,
       "refund_hold": 0,
       "refund_hold_pct": 0.0,
       "refund_defense": 0,
@@ -28885,7 +28916,7 @@
       "refund_reasons": [
         {
           "reason": "환불/RT_전체환불",
-          "count": 349
+          "count": 355
         },
         {
           "reason": "환불/RP_부분환불",
@@ -28893,7 +28924,7 @@
         },
         {
           "reason": "환불/R11_중복신청",
-          "count": 257
+          "count": 258
         },
         {
           "reason": "환불/R10_정책",
@@ -28905,11 +28936,11 @@
         },
         {
           "reason": "환불/R5_지급불가항목",
-          "count": 61
+          "count": 63
         },
         {
           "reason": "환불/R3_변심",
-          "count": 46
+          "count": 49
         },
         {
           "reason": "환불/R6_서류보완",
@@ -28977,12 +29008,12 @@
       }
     },
     "2026-05": {
-      "total_consultations": 1346,
+      "total_consultations": 1359,
       "num_days": 5,
-      "daily_avg": 269.2,
+      "daily_avg": 271.8,
       "agents": {
-        "Summer": 408,
-        "Randy": 300,
+        "Summer": 415,
+        "Randy": 306,
         "Lily": 346,
         "Allie": 156,
         "Jiu": 133,
@@ -29022,10 +29053,10 @@
       "기타": 113
     },
     "2026-05": {
-      "문의": 1300,
-      "환불": 1323,
-      "처리": 708,
-      "안내": 313,
+      "문의": 1310,
+      "환불": 1335,
+      "처리": 711,
+      "안내": 315,
       "특성": 95
     }
   },
@@ -29036,7 +29067,7 @@
       "2026-02": 46830,
       "2026-03": 54598,
       "2026-04": 55825,
-      "2026-05": 48369
+      "2026-05": 48887
     },
     "refunds_db": {
       "2025-12": {
@@ -29065,9 +29096,9 @@
         "cs": 20941
       },
       "2026-05": {
-        "total": 12944,
-        "direct": 11002,
-        "cs": 1942
+        "total": 13076,
+        "direct": 11116,
+        "cs": 1960
       }
     },
     "cohort": {
@@ -29078,13 +29109,13 @@
       },
       "2026-02": {
         "apps": 46830,
-        "refunded": 9238,
-        "rate": 0.197267
+        "refunded": 9239,
+        "rate": 0.197289
       },
       "2026-03": {
         "apps": 54598,
-        "refunded": 11047,
-        "rate": 0.202333
+        "refunded": 11049,
+        "rate": 0.20237
       },
       "2026-04": {
         "apps": 55825,
@@ -29092,9 +29123,9 @@
         "rate": 0.214492
       },
       "2026-05": {
-        "apps": 48371,
-        "refunded": 3508,
-        "rate": 0.072523
+        "apps": 48889,
+        "refunded": 3550,
+        "rate": 0.072614
       }
     }
   }
