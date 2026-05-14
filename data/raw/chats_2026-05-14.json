@@ -1,5 +1,39 @@
 [
   {
+    "chat_id": "6a0595cab0a1df450fa3",
+    "state": "opened",
+    "created_at": 1778750922723,
+    "first_opened_at": 1778750994244,
+    "opened_at": 1778774398548,
+    "closed_at": 1778754214025,
+    "tags": [
+      "문의/Q17_서류보완",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q17_서류보완",
+        "category": "문의",
+        "code": "Q17",
+        "name": "서류보완",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "Randy",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q17_서류보완 & 처리/M1_답변대기"
+    ]
+  },
+  {
     "chat_id": "6a055a3cc4630565331b",
     "state": "opened",
     "created_at": 1778735676803,
@@ -3384,40 +3418,6 @@
       "처리/M10_재탐색 & 환불/R8_실손미가입",
       "처리/M10_재탐색 & 환불/RT_전체환불",
       "환불/R8_실손미가입 & 환불/RT_전체환불"
-    ]
-  },
-  {
-    "chat_id": "6a0595cab0a1df450fa3",
-    "state": "closed",
-    "created_at": 1778750922723,
-    "first_opened_at": 1778750994244,
-    "opened_at": 1778750994244,
-    "closed_at": 1778754214025,
-    "tags": [
-      "문의/Q17_서류보완",
-      "처리/M1_답변대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q17_서류보완",
-        "category": "문의",
-        "code": "Q17",
-        "name": "서류보완",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "Randy",
-    "assignee_id": "565238",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q17_서류보완 & 처리/M1_답변대기"
     ]
   },
   {
@@ -16422,6 +16422,73 @@
     "channel_id": "183570",
     "tag_combinations": [
       "문의/Q4_지급관련 & 처리/M10_재탐색"
+    ]
+  },
+  {
+    "chat_id": "6a0562a71228d72901cd",
+    "state": "closed",
+    "created_at": 1778737831073,
+    "first_opened_at": 1778738414877,
+    "opened_at": 1778738414877,
+    "closed_at": 1778752837304,
+    "tags": [
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기",
+      "환불/R11_중복신청",
+      "환불/RP_부분환불",
+      "처리/M8_재청구"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "처리/M8_재청구",
+        "category": "처리",
+        "code": "M8",
+        "name": "재청구",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "Jiu",
+    "assignee_id": "629325",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 처리/M8_재청구",
+      "처리/M1_답변대기 & 환불/R11_중복신청",
+      "처리/M1_답변대기 & 환불/RP_부분환불",
+      "처리/M1_답변대기 & 처리/M8_재청구",
+      "환불/R11_중복신청 & 환불/RP_부분환불",
+      "환불/R11_중복신청 & 처리/M8_재청구",
+      "환불/RP_부분환불 & 처리/M8_재청구"
     ]
   }
 ]
