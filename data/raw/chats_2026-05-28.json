@@ -1,5 +1,39 @@
 [
   {
+    "chat_id": "6a17e25acca66b9d9980",
+    "state": "opened",
+    "created_at": 1779950170837,
+    "first_opened_at": 1779950289845,
+    "opened_at": 1780001025328,
+    "closed_at": 1779962391096,
+    "tags": [
+      "문의/Q6_환불요청",
+      "처리/M10_재탐색"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M10_재탐색",
+        "category": "처리",
+        "code": "M10",
+        "name": "재탐색",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "Jiu",
+    "assignee_id": "629325",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 처리/M10_재탐색"
+    ]
+  },
+  {
     "chat_id": "6a1799ba66d988668c8c",
     "state": "opened",
     "created_at": 1779931578420,
@@ -9592,40 +9626,6 @@
     "tag_combinations": []
   },
   {
-    "chat_id": "6a17e25acca66b9d9980",
-    "state": "closed",
-    "created_at": 1779950170837,
-    "first_opened_at": 1779950289845,
-    "opened_at": 1779950289845,
-    "closed_at": 1779962391096,
-    "tags": [
-      "문의/Q6_환불요청",
-      "처리/M10_재탐색"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M10_재탐색",
-        "category": "처리",
-        "code": "M10",
-        "name": "재탐색",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "Jiu",
-    "assignee_id": "629325",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 처리/M10_재탐색"
-    ]
-  },
-  {
     "chat_id": "6a17bae472ce89cebb37",
     "state": "closed",
     "created_at": 1779940068470,
@@ -18588,6 +18588,61 @@
       "환불/R11_중복신청 & 환불/RT_전체환불",
       "환불/R11_중복신청 & 환불판단실패",
       "환불/RT_전체환불 & 환불판단실패"
+    ]
+  },
+  {
+    "chat_id": "6a17e1b3705e90503d5c",
+    "state": "closed",
+    "created_at": 1779950003460,
+    "first_opened_at": 1779950280406,
+    "opened_at": 1779950280406,
+    "closed_at": 1779962389979,
+    "tags": [
+      "문의/Q6_환불요청",
+      "환불/R3_변심",
+      "환불/RP_부분환불",
+      "안내/A3_진행상황"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R3_변심",
+        "category": "환불",
+        "code": "R3",
+        "name": "변심",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "안내/A3_진행상황",
+        "category": "안내",
+        "code": "A3",
+        "name": "진행상황",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "Jiu",
+    "assignee_id": "629325",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 환불/R3_변심",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 안내/A3_진행상황",
+      "환불/R3_변심 & 환불/RP_부분환불",
+      "환불/R3_변심 & 안내/A3_진행상황",
+      "환불/RP_부분환불 & 안내/A3_진행상황"
     ]
   }
 ]
