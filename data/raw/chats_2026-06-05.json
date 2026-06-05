@@ -1,5 +1,39 @@
 [
   {
+    "chat_id": "6a226a0a7073b358ec7c",
+    "state": "opened",
+    "created_at": 1780640266460,
+    "first_opened_at": 1780649687766,
+    "opened_at": 1780675234820,
+    "closed_at": 1780653700431,
+    "tags": [
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "David",
+    "assignee_id": "641226",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 처리/M1_답변대기"
+    ]
+  },
+  {
     "chat_id": "6a227166d116103bbbf0",
     "state": "opened",
     "created_at": 1780642150855,
@@ -4305,40 +4339,6 @@
       "안내/A9_보험사변경 & 안내/A5_청구지연",
       "안내/A9_보험사변경 & 특성/E3_중복고객",
       "안내/A5_청구지연 & 특성/E3_중복고객"
-    ]
-  },
-  {
-    "chat_id": "6a226a0a7073b358ec7c",
-    "state": "closed",
-    "created_at": 1780640266460,
-    "first_opened_at": 1780649687766,
-    "opened_at": 1780649687766,
-    "closed_at": 1780653700431,
-    "tags": [
-      "문의/Q6_환불요청",
-      "처리/M1_답변대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "David",
-    "assignee_id": "641226",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 처리/M1_답변대기"
     ]
   },
   {
@@ -19919,6 +19919,40 @@
     "channel_id": "183570",
     "tag_combinations": [
       "문의/Q8_환불이후 & 안내/A8_환불이후"
+    ]
+  },
+  {
+    "chat_id": "6a2223b7a4bc5c5734ef",
+    "state": "closed",
+    "created_at": 1780622263674,
+    "first_opened_at": 1780622551733,
+    "opened_at": 1780622551733,
+    "closed_at": 1780655358377,
+    "tags": [
+      "환불/증빙확인완료_전액",
+      "특성/E3_중복고객"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불/증빙확인완료_전액",
+        "category": "환불",
+        "code": "증빙확인완료",
+        "name": "전액",
+        "prefix": "증"
+      },
+      {
+        "raw": "특성/E3_중복고객",
+        "category": "특성",
+        "code": "E3",
+        "name": "중복고객",
+        "prefix": "E"
+      }
+    ],
+    "assignee": "Randy",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불/증빙확인완료_전액 & 특성/E3_중복고객"
     ]
   }
 ]
