@@ -1,5 +1,29 @@
 [
   {
+    "chat_id": "6a58714ddf76c2cdc8af",
+    "state": "opened",
+    "created_at": 1784181069921,
+    "first_opened_at": 1784181186919,
+    "opened_at": 1784232309638,
+    "closed_at": 1784193626978,
+    "tags": [
+      "특성/E3_중복고객"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "특성/E3_중복고객",
+        "category": "특성",
+        "code": "E3",
+        "name": "중복고객",
+        "prefix": "E"
+      }
+    ],
+    "assignee": "jacob",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
     "chat_id": "6a5889c0233f4612f8b7",
     "state": "opened",
     "created_at": 1784187328150,
@@ -1409,30 +1433,6 @@
     "tag_combinations": [
       "문의/Q3_진행상황 & 안내/A3_진행상황"
     ]
-  },
-  {
-    "chat_id": "6a58714ddf76c2cdc8af",
-    "state": "closed",
-    "created_at": 1784181069921,
-    "first_opened_at": 1784181186919,
-    "opened_at": 1784181186919,
-    "closed_at": 1784193626978,
-    "tags": [
-      "특성/E3_중복고객"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "특성/E3_중복고객",
-        "category": "특성",
-        "code": "E3",
-        "name": "중복고객",
-        "prefix": "E"
-      }
-    ],
-    "assignee": "jacob",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": []
   },
   {
     "chat_id": "6a58705b30231bb906d8",
@@ -15533,6 +15533,50 @@
       "문의/Q6_환불요청 & 환불/R11_중복신청",
       "문의/Q6_환불요청 & 환불/RP_부분환불",
       "환불/R11_중복신청 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6a583c64ec138fd0f63d",
+    "state": "closed",
+    "created_at": 1784167524971,
+    "first_opened_at": 1784167651966,
+    "opened_at": 1784167651966,
+    "closed_at": 1784191317140,
+    "tags": [
+      "문의/Q6_환불요청",
+      "환불/R8_실손미가입",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R8_실손미가입",
+        "category": "환불",
+        "code": "R8",
+        "name": "실손미가입",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "heizle",
+    "assignee_id": "656326",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 환불/R8_실손미가입",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R8_실손미가입 & 환불/RT_전체환불"
     ]
   }
 ]
