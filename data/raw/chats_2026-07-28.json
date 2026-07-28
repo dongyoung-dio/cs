@@ -1,5 +1,39 @@
 [
   {
+    "chat_id": "6a684bb7a7deefbf5e9c",
+    "state": "opened",
+    "created_at": 1785220023692,
+    "first_opened_at": 1785220063661,
+    "opened_at": 1785230330880,
+    "closed_at": 1785223828896,
+    "tags": [
+      "문의/Q3_진행상황",
+      "안내/A3_진행상황"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q3_진행상황",
+        "category": "문의",
+        "code": "Q3",
+        "name": "진행상황",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A3_진행상황",
+        "category": "안내",
+        "code": "A3",
+        "name": "진행상황",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "jacob",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q3_진행상황 & 안내/A3_진행상황"
+    ]
+  },
+  {
     "chat_id": "6a685094cd7e69ea4359",
     "state": "opened",
     "created_at": 1785221268846,
@@ -10393,40 +10427,6 @@
       "문의/Q17_서류보완 & 안내/A17_서류보완",
       "문의/Q17_서류보완 & 처리/M9_응답대기",
       "안내/A17_서류보완 & 처리/M9_응답대기"
-    ]
-  },
-  {
-    "chat_id": "6a684bb7a7deefbf5e9c",
-    "state": "closed",
-    "created_at": 1785220023692,
-    "first_opened_at": 1785220063661,
-    "opened_at": 1785220063661,
-    "closed_at": 1785223828896,
-    "tags": [
-      "문의/Q3_진행상황",
-      "안내/A3_진행상황"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q3_진행상황",
-        "category": "문의",
-        "code": "Q3",
-        "name": "진행상황",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A3_진행상황",
-        "category": "안내",
-        "code": "A3",
-        "name": "진행상황",
-        "prefix": "A"
-      }
-    ],
-    "assignee": "jacob",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q3_진행상황 & 안내/A3_진행상황"
     ]
   },
   {
@@ -21801,6 +21801,61 @@
       "문의/Q17_서류보완 & 환불/R6_서류보완",
       "문의/Q17_서류보완 & 환불/RP_부분환불",
       "환불/R6_서류보완 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6a68153098e6fd108c67",
+    "state": "closed",
+    "created_at": 1785206064631,
+    "first_opened_at": 1785206199188,
+    "opened_at": 1785206199188,
+    "closed_at": 1785226010977,
+    "tags": [
+      "유선IVR",
+      "문의/Q6_환불요청",
+      "환불/R11_중복신청",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "heizle",
+    "assignee_id": "656326",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 문의/Q6_환불요청",
+      "유선IVR & 환불/R11_중복신청",
+      "유선IVR & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R11_중복신청 & 환불/RT_전체환불"
     ]
   }
 ]
