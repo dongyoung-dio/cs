@@ -1,5 +1,39 @@
 [
   {
+    "chat_id": "6a69709579d7592eb4bc",
+    "state": "opened",
+    "created_at": 1785294997504,
+    "first_opened_at": 1785295070468,
+    "opened_at": 1785295070468,
+    "closed_at": null,
+    "tags": [
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "Jiu",
+    "assignee_id": "629325",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q4_지급관련 & 안내/A4_지급관련"
+    ]
+  },
+  {
     "chat_id": "6a6972fa1d3b2f31a84f",
     "state": "opened",
     "created_at": 1785295610124,
@@ -41,86 +75,6 @@
       "유선IVR & 문의/Q3_진행상황",
       "유선IVR & 안내/A3_진행상황",
       "문의/Q3_진행상황 & 안내/A3_진행상황"
-    ]
-  },
-  {
-    "chat_id": "6a696c7b42d349bc6f8f",
-    "state": "opened",
-    "created_at": 1785293947279,
-    "first_opened_at": 1785294005232,
-    "opened_at": 1785294005232,
-    "closed_at": null,
-    "tags": [
-      "유선IVR",
-      "처리/M10_재탐색",
-      "문의/Q4_지급관련",
-      "문의/Q6_환불요청",
-      "환불/R4_보험사오선택",
-      "환불/RT_전체환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "유선IVR",
-        "category": "기타",
-        "code": "유선IVR",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "처리/M10_재탐색",
-        "category": "처리",
-        "code": "M10",
-        "name": "재탐색",
-        "prefix": "M"
-      },
-      {
-        "raw": "문의/Q4_지급관련",
-        "category": "문의",
-        "code": "Q4",
-        "name": "지급관련",
-        "prefix": "Q"
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "환불/R4_보험사오선택",
-        "category": "환불",
-        "code": "R4",
-        "name": "보험사오선택",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RT_전체환불",
-        "category": "환불",
-        "code": "RT",
-        "name": "전체환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "Randy",
-    "assignee_id": "565238",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "유선IVR & 처리/M10_재탐색",
-      "유선IVR & 문의/Q4_지급관련",
-      "유선IVR & 문의/Q6_환불요청",
-      "유선IVR & 환불/R4_보험사오선택",
-      "유선IVR & 환불/RT_전체환불",
-      "처리/M10_재탐색 & 문의/Q4_지급관련",
-      "처리/M10_재탐색 & 문의/Q6_환불요청",
-      "처리/M10_재탐색 & 환불/R4_보험사오선택",
-      "처리/M10_재탐색 & 환불/RT_전체환불",
-      "문의/Q4_지급관련 & 문의/Q6_환불요청",
-      "문의/Q4_지급관련 & 환불/R4_보험사오선택",
-      "문의/Q4_지급관련 & 환불/RT_전체환불",
-      "문의/Q6_환불요청 & 환불/R4_보험사오선택",
-      "문의/Q6_환불요청 & 환불/RT_전체환불",
-      "환불/R4_보험사오선택 & 환불/RT_전체환불"
     ]
   },
   {
@@ -749,7 +703,10 @@
     "opened_at": 1785295560028,
     "closed_at": null,
     "tags": [
-      "유선IVR"
+      "유선IVR",
+      "문의/Q8_환불이후",
+      "안내/A8_환불이후",
+      "안내/A3_진행상황"
     ],
     "parsed_tags": [
       {
@@ -758,12 +715,40 @@
         "code": "유선IVR",
         "name": "",
         "prefix": ""
+      },
+      {
+        "raw": "문의/Q8_환불이후",
+        "category": "문의",
+        "code": "Q8",
+        "name": "환불이후",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A8_환불이후",
+        "category": "안내",
+        "code": "A8",
+        "name": "환불이후",
+        "prefix": "A"
+      },
+      {
+        "raw": "안내/A3_진행상황",
+        "category": "안내",
+        "code": "A3",
+        "name": "진행상황",
+        "prefix": "A"
       }
     ],
     "assignee": "Randy",
     "assignee_id": "565238",
     "channel_id": "183570",
-    "tag_combinations": []
+    "tag_combinations": [
+      "유선IVR & 문의/Q8_환불이후",
+      "유선IVR & 안내/A8_환불이후",
+      "유선IVR & 안내/A3_진행상황",
+      "문의/Q8_환불이후 & 안내/A8_환불이후",
+      "문의/Q8_환불이후 & 안내/A3_진행상황",
+      "안내/A8_환불이후 & 안내/A3_진행상황"
+    ]
   },
   {
     "chat_id": "6a697057334ec844de15",
@@ -1427,40 +1412,6 @@
     "channel_id": "183570",
     "tag_combinations": [
       "문의/Q6_환불요청 & 처리/M1_답변대기"
-    ]
-  },
-  {
-    "chat_id": "6a69709579d7592eb4bc",
-    "state": "opened",
-    "created_at": 1785294997504,
-    "first_opened_at": 1785295070468,
-    "opened_at": 1785295070468,
-    "closed_at": null,
-    "tags": [
-      "문의/Q4_지급관련",
-      "안내/A4_지급관련"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q4_지급관련",
-        "category": "문의",
-        "code": "Q4",
-        "name": "지급관련",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A4_지급관련",
-        "category": "안내",
-        "code": "A4",
-        "name": "지급관련",
-        "prefix": "A"
-      }
-    ],
-    "assignee": "Jiu",
-    "assignee_id": "629325",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q4_지급관련 & 안내/A4_지급관련"
     ]
   },
   {
@@ -10057,6 +10008,86 @@
     "channel_id": "183570",
     "tag_combinations": [
       "문의/Q16_신청확인 & 안내/A16_신청확인"
+    ]
+  },
+  {
+    "chat_id": "6a696c7b42d349bc6f8f",
+    "state": "closed",
+    "created_at": 1785293947279,
+    "first_opened_at": 1785294005232,
+    "opened_at": 1785294005232,
+    "closed_at": 1785298400155,
+    "tags": [
+      "유선IVR",
+      "처리/M10_재탐색",
+      "문의/Q4_지급관련",
+      "문의/Q6_환불요청",
+      "환불/R4_보험사오선택",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "처리/M10_재탐색",
+        "category": "처리",
+        "code": "M10",
+        "name": "재탐색",
+        "prefix": "M"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R4_보험사오선택",
+        "category": "환불",
+        "code": "R4",
+        "name": "보험사오선택",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "Randy",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 처리/M10_재탐색",
+      "유선IVR & 문의/Q4_지급관련",
+      "유선IVR & 문의/Q6_환불요청",
+      "유선IVR & 환불/R4_보험사오선택",
+      "유선IVR & 환불/RT_전체환불",
+      "처리/M10_재탐색 & 문의/Q4_지급관련",
+      "처리/M10_재탐색 & 문의/Q6_환불요청",
+      "처리/M10_재탐색 & 환불/R4_보험사오선택",
+      "처리/M10_재탐색 & 환불/RT_전체환불",
+      "문의/Q4_지급관련 & 문의/Q6_환불요청",
+      "문의/Q4_지급관련 & 환불/R4_보험사오선택",
+      "문의/Q4_지급관련 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R4_보험사오선택",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R4_보험사오선택 & 환불/RT_전체환불"
     ]
   },
   {
