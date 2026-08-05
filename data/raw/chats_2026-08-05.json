@@ -1,5 +1,49 @@
 [
   {
+    "chat_id": "6a72e75da299f6eece29",
+    "state": "opened",
+    "created_at": 1785915229671,
+    "first_opened_at": 1785915335327,
+    "opened_at": 1785944833965,
+    "closed_at": 1785924078134,
+    "tags": [
+      "유선IVR",
+      "문의/Q4_지급관련",
+      "처리/M10_재탐색"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M10_재탐색",
+        "category": "처리",
+        "code": "M10",
+        "name": "재탐색",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김태훈",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 문의/Q4_지급관련",
+      "유선IVR & 처리/M10_재탐색",
+      "문의/Q4_지급관련 & 처리/M10_재탐색"
+    ]
+  },
+  {
     "chat_id": "6a72ed0b203e3ba19e65",
     "state": "opened",
     "created_at": 1785916683137,
@@ -10040,50 +10084,6 @@
     ]
   },
   {
-    "chat_id": "6a72e75da299f6eece29",
-    "state": "closed",
-    "created_at": 1785915229671,
-    "first_opened_at": 1785915335327,
-    "opened_at": 1785915335327,
-    "closed_at": 1785924078134,
-    "tags": [
-      "유선IVR",
-      "문의/Q4_지급관련",
-      "처리/M10_재탐색"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "유선IVR",
-        "category": "기타",
-        "code": "유선IVR",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "문의/Q4_지급관련",
-        "category": "문의",
-        "code": "Q4",
-        "name": "지급관련",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M10_재탐색",
-        "category": "처리",
-        "code": "M10",
-        "name": "재탐색",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김태훈",
-    "assignee_id": "565238",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "유선IVR & 문의/Q4_지급관련",
-      "유선IVR & 처리/M10_재탐색",
-      "문의/Q4_지급관련 & 처리/M10_재탐색"
-    ]
-  },
-  {
     "chat_id": "6a72e59c120356156bd6",
     "state": "closed",
     "created_at": 1785914780078,
@@ -17222,6 +17222,50 @@
       "처리/M10_재탐색 & 환불/RT_전체환불",
       "처리/M10_재탐색 & 환불/R4_보험사오선택",
       "환불/RT_전체환불 & 환불/R4_보험사오선택"
+    ]
+  },
+  {
+    "chat_id": "6a72d449ade1f076465e",
+    "state": "closed",
+    "created_at": 1785910345716,
+    "first_opened_at": 1785910537222,
+    "opened_at": 1785910537222,
+    "closed_at": 1785919128466,
+    "tags": [
+      "문의/Q6_환불요청",
+      "환불/RT_전체환불",
+      "환불/R1_기타"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "이수연",
+    "assignee_id": "656326",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R1_기타",
+      "환불/RT_전체환불 & 환불/R1_기타"
     ]
   }
 ]
