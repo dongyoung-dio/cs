@@ -1,28 +1,15 @@
 [
   {
-    "chat_id": "6a7530f4bd119ce687a1",
+    "chat_id": "6a7539046c1d3d2b5668",
     "state": "opened",
-    "created_at": 1786065140778,
-    "first_opened_at": 1786066314704,
-    "opened_at": 1786066314704,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
-    "assignee": "이수연",
-    "assignee_id": "656326",
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6a7534e00ce9bbdf2ef4",
-    "state": "opened",
-    "created_at": 1786066144058,
-    "first_opened_at": 1786067316481,
-    "opened_at": 1786067316481,
+    "created_at": 1786067204447,
+    "first_opened_at": 1786067369753,
+    "opened_at": 1786067369753,
     "closed_at": null,
     "tags": [
       "유선IVR",
-      "처리/M9_응답대기"
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기"
     ],
     "parsed_tags": [
       {
@@ -31,6 +18,49 @@
         "code": "유선IVR",
         "name": "",
         "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 문의/Q6_환불요청",
+      "유선IVR & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 처리/M1_답변대기"
+    ]
+  },
+  {
+    "chat_id": "6a7532d7cd7c9ae666df",
+    "state": "opened",
+    "created_at": 1786065623847,
+    "first_opened_at": 1786065974533,
+    "opened_at": 1786065974533,
+    "closed_at": null,
+    "tags": [
+      "문의/Q6_환불요청",
+      "처리/M9_응답대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
       },
       {
         "raw": "처리/M9_응답대기",
@@ -44,15 +74,227 @@
     "assignee_id": "636057",
     "channel_id": "183570",
     "tag_combinations": [
-      "유선IVR & 처리/M9_응답대기"
+      "문의/Q6_환불요청 & 처리/M9_응답대기"
     ]
   },
   {
-    "chat_id": "6a753ff1a01378939e5c",
+    "chat_id": "6a75415e6497203a3e38",
     "state": "opened",
-    "created_at": 1786068977660,
-    "first_opened_at": 1786069069692,
-    "opened_at": 1786069069692,
+    "created_at": 1786069342415,
+    "first_opened_at": 1786069527005,
+    "opened_at": 1786069527005,
+    "closed_at": null,
+    "tags": [
+      "유선IVR"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      }
+    ],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a7541693e665f7f7195",
+    "state": "opened",
+    "created_at": 1786069353260,
+    "first_opened_at": 1786069518056,
+    "opened_at": 1786069518056,
+    "closed_at": null,
+    "tags": [],
+    "parsed_tags": [],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a7538af2dc87957b87a",
+    "state": "opened",
+    "created_at": 1786067119192,
+    "first_opened_at": 1786067369396,
+    "opened_at": 1786067369396,
+    "closed_at": null,
+    "tags": [
+      "문의/Q16_신청확인",
+      "처리/M9_응답대기",
+      "문의/Q6_환불요청"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q16_신청확인",
+        "category": "문의",
+        "code": "Q16",
+        "name": "신청확인",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      }
+    ],
+    "assignee": "김동아",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q16_신청확인 & 처리/M9_응답대기",
+      "문의/Q16_신청확인 & 문의/Q6_환불요청",
+      "처리/M9_응답대기 & 문의/Q6_환불요청"
+    ]
+  },
+  {
+    "chat_id": "6a75418110bf8466095b",
+    "state": "opened",
+    "created_at": 1786069377073,
+    "first_opened_at": 1786069488052,
+    "opened_at": 1786069488052,
+    "closed_at": null,
+    "tags": [],
+    "parsed_tags": [],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a75414bb8242fdd0bbe",
+    "state": "opened",
+    "created_at": 1786069323760,
+    "first_opened_at": 1786069500478,
+    "opened_at": 1786069500478,
+    "closed_at": null,
+    "tags": [
+      "유선IVR"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      }
+    ],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a7536ce2c00e8cd10ae",
+    "state": "opened",
+    "created_at": 1786066638185,
+    "first_opened_at": 1786066750150,
+    "opened_at": 1786066750150,
+    "closed_at": null,
+    "tags": [
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기",
+      "처리/M8_재청구"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "처리/M8_재청구",
+        "category": "처리",
+        "code": "M8",
+        "name": "재청구",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "이수연",
+    "assignee_id": "656326",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 처리/M8_재청구",
+      "처리/M1_답변대기 & 처리/M8_재청구"
+    ]
+  },
+  {
+    "chat_id": "6a75418894157989c031",
+    "state": "opened",
+    "created_at": 1786069384612,
+    "first_opened_at": 1786069493907,
+    "opened_at": 1786069493907,
+    "closed_at": null,
+    "tags": [
+      "유선IVR"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      }
+    ],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a7541b030cf5d111c12",
+    "state": "opened",
+    "created_at": 1786069424204,
+    "first_opened_at": 1786069480569,
+    "opened_at": 1786069480569,
+    "closed_at": null,
+    "tags": [
+      "유선IVR"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      }
+    ],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a75411145b6cc41b5ee",
+    "state": "opened",
+    "created_at": 1786069265290,
+    "first_opened_at": 1786069308980,
+    "opened_at": 1786069308980,
     "closed_at": null,
     "tags": [],
     "parsed_tags": [],
@@ -106,16 +348,501 @@
     ]
   },
   {
+    "chat_id": "6a7540f5e9626c75b751",
+    "state": "opened",
+    "created_at": 1786069237960,
+    "first_opened_at": 1786069338053,
+    "opened_at": 1786069338053,
+    "closed_at": null,
+    "tags": [
+      "유선IVR"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      }
+    ],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a7539788dff9e4140ae",
+    "state": "opened",
+    "created_at": 1786067320587,
+    "first_opened_at": 1786067407973,
+    "opened_at": 1786067407973,
+    "closed_at": null,
+    "tags": [
+      "유선IVR",
+      "문의/Q8_환불이후",
+      "안내/A8_환불이후"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q8_환불이후",
+        "category": "문의",
+        "code": "Q8",
+        "name": "환불이후",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A8_환불이후",
+        "category": "안내",
+        "code": "A8",
+        "name": "환불이후",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김동아",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 문의/Q8_환불이후",
+      "유선IVR & 안내/A8_환불이후",
+      "문의/Q8_환불이후 & 안내/A8_환불이후"
+    ]
+  },
+  {
+    "chat_id": "6a752078dcccd557d687",
+    "state": "opened",
+    "created_at": 1786060920909,
+    "first_opened_at": 1786069112711,
+    "opened_at": 1786069112711,
+    "closed_at": null,
+    "tags": [
+      "문의/Q5_청구지연",
+      "문의/Q6_환불요청",
+      "환불/RT_전체환불",
+      "환불/R1_기타"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q5_청구지연",
+        "category": "문의",
+        "code": "Q5",
+        "name": "청구지연",
+        "prefix": "Q"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "이수연",
+    "assignee_id": "656326",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q5_청구지연 & 문의/Q6_환불요청",
+      "문의/Q5_청구지연 & 환불/RT_전체환불",
+      "문의/Q5_청구지연 & 환불/R1_기타",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R1_기타",
+      "환불/RT_전체환불 & 환불/R1_기타"
+    ]
+  },
+  {
+    "chat_id": "6a753a0a2d5d59c98f73",
+    "state": "opened",
+    "created_at": 1786067466191,
+    "first_opened_at": 1786067615092,
+    "opened_at": 1786067615092,
+    "closed_at": null,
+    "tags": [],
+    "parsed_tags": [],
+    "assignee": "김로빈",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a75392ee50f01c2d130",
+    "state": "opened",
+    "created_at": 1786067246946,
+    "first_opened_at": 1786067379947,
+    "opened_at": 1786067379947,
+    "closed_at": null,
+    "tags": [
+      "문의/Q3_진행상황",
+      "안내/A3_진행상황",
+      "처리/M9_응답대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q3_진행상황",
+        "category": "문의",
+        "code": "Q3",
+        "name": "진행상황",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A3_진행상황",
+        "category": "안내",
+        "code": "A3",
+        "name": "진행상황",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q3_진행상황 & 안내/A3_진행상황",
+      "문의/Q3_진행상황 & 처리/M9_응답대기",
+      "안내/A3_진행상황 & 처리/M9_응답대기"
+    ]
+  },
+  {
+    "chat_id": "6a752f65493595d19097",
+    "state": "opened",
+    "created_at": 1786064741304,
+    "first_opened_at": 1786065027669,
+    "opened_at": 1786065027669,
+    "closed_at": null,
+    "tags": [],
+    "parsed_tags": [],
+    "assignee": "김로빈",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a753d5be09fe29a571e",
+    "state": "opened",
+    "created_at": 1786068315925,
+    "first_opened_at": 1786069048177,
+    "opened_at": 1786069048177,
+    "closed_at": null,
+    "tags": [],
+    "parsed_tags": [],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a75401076db875c4eae",
+    "state": "opened",
+    "created_at": 1786069008493,
+    "first_opened_at": 1786069243371,
+    "opened_at": 1786069243371,
+    "closed_at": null,
+    "tags": [],
+    "parsed_tags": [],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
     "chat_id": "6a75391b44986c37e8e5",
     "state": "opened",
     "created_at": 1786067227286,
     "first_opened_at": 1786067347863,
     "opened_at": 1786067347863,
     "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
+    "tags": [
+      "문의/Q6_환불요청",
+      "환불/R8_실손미가입",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R8_실손미가입",
+        "category": "환불",
+        "code": "R8",
+        "name": "실손미가입",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
     "assignee": "김로빈",
     "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 환불/R8_실손미가입",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R8_실손미가입 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6a7540883186c10d05f3",
+    "state": "opened",
+    "created_at": 1786069128208,
+    "first_opened_at": 1786069218445,
+    "opened_at": 1786069218445,
+    "closed_at": null,
+    "tags": [],
+    "parsed_tags": [],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a752b84d53f6e5e1762",
+    "state": "opened",
+    "created_at": 1786063748879,
+    "first_opened_at": 1786066388995,
+    "opened_at": 1786066388995,
+    "closed_at": null,
+    "tags": [
+      "유선IVR",
+      "문의/Q6_환불요청",
+      "처리/M9_응답대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 문의/Q6_환불요청",
+      "유선IVR & 처리/M9_응답대기",
+      "문의/Q6_환불요청 & 처리/M9_응답대기"
+    ]
+  },
+  {
+    "chat_id": "6a75368db89a72d90beb",
+    "state": "opened",
+    "created_at": 1786066573762,
+    "first_opened_at": 1786066662509,
+    "opened_at": 1786066662509,
+    "closed_at": null,
+    "tags": [
+      "문의/Q3_진행상황",
+      "안내/A3_진행상황",
+      "처리/M9_응답대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q3_진행상황",
+        "category": "문의",
+        "code": "Q3",
+        "name": "진행상황",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A3_진행상황",
+        "category": "안내",
+        "code": "A3",
+        "name": "진행상황",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q3_진행상황 & 안내/A3_진행상황",
+      "문의/Q3_진행상황 & 처리/M9_응답대기",
+      "안내/A3_진행상황 & 처리/M9_응답대기"
+    ]
+  },
+  {
+    "chat_id": "6a753fad6b223c700f6b",
+    "state": "opened",
+    "created_at": 1786068909443,
+    "first_opened_at": 1786069188566,
+    "opened_at": 1786069188566,
+    "closed_at": null,
+    "tags": [],
+    "parsed_tags": [],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a753f8fb43a27c9cbd5",
+    "state": "opened",
+    "created_at": 1786068879743,
+    "first_opened_at": 1786069129317,
+    "opened_at": 1786069129317,
+    "closed_at": null,
+    "tags": [
+      "유선IVR"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      }
+    ],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6a7530f4bd119ce687a1",
+    "state": "opened",
+    "created_at": 1786065140778,
+    "first_opened_at": 1786066314704,
+    "opened_at": 1786066314704,
+    "closed_at": null,
+    "tags": [
+      "문의/Q6_환불요청",
+      "환불/R10_정책",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "이수연",
+    "assignee_id": "656326",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "환불/R10_정책 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6a7534e00ce9bbdf2ef4",
+    "state": "opened",
+    "created_at": 1786066144058,
+    "first_opened_at": 1786067316481,
+    "opened_at": 1786067316481,
+    "closed_at": null,
+    "tags": [
+      "유선IVR",
+      "처리/M9_응답대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 처리/M9_응답대기"
+    ]
+  },
+  {
+    "chat_id": "6a753ff1a01378939e5c",
+    "state": "opened",
+    "created_at": 1786068977660,
+    "first_opened_at": 1786069069692,
+    "opened_at": 1786069069692,
+    "closed_at": null,
+    "tags": [],
+    "parsed_tags": [],
+    "assignee": null,
+    "assignee_id": null,
     "channel_id": "183570",
     "tag_combinations": []
   },
@@ -485,40 +1212,6 @@
     "tag_combinations": []
   },
   {
-    "chat_id": "6a7532d7cd7c9ae666df",
-    "state": "opened",
-    "created_at": 1786065623847,
-    "first_opened_at": 1786065974533,
-    "opened_at": 1786065974533,
-    "closed_at": null,
-    "tags": [
-      "문의/Q6_환불요청",
-      "처리/M9_응답대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M9_응답대기",
-        "category": "처리",
-        "code": "M9",
-        "name": "응답대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김동아",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 처리/M9_응답대기"
-    ]
-  },
-  {
     "chat_id": "6a753744f3c0758ca75b",
     "state": "opened",
     "created_at": 1786066757003,
@@ -747,40 +1440,6 @@
     "assignee_id": null,
     "channel_id": "183570",
     "tag_combinations": []
-  },
-  {
-    "chat_id": "6a7536ce2c00e8cd10ae",
-    "state": "opened",
-    "created_at": 1786066638185,
-    "first_opened_at": 1786066750150,
-    "opened_at": 1786066750150,
-    "closed_at": null,
-    "tags": [
-      "문의/Q6_환불요청",
-      "처리/M1_답변대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "이수연",
-    "assignee_id": "656326",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 처리/M1_답변대기"
-    ]
   },
   {
     "chat_id": "6a75335a1ce44903cd10",
@@ -1638,20 +2297,6 @@
     ]
   },
   {
-    "chat_id": "6a753d5be09fe29a571e",
-    "state": "opened",
-    "created_at": 1786068315925,
-    "first_opened_at": 1786069048177,
-    "opened_at": 1786069048177,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
-    "assignee": null,
-    "assignee_id": null,
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
     "chat_id": "6a753d579e887eac2c1a",
     "state": "opened",
     "created_at": 1786068311654,
@@ -1708,64 +2353,6 @@
       "유선IVR & 안내/A1_서비스신청",
       "문의/Q1_서비스신청 & 안내/A1_서비스신청"
     ]
-  },
-  {
-    "chat_id": "6a75368db89a72d90beb",
-    "state": "opened",
-    "created_at": 1786066573762,
-    "first_opened_at": 1786066662509,
-    "opened_at": 1786066662509,
-    "closed_at": null,
-    "tags": [
-      "문의/Q3_진행상황",
-      "안내/A3_진행상황",
-      "처리/M9_응답대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q3_진행상황",
-        "category": "문의",
-        "code": "Q3",
-        "name": "진행상황",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A3_진행상황",
-        "category": "안내",
-        "code": "A3",
-        "name": "진행상황",
-        "prefix": "A"
-      },
-      {
-        "raw": "처리/M9_응답대기",
-        "category": "처리",
-        "code": "M9",
-        "name": "응답대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김동아",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q3_진행상황 & 안내/A3_진행상황",
-      "문의/Q3_진행상황 & 처리/M9_응답대기",
-      "안내/A3_진행상황 & 처리/M9_응답대기"
-    ]
-  },
-  {
-    "chat_id": "6a752f65493595d19097",
-    "state": "opened",
-    "created_at": 1786064741304,
-    "first_opened_at": 1786065027669,
-    "opened_at": 1786065027669,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
-    "assignee": "김로빈",
-    "assignee_id": "667753",
-    "channel_id": "183570",
-    "tag_combinations": []
   },
   {
     "chat_id": "6a75365759235f334134",
@@ -1879,50 +2466,6 @@
     "assignee_id": null,
     "channel_id": "183570",
     "tag_combinations": []
-  },
-  {
-    "chat_id": "6a752b84d53f6e5e1762",
-    "state": "opened",
-    "created_at": 1786063748879,
-    "first_opened_at": 1786066388995,
-    "opened_at": 1786066388995,
-    "closed_at": null,
-    "tags": [
-      "유선IVR",
-      "문의/Q6_환불요청",
-      "처리/M9_응답대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "유선IVR",
-        "category": "기타",
-        "code": "유선IVR",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M9_응답대기",
-        "category": "처리",
-        "code": "M9",
-        "name": "응답대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김동아",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "유선IVR & 문의/Q6_환불요청",
-      "유선IVR & 처리/M9_응답대기",
-      "문의/Q6_환불요청 & 처리/M9_응답대기"
-    ]
   },
   {
     "chat_id": "6a7535b214f14e8a0b52",
@@ -2171,30 +2714,6 @@
     "closed_at": null,
     "tags": [],
     "parsed_tags": [],
-    "assignee": null,
-    "assignee_id": null,
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6a753c5ae8cde81a529a",
-    "state": "opened",
-    "created_at": 1786068058959,
-    "first_opened_at": 1786068088427,
-    "opened_at": 1786068088427,
-    "closed_at": null,
-    "tags": [
-      "유선IVR"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "유선IVR",
-        "category": "기타",
-        "code": "유선IVR",
-        "name": "",
-        "prefix": ""
-      }
-    ],
     "assignee": null,
     "assignee_id": null,
     "channel_id": "183570",
@@ -3039,20 +3558,6 @@
     "tag_combinations": []
   },
   {
-    "chat_id": "6a753a0a2d5d59c98f73",
-    "state": "opened",
-    "created_at": 1786067466191,
-    "first_opened_at": 1786067615092,
-    "opened_at": 1786067615092,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
-    "assignee": null,
-    "assignee_id": null,
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
     "chat_id": "6a752f6d224dc95fab82",
     "state": "opened",
     "created_at": 1786064749145,
@@ -3339,30 +3844,6 @@
     ]
   },
   {
-    "chat_id": "6a7539788dff9e4140ae",
-    "state": "opened",
-    "created_at": 1786067320587,
-    "first_opened_at": 1786067407973,
-    "opened_at": 1786067407973,
-    "closed_at": null,
-    "tags": [
-      "유선IVR"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "유선IVR",
-        "category": "기타",
-        "code": "유선IVR",
-        "name": "",
-        "prefix": ""
-      }
-    ],
-    "assignee": null,
-    "assignee_id": null,
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
     "chat_id": "6a75320600fe00d33539",
     "state": "opened",
     "created_at": 1786065414009,
@@ -3493,58 +3974,6 @@
       "문의/Q6_환불요청 & 환불/R11_중복신청",
       "환불/RP_부분환불 & 환불/R11_중복신청"
     ]
-  },
-  {
-    "chat_id": "6a75392ee50f01c2d130",
-    "state": "opened",
-    "created_at": 1786067246946,
-    "first_opened_at": 1786067379947,
-    "opened_at": 1786067379947,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
-    "assignee": null,
-    "assignee_id": null,
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6a7539046c1d3d2b5668",
-    "state": "opened",
-    "created_at": 1786067204447,
-    "first_opened_at": 1786067369753,
-    "opened_at": 1786067369753,
-    "closed_at": null,
-    "tags": [
-      "유선IVR"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "유선IVR",
-        "category": "기타",
-        "code": "유선IVR",
-        "name": "",
-        "prefix": ""
-      }
-    ],
-    "assignee": null,
-    "assignee_id": null,
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6a7538af2dc87957b87a",
-    "state": "opened",
-    "created_at": 1786067119192,
-    "first_opened_at": 1786067369396,
-    "opened_at": 1786067369396,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
-    "assignee": "김동아",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": []
   },
   {
     "chat_id": "6a753282c6ad3975a58e",
@@ -3989,8 +4418,8 @@
         "prefix": ""
       }
     ],
-    "assignee": null,
-    "assignee_id": null,
+    "assignee": "이수연",
+    "assignee_id": "656326",
     "channel_id": "183570",
     "tag_combinations": []
   },
@@ -5064,14 +5493,24 @@
     ]
   },
   {
-    "chat_id": "6a752078dcccd557d687",
-    "state": "opened",
-    "created_at": 1786060920909,
-    "first_opened_at": 1786069112711,
-    "opened_at": 1786069112711,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
+    "chat_id": "6a753c5ae8cde81a529a",
+    "state": "closed",
+    "created_at": 1786068058959,
+    "first_opened_at": 1786068088427,
+    "opened_at": 1786068088427,
+    "closed_at": 1786069544818,
+    "tags": [
+      "유선IVR"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      }
+    ],
     "assignee": null,
     "assignee_id": null,
     "channel_id": "183570",
