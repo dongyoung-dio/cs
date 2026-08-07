@@ -3524,7 +3524,8 @@
     "closed_at": 1786005954039,
     "tags": [
       "유선IVR",
-      "문의/Q2_서비스"
+      "문의/Q19_기타",
+      "안내/A19_기타"
     ],
     "parsed_tags": [
       {
@@ -3535,18 +3536,27 @@
         "prefix": ""
       },
       {
-        "raw": "문의/Q2_서비스",
+        "raw": "문의/Q19_기타",
         "category": "문의",
-        "code": "Q2",
-        "name": "서비스",
+        "code": "Q19",
+        "name": "기타",
         "prefix": "Q"
+      },
+      {
+        "raw": "안내/A19_기타",
+        "category": "안내",
+        "code": "A19",
+        "name": "기타",
+        "prefix": "A"
       }
     ],
     "assignee": "김로빈",
     "assignee_id": "667753",
     "channel_id": "183570",
     "tag_combinations": [
-      "유선IVR & 문의/Q2_서비스"
+      "유선IVR & 문의/Q19_기타",
+      "유선IVR & 안내/A19_기타",
+      "문의/Q19_기타 & 안내/A19_기타"
     ]
   },
   {
@@ -4268,30 +4278,30 @@
     "opened_at": 1785997506427,
     "closed_at": 1786005556862,
     "tags": [
-      "안내/A6_환불요청",
-      "문의/Q6_환불요청"
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기"
     ],
     "parsed_tags": [
-      {
-        "raw": "안내/A6_환불요청",
-        "category": "안내",
-        "code": "A6",
-        "name": "환불요청",
-        "prefix": "A"
-      },
       {
         "raw": "문의/Q6_환불요청",
         "category": "문의",
         "code": "Q6",
         "name": "환불요청",
         "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
       }
     ],
     "assignee": "김로빈",
     "assignee_id": "667753",
     "channel_id": "183570",
     "tag_combinations": [
-      "안내/A6_환불요청 & 문의/Q6_환불요청"
+      "문의/Q6_환불요청 & 처리/M1_답변대기"
     ]
   },
   {
