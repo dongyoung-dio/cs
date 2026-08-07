@@ -3250,8 +3250,7 @@
     "tags": [
       "유선IVR",
       "문의/Q8_환불이후",
-      "안내/A8_환불이후",
-      "처리/M1_답변대기"
+      "안내/A8_환불이후"
     ],
     "parsed_tags": [
       {
@@ -3274,13 +3273,6 @@
         "code": "A8",
         "name": "환불이후",
         "prefix": "A"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
       }
     ],
     "assignee": "남규민",
@@ -3289,10 +3281,7 @@
     "tag_combinations": [
       "유선IVR & 문의/Q8_환불이후",
       "유선IVR & 안내/A8_환불이후",
-      "유선IVR & 처리/M1_답변대기",
-      "문의/Q8_환불이후 & 안내/A8_환불이후",
-      "문의/Q8_환불이후 & 처리/M1_답변대기",
-      "안내/A8_환불이후 & 처리/M1_답변대기"
+      "문의/Q8_환불이후 & 안내/A8_환불이후"
     ]
   },
   {
@@ -3360,8 +3349,7 @@
     "tags": [
       "유선IVR",
       "문의/Q3_진행상황",
-      "안내/A3_진행상황",
-      "처리/M1_답변대기"
+      "안내/A3_진행상황"
     ],
     "parsed_tags": [
       {
@@ -3384,13 +3372,6 @@
         "code": "A3",
         "name": "진행상황",
         "prefix": "A"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
       }
     ],
     "assignee": "남규민",
@@ -3399,10 +3380,7 @@
     "tag_combinations": [
       "유선IVR & 문의/Q3_진행상황",
       "유선IVR & 안내/A3_진행상황",
-      "유선IVR & 처리/M1_답변대기",
-      "문의/Q3_진행상황 & 안내/A3_진행상황",
-      "문의/Q3_진행상황 & 처리/M1_답변대기",
-      "안내/A3_진행상황 & 처리/M1_답변대기"
+      "문의/Q3_진행상황 & 안내/A3_진행상황"
     ]
   },
   {
@@ -3545,7 +3523,8 @@
     "opened_at": 1786001728769,
     "closed_at": 1786005954039,
     "tags": [
-      "유선IVR"
+      "유선IVR",
+      "문의/Q2_서비스"
     ],
     "parsed_tags": [
       {
@@ -3554,12 +3533,21 @@
         "code": "유선IVR",
         "name": "",
         "prefix": ""
+      },
+      {
+        "raw": "문의/Q2_서비스",
+        "category": "문의",
+        "code": "Q2",
+        "name": "서비스",
+        "prefix": "Q"
       }
     ],
     "assignee": "김로빈",
     "assignee_id": "667753",
     "channel_id": "183570",
-    "tag_combinations": []
+    "tag_combinations": [
+      "유선IVR & 문의/Q2_서비스"
+    ]
   },
   {
     "chat_id": "6a74358f6afb73e85cda",
@@ -4447,7 +4435,8 @@
     "closed_at": 1786005383956,
     "tags": [
       "유선IVR",
-      "문의"
+      "문의",
+      "처리/M9_응답대기"
     ],
     "parsed_tags": [
       {
@@ -4463,13 +4452,22 @@
         "code": "문의",
         "name": "",
         "prefix": ""
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
       }
     ],
     "assignee": "김로빈",
     "assignee_id": "667753",
     "channel_id": "183570",
     "tag_combinations": [
-      "유선IVR & 문의"
+      "유선IVR & 문의",
+      "유선IVR & 처리/M9_응답대기",
+      "문의 & 처리/M9_응답대기"
     ]
   },
   {
@@ -4547,7 +4545,8 @@
     "opened_at": 1785996502196,
     "closed_at": 1786005369452,
     "tags": [
-      "문의"
+      "문의",
+      "처리/M9_응답대기"
     ],
     "parsed_tags": [
       {
@@ -4556,12 +4555,21 @@
         "code": "문의",
         "name": "",
         "prefix": ""
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
       }
     ],
     "assignee": "김로빈",
     "assignee_id": "667753",
     "channel_id": "183570",
-    "tag_combinations": []
+    "tag_combinations": [
+      "문의 & 처리/M9_응답대기"
+    ]
   },
   {
     "chat_id": "6a74235dae6a9702c969",
@@ -4615,7 +4623,8 @@
     "opened_at": 1785996320323,
     "closed_at": 1786005324589,
     "tags": [
-      "문의"
+      "문의",
+      "처리/M9_응답대기"
     ],
     "parsed_tags": [
       {
@@ -4624,12 +4633,21 @@
         "code": "문의",
         "name": "",
         "prefix": ""
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
       }
     ],
     "assignee": "김로빈",
     "assignee_id": "667753",
     "channel_id": "183570",
-    "tag_combinations": []
+    "tag_combinations": [
+      "문의 & 처리/M9_응답대기"
+    ]
   },
   {
     "chat_id": "6a74236889eaabaa4f03",
@@ -11606,7 +11624,8 @@
     "opened_at": 1785994361937,
     "closed_at": 1786000306376,
     "tags": [
-      "문의"
+      "문의",
+      "처리/M9_응답대기"
     ],
     "parsed_tags": [
       {
@@ -11615,12 +11634,21 @@
         "code": "문의",
         "name": "",
         "prefix": ""
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
       }
     ],
     "assignee": "김로빈",
     "assignee_id": "667753",
     "channel_id": "183570",
-    "tag_combinations": []
+    "tag_combinations": [
+      "문의 & 처리/M9_응답대기"
+    ]
   },
   {
     "chat_id": "6a741a1f5f68947609ab",
