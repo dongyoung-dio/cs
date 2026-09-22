@@ -1,18 +1,83 @@
 [
   {
-    "chat_id": "6ab219050e35d6b03fe4",
+    "chat_id": "6ab22f4a83d7a33f8970",
     "state": "opened",
-    "created_at": 1790056709065,
-    "first_opened_at": 1790057209488,
-    "opened_at": 1790057209488,
+    "created_at": 1790062410547,
+    "first_opened_at": 1790063148590,
+    "opened_at": 1790075736331,
+    "closed_at": 1790064195958,
+    "tags": [
+      "진행안내/안내완료",
+      "문의/Q2_서비스",
+      "안내/A2_서비스"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "진행안내/안내완료",
+        "category": "진행안내",
+        "code": "안내완료",
+        "name": "",
+        "prefix": "안"
+      },
+      {
+        "raw": "문의/Q2_서비스",
+        "category": "문의",
+        "code": "Q2",
+        "name": "서비스",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A2_서비스",
+        "category": "안내",
+        "code": "A2",
+        "name": "서비스",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "진행안내/안내완료 & 문의/Q2_서비스",
+      "진행안내/안내완료 & 안내/A2_서비스",
+      "문의/Q2_서비스 & 안내/A2_서비스"
+    ]
+  },
+  {
+    "chat_id": "6ab2332c759a16edfb0c",
+    "state": "opened",
+    "created_at": 1790063404487,
+    "first_opened_at": 1790069694990,
+    "opened_at": 1790069694990,
+    "closed_at": null,
+    "tags": [
+      "환불_지급확인_대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      }
+    ],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6ab08482a727365e8f95",
+    "state": "opened",
+    "created_at": 1789953154690,
+    "first_opened_at": 1790064971377,
+    "opened_at": 1790064971377,
     "closed_at": null,
     "tags": [
       "진행안내/확인서안내",
       "진행안내/안내완료",
-      "에스컬레이션/진행안내",
-      "문의/Q4_지급관련",
-      "안내/A4_지급관련",
-      "처리/M8_재청구"
+      "환불_지급확인_대기"
     ],
     "parsed_tags": [
       {
@@ -30,11 +95,354 @@
         "prefix": "안"
       },
       {
-        "raw": "에스컬레이션/진행안내",
-        "category": "에스컬레이션",
-        "code": "진행안내",
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
         "name": "",
-        "prefix": "진"
+        "prefix": ""
+      }
+    ],
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "진행안내/확인서안내 & 진행안내/안내완료",
+      "진행안내/확인서안내 & 환불_지급확인_대기",
+      "진행안내/안내완료 & 환불_지급확인_대기"
+    ]
+  },
+  {
+    "chat_id": "6ab234952becaeb2999d",
+    "state": "opened",
+    "created_at": 1790063765186,
+    "first_opened_at": 1790064117663,
+    "opened_at": 1790064117663,
+    "closed_at": null,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/R10_정책",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R10_정책",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "환불/R10_정책 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab1e30cc42bfbc7aa3e",
+    "state": "opened",
+    "created_at": 1790042892810,
+    "first_opened_at": 1790043540663,
+    "opened_at": 1790078779411,
+    "closed_at": 1790057436629,
+    "tags": [
+      "환불_지급불가_사유확인",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급불가_사유확인",
+        "category": "기타",
+        "code": "환불_지급불가_사유확인",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급불가_사유확인 & 문의/Q4_지급관련",
+      "환불_지급불가_사유확인 & 안내/A4_지급관련",
+      "환불_지급불가_사유확인 & 처리/M1_답변대기",
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 처리/M1_답변대기",
+      "안내/A4_지급관련 & 처리/M1_답변대기"
+    ]
+  },
+  {
+    "chat_id": "6ab22b8a118ea422320d",
+    "state": "opened",
+    "created_at": 1790061450077,
+    "first_opened_at": 1790061476550,
+    "opened_at": 1790061476550,
+    "closed_at": null,
+    "tags": [
+      "유선IVR",
+      "문의/Q6_환불요청",
+      "안내/A6_환불요청"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A6_환불요청",
+        "category": "안내",
+        "code": "A6",
+        "name": "환불요청",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 문의/Q6_환불요청",
+      "유선IVR & 안내/A6_환불요청",
+      "문의/Q6_환불요청 & 안내/A6_환불요청"
+    ]
+  },
+  {
+    "chat_id": "6ab22546b244208a738b",
+    "state": "opened",
+    "created_at": 1790059846737,
+    "first_opened_at": 1790059847061,
+    "opened_at": 1790059847061,
+    "closed_at": null,
+    "tags": [
+      "특성/E1_대외언급"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "특성/E1_대외언급",
+        "category": "특성",
+        "code": "E1",
+        "name": "대외언급",
+        "prefix": "E"
+      }
+    ],
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6ab22366a6c4c8a30931",
+    "state": "opened",
+    "created_at": 1790059366690,
+    "first_opened_at": 1790059540417,
+    "opened_at": 1790059540417,
+    "closed_at": null,
+    "tags": [
+      "특성/E4_유선요청",
+      "문의/Q6_환불요청",
+      "안내/A6_환불요청",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "특성/E4_유선요청",
+        "category": "특성",
+        "code": "E4",
+        "name": "유선요청",
+        "prefix": "E"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A6_환불요청",
+        "category": "안내",
+        "code": "A6",
+        "name": "환불요청",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "특성/E4_유선요청 & 문의/Q6_환불요청",
+      "특성/E4_유선요청 & 안내/A6_환불요청",
+      "특성/E4_유선요청 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 안내/A6_환불요청",
+      "문의/Q6_환불요청 & 처리/M1_답변대기",
+      "안내/A6_환불요청 & 처리/M1_답변대기"
+    ]
+  },
+  {
+    "chat_id": "6ab21f84b0b59cba26f2",
+    "state": "opened",
+    "created_at": 1790058372730,
+    "first_opened_at": 1790058421036,
+    "opened_at": 1790058421036,
+    "closed_at": null,
+    "tags": [
+      "유선IVR",
+      "문의/Q6_환불요청",
+      "환불/R3_변심",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R3_변심",
+        "category": "환불",
+        "code": "R3",
+        "name": "변심",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 문의/Q6_환불요청",
+      "유선IVR & 환불/R3_변심",
+      "유선IVR & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R3_변심",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "환불/R3_변심 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab1eafad91df2e03a8b",
+    "state": "opened",
+    "created_at": 1790044922895,
+    "first_opened_at": 1790057601711,
+    "opened_at": 1790057601711,
+    "closed_at": null,
+    "tags": [
+      "특성/E2_불만"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "특성/E2_불만",
+        "category": "특성",
+        "code": "E2",
+        "name": "불만",
+        "prefix": "E"
+      }
+    ],
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6ab21b52c9d0fd9e5901",
+    "state": "opened",
+    "created_at": 1790057298833,
+    "first_opened_at": 1790057543151,
+    "opened_at": 1790057543151,
+    "closed_at": null,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "처리/M8_재청구"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
       },
       {
         "raw": "문의/Q4_지급관련",
@@ -58,914 +466,16 @@
         "prefix": "M"
       }
     ],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
     "channel_id": "183570",
     "tag_combinations": [
-      "진행안내/확인서안내 & 진행안내/안내완료",
-      "진행안내/확인서안내 & 에스컬레이션/진행안내",
-      "진행안내/확인서안내 & 문의/Q4_지급관련",
-      "진행안내/확인서안내 & 안내/A4_지급관련",
-      "진행안내/확인서안내 & 처리/M8_재청구",
-      "진행안내/안내완료 & 에스컬레이션/진행안내",
-      "진행안내/안내완료 & 문의/Q4_지급관련",
-      "진행안내/안내완료 & 안내/A4_지급관련",
-      "진행안내/안내완료 & 처리/M8_재청구",
-      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
-      "에스컬레이션/진행안내 & 안내/A4_지급관련",
-      "에스컬레이션/진행안내 & 처리/M8_재청구",
+      "환불_지급확인_대기 & 문의/Q4_지급관련",
+      "환불_지급확인_대기 & 안내/A4_지급관련",
+      "환불_지급확인_대기 & 처리/M8_재청구",
       "문의/Q4_지급관련 & 안내/A4_지급관련",
       "문의/Q4_지급관련 & 처리/M8_재청구",
       "안내/A4_지급관련 & 처리/M8_재청구"
-    ]
-  },
-  {
-    "chat_id": "6ab219cba170f0e7a161",
-    "state": "opened",
-    "created_at": 1790056907669,
-    "first_opened_at": 1790056993369,
-    "opened_at": 1790056993369,
-    "closed_at": null,
-    "tags": [
-      "문의/Q6_환불요청",
-      "처리/M1_답변대기",
-      "환불/R1_기타",
-      "환불/RT_전체환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      },
-      {
-        "raw": "환불/R1_기타",
-        "category": "환불",
-        "code": "R1",
-        "name": "기타",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RT_전체환불",
-        "category": "환불",
-        "code": "RT",
-        "name": "전체환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "김로빈 매니저",
-    "assignee_id": "667753",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 처리/M1_답변대기",
-      "문의/Q6_환불요청 & 환불/R1_기타",
-      "문의/Q6_환불요청 & 환불/RT_전체환불",
-      "처리/M1_답변대기 & 환불/R1_기타",
-      "처리/M1_답변대기 & 환불/RT_전체환불",
-      "환불/R1_기타 & 환불/RT_전체환불"
-    ]
-  },
-  {
-    "chat_id": "6ab21ef22eea3485445e",
-    "state": "opened",
-    "created_at": 1790058226199,
-    "first_opened_at": 1790058416335,
-    "opened_at": 1790058416335,
-    "closed_at": null,
-    "tags": [
-      "환불_지급확인_대기",
-      "문의/Q6_환불요청",
-      "처리/M1_답변대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급확인_대기",
-        "category": "기타",
-        "code": "환불_지급확인_대기",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김로빈 매니저",
-    "assignee_id": "667753",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "환불_지급확인_대기 & 문의/Q6_환불요청",
-      "환불_지급확인_대기 & 처리/M1_답변대기",
-      "문의/Q6_환불요청 & 처리/M1_답변대기"
-    ]
-  },
-  {
-    "chat_id": "6ab1eafad91df2e03a8b",
-    "state": "opened",
-    "created_at": 1790044922895,
-    "first_opened_at": 1790057601711,
-    "opened_at": 1790057601711,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
-    "assignee": "김태훈 매니저",
-    "assignee_id": "565238",
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6ab21ac7d9ada1d7ed96",
-    "state": "opened",
-    "created_at": 1790057159896,
-    "first_opened_at": 1790057642589,
-    "opened_at": 1790057642589,
-    "closed_at": null,
-    "tags": [
-      "환불_지급확인_대기",
-      "문의/Q6_환불요청",
-      "환불/R1_기타",
-      "환불/RT_전체환불",
-      "특성/E2_불만"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급확인_대기",
-        "category": "기타",
-        "code": "환불_지급확인_대기",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "환불/R1_기타",
-        "category": "환불",
-        "code": "R1",
-        "name": "기타",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RT_전체환불",
-        "category": "환불",
-        "code": "RT",
-        "name": "전체환불",
-        "prefix": "R"
-      },
-      {
-        "raw": "특성/E2_불만",
-        "category": "특성",
-        "code": "E2",
-        "name": "불만",
-        "prefix": "E"
-      }
-    ],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "환불_지급확인_대기 & 문의/Q6_환불요청",
-      "환불_지급확인_대기 & 환불/R1_기타",
-      "환불_지급확인_대기 & 환불/RT_전체환불",
-      "환불_지급확인_대기 & 특성/E2_불만",
-      "문의/Q6_환불요청 & 환불/R1_기타",
-      "문의/Q6_환불요청 & 환불/RT_전체환불",
-      "문의/Q6_환불요청 & 특성/E2_불만",
-      "환불/R1_기타 & 환불/RT_전체환불",
-      "환불/R1_기타 & 특성/E2_불만",
-      "환불/RT_전체환불 & 특성/E2_불만"
-    ]
-  },
-  {
-    "chat_id": "6ab21fe4a028a0ab8258",
-    "state": "opened",
-    "created_at": 1790058468661,
-    "first_opened_at": 1790058617585,
-    "opened_at": 1790058617585,
-    "closed_at": null,
-    "tags": [
-      "에스컬레이션/진행안내"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "에스컬레이션/진행안내",
-        "category": "에스컬레이션",
-        "code": "진행안내",
-        "name": "",
-        "prefix": "진"
-      }
-    ],
-    "assignee": null,
-    "assignee_id": null,
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6ab21e08a5721a989eba",
-    "state": "opened",
-    "created_at": 1790057992683,
-    "first_opened_at": 1790058174778,
-    "opened_at": 1790058174778,
-    "closed_at": null,
-    "tags": [
-      "에스컬레이션/진행안내",
-      "문의/Q8_환불이후",
-      "안내/A8_환불이후"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "에스컬레이션/진행안내",
-        "category": "에스컬레이션",
-        "code": "진행안내",
-        "name": "",
-        "prefix": "진"
-      },
-      {
-        "raw": "문의/Q8_환불이후",
-        "category": "문의",
-        "code": "Q8",
-        "name": "환불이후",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A8_환불이후",
-        "category": "안내",
-        "code": "A8",
-        "name": "환불이후",
-        "prefix": "A"
-      }
-    ],
-    "assignee": "김태훈 매니저",
-    "assignee_id": "565238",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "에스컬레이션/진행안내 & 문의/Q8_환불이후",
-      "에스컬레이션/진행안내 & 안내/A8_환불이후",
-      "문의/Q8_환불이후 & 안내/A8_환불이후"
-    ]
-  },
-  {
-    "chat_id": "6ab21f84b0b59cba26f2",
-    "state": "opened",
-    "created_at": 1790058372730,
-    "first_opened_at": 1790058421036,
-    "opened_at": 1790058421036,
-    "closed_at": null,
-    "tags": [
-      "유선IVR"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "유선IVR",
-        "category": "기타",
-        "code": "유선IVR",
-        "name": "",
-        "prefix": ""
-      }
-    ],
-    "assignee": null,
-    "assignee_id": null,
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6ab21e5c1b946a468b6b",
-    "state": "opened",
-    "created_at": 1790058076119,
-    "first_opened_at": 1790058184251,
-    "opened_at": 1790058184251,
-    "closed_at": null,
-    "tags": [
-      "문의/Q6_환불요청",
-      "환불/R11_중복신청",
-      "환불/RT_전체환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "환불/R11_중복신청",
-        "category": "환불",
-        "code": "R11",
-        "name": "중복신청",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RT_전체환불",
-        "category": "환불",
-        "code": "RT",
-        "name": "전체환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "김로빈 매니저",
-    "assignee_id": "667753",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 환불/R11_중복신청",
-      "문의/Q6_환불요청 & 환불/RT_전체환불",
-      "환불/R11_중복신청 & 환불/RT_전체환불"
-    ]
-  },
-  {
-    "chat_id": "6ab21e4c4437391eee0e",
-    "state": "opened",
-    "created_at": 1790058060286,
-    "first_opened_at": 1790058110611,
-    "opened_at": 1790058110611,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
-    "assignee": "김태훈 매니저",
-    "assignee_id": "565238",
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6ab215d73241a834f2d2",
-    "state": "opened",
-    "created_at": 1790055895210,
-    "first_opened_at": 1790056100315,
-    "opened_at": 1790058427575,
-    "closed_at": 1790058345717,
-    "tags": [
-      "문의/Q6_환불요청",
-      "처리/M1_답변대기",
-      "환불/R5_지급불가항목",
-      "환불/RP_부분환불",
-      "환불/R3_변심"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      },
-      {
-        "raw": "환불/R5_지급불가항목",
-        "category": "환불",
-        "code": "R5",
-        "name": "지급불가항목",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RP_부분환불",
-        "category": "환불",
-        "code": "RP",
-        "name": "부분환불",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/R3_변심",
-        "category": "환불",
-        "code": "R3",
-        "name": "변심",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "김동아 매니저",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 처리/M1_답변대기",
-      "문의/Q6_환불요청 & 환불/R5_지급불가항목",
-      "문의/Q6_환불요청 & 환불/RP_부분환불",
-      "문의/Q6_환불요청 & 환불/R3_변심",
-      "처리/M1_답변대기 & 환불/R5_지급불가항목",
-      "처리/M1_답변대기 & 환불/RP_부분환불",
-      "처리/M1_답변대기 & 환불/R3_변심",
-      "환불/R5_지급불가항목 & 환불/RP_부분환불",
-      "환불/R5_지급불가항목 & 환불/R3_변심",
-      "환불/RP_부분환불 & 환불/R3_변심"
-    ]
-  },
-  {
-    "chat_id": "6ab21e726a411fe96733",
-    "state": "opened",
-    "created_at": 1790058098441,
-    "first_opened_at": 1790058161463,
-    "opened_at": 1790058161463,
-    "closed_at": null,
-    "tags": [
-      "문의/Q2_서비스",
-      "안내/A2_서비스",
-      "처리/M1_답변대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q2_서비스",
-        "category": "문의",
-        "code": "Q2",
-        "name": "서비스",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A2_서비스",
-        "category": "안내",
-        "code": "A2",
-        "name": "서비스",
-        "prefix": "A"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김로빈 매니저",
-    "assignee_id": "667753",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q2_서비스 & 안내/A2_서비스",
-      "문의/Q2_서비스 & 처리/M1_답변대기",
-      "안내/A2_서비스 & 처리/M1_답변대기"
-    ]
-  },
-  {
-    "chat_id": "6ab21ca398ae2d442e9f",
-    "state": "opened",
-    "created_at": 1790057635629,
-    "first_opened_at": 1790058473997,
-    "opened_at": 1790058473997,
-    "closed_at": null,
-    "tags": [
-      "진행안내/안내완료",
-      "환불_지급불가_사유확인"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "진행안내/안내완료",
-        "category": "진행안내",
-        "code": "안내완료",
-        "name": "",
-        "prefix": "안"
-      },
-      {
-        "raw": "환불_지급불가_사유확인",
-        "category": "기타",
-        "code": "환불_지급불가_사유확인",
-        "name": "",
-        "prefix": ""
-      }
-    ],
-    "assignee": null,
-    "assignee_id": null,
-    "channel_id": "183570",
-    "tag_combinations": [
-      "진행안내/안내완료 & 환불_지급불가_사유확인"
-    ]
-  },
-  {
-    "chat_id": "6ab2109202a67eb49d38",
-    "state": "opened",
-    "created_at": 1790054546017,
-    "first_opened_at": 1790054771956,
-    "opened_at": 1790057914125,
-    "closed_at": 1790056800757,
-    "tags": [
-      "문의/Q6_환불요청",
-      "환불/R11_중복신청",
-      "환불/RP_부분환불",
-      "안내/A3_진행상황",
-      "특성/E2_불만"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "환불/R11_중복신청",
-        "category": "환불",
-        "code": "R11",
-        "name": "중복신청",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RP_부분환불",
-        "category": "환불",
-        "code": "RP",
-        "name": "부분환불",
-        "prefix": "R"
-      },
-      {
-        "raw": "안내/A3_진행상황",
-        "category": "안내",
-        "code": "A3",
-        "name": "진행상황",
-        "prefix": "A"
-      },
-      {
-        "raw": "특성/E2_불만",
-        "category": "특성",
-        "code": "E2",
-        "name": "불만",
-        "prefix": "E"
-      }
-    ],
-    "assignee": "조윤조 매니저",
-    "assignee_id": "609327",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 환불/R11_중복신청",
-      "문의/Q6_환불요청 & 환불/RP_부분환불",
-      "문의/Q6_환불요청 & 안내/A3_진행상황",
-      "문의/Q6_환불요청 & 특성/E2_불만",
-      "환불/R11_중복신청 & 환불/RP_부분환불",
-      "환불/R11_중복신청 & 안내/A3_진행상황",
-      "환불/R11_중복신청 & 특성/E2_불만",
-      "환불/RP_부분환불 & 안내/A3_진행상황",
-      "환불/RP_부분환불 & 특성/E2_불만",
-      "안내/A3_진행상황 & 특성/E2_불만"
-    ]
-  },
-  {
-    "chat_id": "6ab21ed860edf571e370",
-    "state": "opened",
-    "created_at": 1790058200402,
-    "first_opened_at": 1790058497177,
-    "opened_at": 1790058497177,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
-    "assignee": null,
-    "assignee_id": null,
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6ab21f154cf588e90706",
-    "state": "opened",
-    "created_at": 1790058261321,
-    "first_opened_at": 1790058506790,
-    "opened_at": 1790058506790,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
-    "assignee": "김동아 매니저",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6ab21cdf73f09baec667",
-    "state": "opened",
-    "created_at": 1790057695480,
-    "first_opened_at": 1790058133725,
-    "opened_at": 1790058133725,
-    "closed_at": null,
-    "tags": [
-      "환불_지급확인_대기",
-      "문의/Q6_환불요청",
-      "처리/M1_답변대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급확인_대기",
-        "category": "기타",
-        "code": "환불_지급확인_대기",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김로빈 매니저",
-    "assignee_id": "667753",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "환불_지급확인_대기 & 문의/Q6_환불요청",
-      "환불_지급확인_대기 & 처리/M1_답변대기",
-      "문의/Q6_환불요청 & 처리/M1_답변대기"
-    ]
-  },
-  {
-    "chat_id": "6ab21d9b3841b70698e5",
-    "state": "opened",
-    "created_at": 1790057883236,
-    "first_opened_at": 1790058067594,
-    "opened_at": 1790058067594,
-    "closed_at": null,
-    "tags": [
-      "문의/Q6_환불요청",
-      "환불/R11_중복신청",
-      "환불/RP_부분환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "환불/R11_중복신청",
-        "category": "환불",
-        "code": "R11",
-        "name": "중복신청",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RP_부분환불",
-        "category": "환불",
-        "code": "RP",
-        "name": "부분환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "조윤조 매니저",
-    "assignee_id": "609327",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 환불/R11_중복신청",
-      "문의/Q6_환불요청 & 환불/RP_부분환불",
-      "환불/R11_중복신청 & 환불/RP_부분환불"
-    ]
-  },
-  {
-    "chat_id": "6ab21d8f9cb14854fb0d",
-    "state": "opened",
-    "created_at": 1790057871648,
-    "first_opened_at": 1790058158033,
-    "opened_at": 1790058158033,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6ab21ee1a920c1639e5d",
-    "state": "opened",
-    "created_at": 1790058209698,
-    "first_opened_at": 1790058269169,
-    "opened_at": 1790058269169,
-    "closed_at": null,
-    "tags": [],
-    "parsed_tags": [],
-    "assignee": "조윤조 매니저",
-    "assignee_id": "609327",
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6ab21aae77ded0d84809",
-    "state": "opened",
-    "created_at": 1790057134496,
-    "first_opened_at": 1790057319194,
-    "opened_at": 1790057319194,
-    "closed_at": null,
-    "tags": [
-      "에스컬레이션/진행안내",
-      "문의/Q6_환불요청",
-      "환불/RP_부분환불",
-      "환불/R10_정책"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "에스컬레이션/진행안내",
-        "category": "에스컬레이션",
-        "code": "진행안내",
-        "name": "",
-        "prefix": "진"
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "환불/RP_부분환불",
-        "category": "환불",
-        "code": "RP",
-        "name": "부분환불",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/R10_정책",
-        "category": "환불",
-        "code": "R10",
-        "name": "정책",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "에스컬레이션/진행안내 & 문의/Q6_환불요청",
-      "에스컬레이션/진행안내 & 환불/RP_부분환불",
-      "에스컬레이션/진행안내 & 환불/R10_정책",
-      "문의/Q6_환불요청 & 환불/RP_부분환불",
-      "문의/Q6_환불요청 & 환불/R10_정책",
-      "환불/RP_부분환불 & 환불/R10_정책"
-    ]
-  },
-  {
-    "chat_id": "6ab217c44fc669ce54bc",
-    "state": "opened",
-    "created_at": 1790056388332,
-    "first_opened_at": 1790056581327,
-    "opened_at": 1790056581327,
-    "closed_at": null,
-    "tags": [
-      "환불_지급확인_대기",
-      "문의/Q18_타채널",
-      "안내/A18_타채널",
-      "환불/RT_전체환불",
-      "환불/R1_기타",
-      "문의/Q6_환불요청"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급확인_대기",
-        "category": "기타",
-        "code": "환불_지급확인_대기",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "문의/Q18_타채널",
-        "category": "문의",
-        "code": "Q18",
-        "name": "타채널",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A18_타채널",
-        "category": "안내",
-        "code": "A18",
-        "name": "타채널",
-        "prefix": "A"
-      },
-      {
-        "raw": "환불/RT_전체환불",
-        "category": "환불",
-        "code": "RT",
-        "name": "전체환불",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/R1_기타",
-        "category": "환불",
-        "code": "R1",
-        "name": "기타",
-        "prefix": "R"
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      }
-    ],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "환불_지급확인_대기 & 문의/Q18_타채널",
-      "환불_지급확인_대기 & 안내/A18_타채널",
-      "환불_지급확인_대기 & 환불/RT_전체환불",
-      "환불_지급확인_대기 & 환불/R1_기타",
-      "환불_지급확인_대기 & 문의/Q6_환불요청",
-      "문의/Q18_타채널 & 안내/A18_타채널",
-      "문의/Q18_타채널 & 환불/RT_전체환불",
-      "문의/Q18_타채널 & 환불/R1_기타",
-      "문의/Q18_타채널 & 문의/Q6_환불요청",
-      "안내/A18_타채널 & 환불/RT_전체환불",
-      "안내/A18_타채널 & 환불/R1_기타",
-      "안내/A18_타채널 & 문의/Q6_환불요청",
-      "환불/RT_전체환불 & 환불/R1_기타",
-      "환불/RT_전체환불 & 문의/Q6_환불요청",
-      "환불/R1_기타 & 문의/Q6_환불요청"
-    ]
-  },
-  {
-    "chat_id": "6ab21b52c9d0fd9e5901",
-    "state": "opened",
-    "created_at": 1790057298833,
-    "first_opened_at": 1790057543151,
-    "opened_at": 1790057543151,
-    "closed_at": null,
-    "tags": [
-      "환불_지급확인_대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급확인_대기",
-        "category": "기타",
-        "code": "환불_지급확인_대기",
-        "name": "",
-        "prefix": ""
-      }
-    ],
-    "assignee": "김태훈 매니저",
-    "assignee_id": "565238",
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6ab219203d4c1bcdb171",
-    "state": "opened",
-    "created_at": 1790056736258,
-    "first_opened_at": 1790057428200,
-    "opened_at": 1790057428200,
-    "closed_at": null,
-    "tags": [
-      "문의/Q6_환불요청",
-      "환불/R10_정책",
-      "환불/RP_부분환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "환불/R10_정책",
-        "category": "환불",
-        "code": "R10",
-        "name": "정책",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RP_부분환불",
-        "category": "환불",
-        "code": "RP",
-        "name": "부분환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 환불/R10_정책",
-      "문의/Q6_환불요청 & 환불/RP_부분환불",
-      "환불/R10_정책 & 환불/RP_부분환불"
     ]
   },
   {
@@ -976,7 +486,9 @@
     "opened_at": 1790054396422,
     "closed_at": null,
     "tags": [
-      "환불_지급확인_대기"
+      "환불_지급확인_대기",
+      "문의/Q9_보험사변경",
+      "처리/M3_보험사변경"
     ],
     "parsed_tags": [
       {
@@ -985,215 +497,29 @@
         "code": "환불_지급확인_대기",
         "name": "",
         "prefix": ""
+      },
+      {
+        "raw": "문의/Q9_보험사변경",
+        "category": "문의",
+        "code": "Q9",
+        "name": "보험사변경",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M3_보험사변경",
+        "category": "처리",
+        "code": "M3",
+        "name": "보험사변경",
+        "prefix": "M"
       }
     ],
     "assignee": "김태훈 매니저",
     "assignee_id": "565238",
     "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6ab2130092d45a1e1119",
-    "state": "opened",
-    "created_at": 1790055168605,
-    "first_opened_at": 1790055318002,
-    "opened_at": 1790055318002,
-    "closed_at": null,
-    "tags": [
-      "환불_지급불가_사유확인"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급불가_사유확인",
-        "category": "기타",
-        "code": "환불_지급불가_사유확인",
-        "name": "",
-        "prefix": ""
-      }
-    ],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6ab21409b0076d3b52dc",
-    "state": "opened",
-    "created_at": 1790055433727,
-    "first_opened_at": 1790055721019,
-    "opened_at": 1790055721019,
-    "closed_at": null,
-    "tags": [
-      "환불_지급확인_대기",
-      "문의/Q6_환불요청",
-      "처리/M1_답변대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급확인_대기",
-        "category": "기타",
-        "code": "환불_지급확인_대기",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
-    "channel_id": "183570",
     "tag_combinations": [
-      "환불_지급확인_대기 & 문의/Q6_환불요청",
-      "환불_지급확인_대기 & 처리/M1_답변대기",
-      "문의/Q6_환불요청 & 처리/M1_답변대기"
-    ]
-  },
-  {
-    "chat_id": "6ab211f736b08f240af9",
-    "state": "opened",
-    "created_at": 1790054903229,
-    "first_opened_at": 1790055109401,
-    "opened_at": 1790055109401,
-    "closed_at": null,
-    "tags": [
-      "에스컬레이션/진행안내"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "에스컬레이션/진행안내",
-        "category": "에스컬레이션",
-        "code": "진행안내",
-        "name": "",
-        "prefix": "진"
-      }
-    ],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6ab211e755ad286a42bb",
-    "state": "opened",
-    "created_at": 1790054887375,
-    "first_opened_at": 1790054989328,
-    "opened_at": 1790054989328,
-    "closed_at": null,
-    "tags": [
-      "환불_지급확인_대기",
-      "특성/E3_중복고객"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급확인_대기",
-        "category": "기타",
-        "code": "환불_지급확인_대기",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "특성/E3_중복고객",
-        "category": "특성",
-        "code": "E3",
-        "name": "중복고객",
-        "prefix": "E"
-      }
-    ],
-    "assignee": "김동아 매니저",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "환불_지급확인_대기 & 특성/E3_중복고객"
-    ]
-  },
-  {
-    "chat_id": "6ab211a1811263d6155a",
-    "state": "opened",
-    "created_at": 1790054817536,
-    "first_opened_at": 1790054865732,
-    "opened_at": 1790054865732,
-    "closed_at": null,
-    "tags": [
-      "특성/E4_유선요청",
-      "처리/M9_응답대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "특성/E4_유선요청",
-        "category": "특성",
-        "code": "E4",
-        "name": "유선요청",
-        "prefix": "E"
-      },
-      {
-        "raw": "처리/M9_응답대기",
-        "category": "처리",
-        "code": "M9",
-        "name": "응답대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김동아 매니저",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "특성/E4_유선요청 & 처리/M9_응답대기"
-    ]
-  },
-  {
-    "chat_id": "6ab1d7b0c7b13abee5da",
-    "state": "opened",
-    "created_at": 1790039984825,
-    "first_opened_at": 1790042499586,
-    "opened_at": 1790049957577,
-    "closed_at": 1790043601760,
-    "tags": [
-      "진행안내/안내완료",
-      "환불_지급불가_사유확인",
-      "처리/M1_답변대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "진행안내/안내완료",
-        "category": "진행안내",
-        "code": "안내완료",
-        "name": "",
-        "prefix": "안"
-      },
-      {
-        "raw": "환불_지급불가_사유확인",
-        "category": "기타",
-        "code": "환불_지급불가_사유확인",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "조윤조 매니저",
-    "assignee_id": "609327",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "진행안내/안내완료 & 환불_지급불가_사유확인",
-      "진행안내/안내완료 & 처리/M1_답변대기",
-      "환불_지급불가_사유확인 & 처리/M1_답변대기"
+      "환불_지급확인_대기 & 문의/Q9_보험사변경",
+      "환불_지급확인_대기 & 처리/M3_보험사변경",
+      "문의/Q9_보험사변경 & 처리/M3_보험사변경"
     ]
   },
   {
@@ -1286,6 +612,4859 @@
     ]
   },
   {
+    "chat_id": "6ab22983d47780d487f7",
+    "state": "closed",
+    "created_at": 1790060931877,
+    "first_opened_at": 1790061053528,
+    "opened_at": 1790068234648,
+    "closed_at": 1790068986771,
+    "tags": [
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q4_지급관련 & 안내/A4_지급관련"
+    ]
+  },
+  {
+    "chat_id": "6ab23d79dc434e821403",
+    "state": "closed",
+    "created_at": 1790066041909,
+    "first_opened_at": 1790066042215,
+    "opened_at": 1790066042215,
+    "closed_at": 1790066138371,
+    "tags": [
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q4_지급관련 & 안내/A4_지급관련"
+    ]
+  },
+  {
+    "chat_id": "6ab22d2a9095a2478f91",
+    "state": "closed",
+    "created_at": 1790061866598,
+    "first_opened_at": 1790062066132,
+    "opened_at": 1790062066132,
+    "closed_at": 1790065863084,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q8_환불이후",
+      "안내/A8_환불이후"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q8_환불이후",
+        "category": "문의",
+        "code": "Q8",
+        "name": "환불이후",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A8_환불이후",
+        "category": "안내",
+        "code": "A8",
+        "name": "환불이후",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q8_환불이후",
+      "에스컬레이션/진행안내 & 안내/A8_환불이후",
+      "문의/Q8_환불이후 & 안내/A8_환불이후"
+    ]
+  },
+  {
+    "chat_id": "6ab233703721575b216d",
+    "state": "closed",
+    "created_at": 1790063472232,
+    "first_opened_at": 1790063698140,
+    "opened_at": 1790063698140,
+    "closed_at": 1790065072996,
+    "tags": [
+      "문의/Q17_서류보완",
+      "안내/A17_서류보완",
+      "처리/M8_재청구",
+      "특성/E2_불만"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q17_서류보완",
+        "category": "문의",
+        "code": "Q17",
+        "name": "서류보완",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A17_서류보완",
+        "category": "안내",
+        "code": "A17",
+        "name": "서류보완",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M8_재청구",
+        "category": "처리",
+        "code": "M8",
+        "name": "재청구",
+        "prefix": "M"
+      },
+      {
+        "raw": "특성/E2_불만",
+        "category": "특성",
+        "code": "E2",
+        "name": "불만",
+        "prefix": "E"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q17_서류보완 & 안내/A17_서류보완",
+      "문의/Q17_서류보완 & 처리/M8_재청구",
+      "문의/Q17_서류보완 & 특성/E2_불만",
+      "안내/A17_서류보완 & 처리/M8_재청구",
+      "안내/A17_서류보완 & 특성/E2_불만",
+      "처리/M8_재청구 & 특성/E2_불만"
+    ]
+  },
+  {
+    "chat_id": "6ab23426cc3368bb2a55",
+    "state": "closed",
+    "created_at": 1790063654842,
+    "first_opened_at": 1790063889591,
+    "opened_at": 1790063889591,
+    "closed_at": 1790065434744,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q2_서비스",
+      "안내/A2_서비스",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q2_서비스",
+        "category": "문의",
+        "code": "Q2",
+        "name": "서비스",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A2_서비스",
+        "category": "안내",
+        "code": "A2",
+        "name": "서비스",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q2_서비스",
+      "에스컬레이션/진행안내 & 안내/A2_서비스",
+      "에스컬레이션/진행안내 & 처리/M1_답변대기",
+      "문의/Q2_서비스 & 안내/A2_서비스",
+      "문의/Q2_서비스 & 처리/M1_답변대기",
+      "안내/A2_서비스 & 처리/M1_답변대기"
+    ]
+  },
+  {
+    "chat_id": "6ab2323fc35c60bd048f",
+    "state": "closed",
+    "created_at": 1790063167806,
+    "first_opened_at": 1790064368697,
+    "opened_at": 1790064368697,
+    "closed_at": 1790065400767,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/R10_정책",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R10_정책",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "환불/R10_정책 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab22eb89c9059dac7d8",
+    "state": "closed",
+    "created_at": 1790062264647,
+    "first_opened_at": 1790062792586,
+    "opened_at": 1790062792586,
+    "closed_at": 1790065229766,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "환불/R1_기타",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q4_지급관련",
+      "환불_지급확인_대기 & 안내/A4_지급관련",
+      "환불_지급확인_대기 & 환불/R1_기타",
+      "환불_지급확인_대기 & 환불/RT_전체환불",
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 환불/R1_기타",
+      "문의/Q4_지급관련 & 환불/RT_전체환불",
+      "안내/A4_지급관련 & 환불/R1_기타",
+      "안내/A4_지급관련 & 환불/RT_전체환불",
+      "환불/R1_기타 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab22d8cd9355e744e76",
+    "state": "closed",
+    "created_at": 1790061964894,
+    "first_opened_at": 1790062173719,
+    "opened_at": 1790062173719,
+    "closed_at": 1790064613249,
+    "tags": [
+      "환불_지급불가_사유확인",
+      "문의/Q8_환불이후",
+      "안내/A8_환불이후"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급불가_사유확인",
+        "category": "기타",
+        "code": "환불_지급불가_사유확인",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q8_환불이후",
+        "category": "문의",
+        "code": "Q8",
+        "name": "환불이후",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A8_환불이후",
+        "category": "안내",
+        "code": "A8",
+        "name": "환불이후",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급불가_사유확인 & 문의/Q8_환불이후",
+      "환불_지급불가_사유확인 & 안내/A8_환불이후",
+      "문의/Q8_환불이후 & 안내/A8_환불이후"
+    ]
+  },
+  {
+    "chat_id": "6ab225b3d907f1c71a88",
+    "state": "closed",
+    "created_at": 1790059955896,
+    "first_opened_at": 1790060363821,
+    "opened_at": 1790060363821,
+    "closed_at": 1790064538330,
+    "tags": [
+      "환불_지급확인_대기",
+      "환불/R11_중복신청",
+      "문의/Q6_환불요청",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 환불/R11_중복신청",
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "환불/R11_중복신청 & 문의/Q6_환불요청",
+      "환불/R11_중복신청 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab230f938137d8694ea",
+    "state": "closed",
+    "created_at": 1790062841235,
+    "first_opened_at": 1790063186003,
+    "opened_at": 1790063186003,
+    "closed_at": 1790064468186,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
+      "에스컬레이션/진행안내 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 안내/A4_지급관련"
+    ]
+  },
+  {
+    "chat_id": "6ab2343e4d3b33fa27fc",
+    "state": "closed",
+    "created_at": 1790063678323,
+    "first_opened_at": 1790064121249,
+    "opened_at": 1790064121249,
+    "closed_at": 1790065008762,
+    "tags": [
+      "문의/Q18_타채널",
+      "안내/A18_타채널"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q18_타채널",
+        "category": "문의",
+        "code": "Q18",
+        "name": "타채널",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A18_타채널",
+        "category": "안내",
+        "code": "A18",
+        "name": "타채널",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q18_타채널 & 안내/A18_타채널"
+    ]
+  },
+  {
+    "chat_id": "6ab233dd3de7765a112f",
+    "state": "closed",
+    "created_at": 1790063581258,
+    "first_opened_at": 1790064076715,
+    "opened_at": 1790064076715,
+    "closed_at": 1790064973740,
+    "tags": [
+      "환불_지급불가_사유확인",
+      "문의/Q6_환불요청",
+      "환불/R1_기타",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급불가_사유확인",
+        "category": "기타",
+        "code": "환불_지급불가_사유확인",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급불가_사유확인 & 문의/Q6_환불요청",
+      "환불_지급불가_사유확인 & 환불/R1_기타",
+      "환불_지급불가_사유확인 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R1_기타",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R1_기타 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab2347db82acb485862",
+    "state": "closed",
+    "created_at": 1790063741762,
+    "first_opened_at": 1790063987439,
+    "opened_at": 1790063987439,
+    "closed_at": 1790064969724,
+    "tags": [
+      "진행안내/안내완료",
+      "환불_지급불가_사유확인",
+      "문의/Q6_환불요청",
+      "환불/R1_기타",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "진행안내/안내완료",
+        "category": "진행안내",
+        "code": "안내완료",
+        "name": "",
+        "prefix": "안"
+      },
+      {
+        "raw": "환불_지급불가_사유확인",
+        "category": "기타",
+        "code": "환불_지급불가_사유확인",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "진행안내/안내완료 & 환불_지급불가_사유확인",
+      "진행안내/안내완료 & 문의/Q6_환불요청",
+      "진행안내/안내완료 & 환불/R1_기타",
+      "진행안내/안내완료 & 환불/RT_전체환불",
+      "환불_지급불가_사유확인 & 문의/Q6_환불요청",
+      "환불_지급불가_사유확인 & 환불/R1_기타",
+      "환불_지급불가_사유확인 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R1_기타",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R1_기타 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab22de9941f196d37ce",
+    "state": "closed",
+    "created_at": 1790062057612,
+    "first_opened_at": 1790062202056,
+    "opened_at": 1790062202056,
+    "closed_at": 1790064827733,
+    "tags": [
+      "문의/Q8_환불이후",
+      "안내/A8_환불이후",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "환불/R11_중복신청",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q8_환불이후",
+        "category": "문의",
+        "code": "Q8",
+        "name": "환불이후",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A8_환불이후",
+        "category": "안내",
+        "code": "A8",
+        "name": "환불이후",
+        "prefix": "A"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q8_환불이후 & 안내/A8_환불이후",
+      "문의/Q8_환불이후 & 문의/Q4_지급관련",
+      "문의/Q8_환불이후 & 안내/A4_지급관련",
+      "문의/Q8_환불이후 & 환불/R11_중복신청",
+      "문의/Q8_환불이후 & 환불/RP_부분환불",
+      "안내/A8_환불이후 & 문의/Q4_지급관련",
+      "안내/A8_환불이후 & 안내/A4_지급관련",
+      "안내/A8_환불이후 & 환불/R11_중복신청",
+      "안내/A8_환불이후 & 환불/RP_부분환불",
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 환불/R11_중복신청",
+      "문의/Q4_지급관련 & 환불/RP_부분환불",
+      "안내/A4_지급관련 & 환불/R11_중복신청",
+      "안내/A4_지급관련 & 환불/RP_부분환불",
+      "환불/R11_중복신청 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab234706159e6b2a64c",
+    "state": "closed",
+    "created_at": 1790063728404,
+    "first_opened_at": 1790063761571,
+    "opened_at": 1790063761571,
+    "closed_at": 1790064725763,
+    "tags": [
+      "유선IVR",
+      "문의/Q6_환불요청",
+      "환불/R11_중복신청",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 문의/Q6_환불요청",
+      "유선IVR & 환불/R11_중복신청",
+      "유선IVR & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R11_중복신청 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab22a479425f276be7c",
+    "state": "closed",
+    "created_at": 1790061127613,
+    "first_opened_at": 1790061240679,
+    "opened_at": 1790061240679,
+    "closed_at": 1790064033124,
+    "tags": [
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 처리/M1_답변대기"
+    ]
+  },
+  {
+    "chat_id": "6ab231c2ac3a5bdb604f",
+    "state": "closed",
+    "created_at": 1790063042711,
+    "first_opened_at": 1790063707223,
+    "opened_at": 1790063707223,
+    "closed_at": 1790064619687,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/RP_부분환불",
+      "환불/R5_지급불가항목"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R5_지급불가항목",
+        "category": "환불",
+        "code": "R5",
+        "name": "지급불가항목",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "환불_지급확인_대기 & 환불/R5_지급불가항목",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R5_지급불가항목",
+      "환불/RP_부분환불 & 환불/R5_지급불가항목"
+    ]
+  },
+  {
+    "chat_id": "6ab22a195e372d2e6556",
+    "state": "closed",
+    "created_at": 1790061081391,
+    "first_opened_at": 1790061231168,
+    "opened_at": 1790062421636,
+    "closed_at": 1790063938070,
+    "tags": [
+      "문의/Q2_서비스",
+      "안내/A2_서비스",
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기",
+      "환불/R10_정책",
+      "환불/RP_부분환불",
+      "환불/R1_기타"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q2_서비스",
+        "category": "문의",
+        "code": "Q2",
+        "name": "서비스",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A2_서비스",
+        "category": "안내",
+        "code": "A2",
+        "name": "서비스",
+        "prefix": "A"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q2_서비스 & 안내/A2_서비스",
+      "문의/Q2_서비스 & 문의/Q6_환불요청",
+      "문의/Q2_서비스 & 처리/M1_답변대기",
+      "문의/Q2_서비스 & 환불/R10_정책",
+      "문의/Q2_서비스 & 환불/RP_부분환불",
+      "문의/Q2_서비스 & 환불/R1_기타",
+      "안내/A2_서비스 & 문의/Q6_환불요청",
+      "안내/A2_서비스 & 처리/M1_답변대기",
+      "안내/A2_서비스 & 환불/R10_정책",
+      "안내/A2_서비스 & 환불/RP_부분환불",
+      "안내/A2_서비스 & 환불/R1_기타",
+      "문의/Q6_환불요청 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R1_기타",
+      "처리/M1_답변대기 & 환불/R10_정책",
+      "처리/M1_답변대기 & 환불/RP_부분환불",
+      "처리/M1_답변대기 & 환불/R1_기타",
+      "환불/R10_정책 & 환불/RP_부분환불",
+      "환불/R10_정책 & 환불/R1_기타",
+      "환불/RP_부분환불 & 환불/R1_기타"
+    ]
+  },
+  {
+    "chat_id": "6ab232bfdf94ea1c3553",
+    "state": "closed",
+    "created_at": 1790063295922,
+    "first_opened_at": 1790063365145,
+    "opened_at": 1790063365145,
+    "closed_at": 1790064487762,
+    "tags": [
+      "유선IVR",
+      "문의/Q8_환불이후",
+      "안내/A8_환불이후"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q8_환불이후",
+        "category": "문의",
+        "code": "Q8",
+        "name": "환불이후",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A8_환불이후",
+        "category": "안내",
+        "code": "A8",
+        "name": "환불이후",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 문의/Q8_환불이후",
+      "유선IVR & 안내/A8_환불이후",
+      "문의/Q8_환불이후 & 안내/A8_환불이후"
+    ]
+  },
+  {
+    "chat_id": "6ab233fc0ab75c6411eb",
+    "state": "closed",
+    "created_at": 1790063612051,
+    "first_opened_at": 1790063718089,
+    "opened_at": 1790063718089,
+    "closed_at": 1790064482744,
+    "tags": [
+      "문의/Q2_서비스",
+      "안내/A2_서비스",
+      "처리/M8_재청구"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q2_서비스",
+        "category": "문의",
+        "code": "Q2",
+        "name": "서비스",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A2_서비스",
+        "category": "안내",
+        "code": "A2",
+        "name": "서비스",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M8_재청구",
+        "category": "처리",
+        "code": "M8",
+        "name": "재청구",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q2_서비스 & 안내/A2_서비스",
+      "문의/Q2_서비스 & 처리/M8_재청구",
+      "안내/A2_서비스 & 처리/M8_재청구"
+    ]
+  },
+  {
+    "chat_id": "6ab231bd2d4ab9f3b6d3",
+    "state": "closed",
+    "created_at": 1790063037191,
+    "first_opened_at": 1790063073576,
+    "opened_at": 1790063073576,
+    "closed_at": 1790064395742,
+    "tags": [
+      "유선IVR",
+      "문의/Q3_진행상황",
+      "안내/A3_진행상황"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q3_진행상황",
+        "category": "문의",
+        "code": "Q3",
+        "name": "진행상황",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A3_진행상황",
+        "category": "안내",
+        "code": "A3",
+        "name": "진행상황",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 문의/Q3_진행상황",
+      "유선IVR & 안내/A3_진행상황",
+      "문의/Q3_진행상황 & 안내/A3_진행상황"
+    ]
+  },
+  {
+    "chat_id": "6ab23311b3c9ef19c2bf",
+    "state": "closed",
+    "created_at": 1790063377743,
+    "first_opened_at": 1790063442211,
+    "opened_at": 1790063442211,
+    "closed_at": 1790064353745,
+    "tags": [
+      "문의/Q2_서비스",
+      "안내/A2_서비스"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q2_서비스",
+        "category": "문의",
+        "code": "Q2",
+        "name": "서비스",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A2_서비스",
+        "category": "안내",
+        "code": "A2",
+        "name": "서비스",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q2_서비스 & 안내/A2_서비스"
+    ]
+  },
+  {
+    "chat_id": "6ab1ff3891aac09e9f2a",
+    "state": "closed",
+    "created_at": 1790050104601,
+    "first_opened_at": 1790062894437,
+    "opened_at": 1790062894437,
+    "closed_at": 1790063737494,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "처리/M8_재청구"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M8_재청구",
+        "category": "처리",
+        "code": "M8",
+        "name": "재청구",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
+      "에스컬레이션/진행안내 & 안내/A4_지급관련",
+      "에스컬레이션/진행안내 & 처리/M8_재청구",
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 처리/M8_재청구",
+      "안내/A4_지급관련 & 처리/M8_재청구"
+    ]
+  },
+  {
+    "chat_id": "6ab22480131b6468a905",
+    "state": "closed",
+    "created_at": 1790059648084,
+    "first_opened_at": 1790059648388,
+    "opened_at": 1790059648388,
+    "closed_at": 1790064232747,
+    "tags": [
+      "특성/E1_대외언급",
+      "문의/Q6_환불요청",
+      "환불/R11_중복신청",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "특성/E1_대외언급",
+        "category": "특성",
+        "code": "E1",
+        "name": "대외언급",
+        "prefix": "E"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "특성/E1_대외언급 & 문의/Q6_환불요청",
+      "특성/E1_대외언급 & 환불/R11_중복신청",
+      "특성/E1_대외언급 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R11_중복신청 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab22f6fa7070295a197",
+    "state": "closed",
+    "created_at": 1790062447691,
+    "first_opened_at": 1790062739070,
+    "opened_at": 1790062739070,
+    "closed_at": 1790064199711,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/R5_지급불가항목",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R5_지급불가항목",
+        "category": "환불",
+        "code": "R5",
+        "name": "지급불가항목",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R5_지급불가항목",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R5_지급불가항목",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "환불/R5_지급불가항목 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab229ed31f166a91bfa",
+    "state": "closed",
+    "created_at": 1790061037209,
+    "first_opened_at": 1790061090557,
+    "opened_at": 1790061090557,
+    "closed_at": 1790063448378,
+    "tags": [
+      "문의/Q12_기타변경",
+      "안내/A12_기타변경",
+      "문의/Q6_환불요청",
+      "처리/M10_재탐색",
+      "처리/M3_보험사변경"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q12_기타변경",
+        "category": "문의",
+        "code": "Q12",
+        "name": "기타변경",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A12_기타변경",
+        "category": "안내",
+        "code": "A12",
+        "name": "기타변경",
+        "prefix": "A"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M10_재탐색",
+        "category": "처리",
+        "code": "M10",
+        "name": "재탐색",
+        "prefix": "M"
+      },
+      {
+        "raw": "처리/M3_보험사변경",
+        "category": "처리",
+        "code": "M3",
+        "name": "보험사변경",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q12_기타변경 & 안내/A12_기타변경",
+      "문의/Q12_기타변경 & 문의/Q6_환불요청",
+      "문의/Q12_기타변경 & 처리/M10_재탐색",
+      "문의/Q12_기타변경 & 처리/M3_보험사변경",
+      "안내/A12_기타변경 & 문의/Q6_환불요청",
+      "안내/A12_기타변경 & 처리/M10_재탐색",
+      "안내/A12_기타변경 & 처리/M3_보험사변경",
+      "문의/Q6_환불요청 & 처리/M10_재탐색",
+      "문의/Q6_환불요청 & 처리/M3_보험사변경",
+      "처리/M10_재탐색 & 처리/M3_보험사변경"
+    ]
+  },
+  {
+    "chat_id": "6ab22ea57828ac430b8e",
+    "state": "closed",
+    "created_at": 1790062245497,
+    "first_opened_at": 1790062837610,
+    "opened_at": 1790062837610,
+    "closed_at": 1790064047727,
+    "tags": [
+      "진행안내/안내완료",
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/R5_지급불가항목",
+      "환불/R11_중복신청",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "진행안내/안내완료",
+        "category": "진행안내",
+        "code": "안내완료",
+        "name": "",
+        "prefix": "안"
+      },
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R5_지급불가항목",
+        "category": "환불",
+        "code": "R5",
+        "name": "지급불가항목",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "진행안내/안내완료 & 환불_지급확인_대기",
+      "진행안내/안내완료 & 문의/Q6_환불요청",
+      "진행안내/안내완료 & 환불/R5_지급불가항목",
+      "진행안내/안내완료 & 환불/R11_중복신청",
+      "진행안내/안내완료 & 환불/RP_부분환불",
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R5_지급불가항목",
+      "환불_지급확인_대기 & 환불/R11_중복신청",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R5_지급불가항목",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "환불/R5_지급불가항목 & 환불/R11_중복신청",
+      "환불/R5_지급불가항목 & 환불/RP_부분환불",
+      "환불/R11_중복신청 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab22fe10a8fb2c7e9f2",
+    "state": "closed",
+    "created_at": 1790062561050,
+    "first_opened_at": 1790062878253,
+    "opened_at": 1790062878253,
+    "closed_at": 1790064029768,
+    "tags": [
+      "문의/Q6_환불요청",
+      "안내/A8_환불이후"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A8_환불이후",
+        "category": "안내",
+        "code": "A8",
+        "name": "환불이후",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 안내/A8_환불이후"
+    ]
+  },
+  {
+    "chat_id": "6ab230914de716453115",
+    "state": "closed",
+    "created_at": 1790062737325,
+    "first_opened_at": 1790062823430,
+    "opened_at": 1790062823430,
+    "closed_at": 1790064000840,
+    "tags": [
+      "문의/Q2_서비스",
+      "안내/A2_서비스"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q2_서비스",
+        "category": "문의",
+        "code": "Q2",
+        "name": "서비스",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A2_서비스",
+        "category": "안내",
+        "code": "A2",
+        "name": "서비스",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q2_서비스 & 안내/A2_서비스"
+    ]
+  },
+  {
+    "chat_id": "6ab22c9b34d6c36e697e",
+    "state": "closed",
+    "created_at": 1790061723222,
+    "first_opened_at": 1790062363034,
+    "opened_at": 1790062363034,
+    "closed_at": 1790063991873,
+    "tags": [
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기",
+      "환불/R10_정책",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "처리/M1_답변대기 & 환불/R10_정책",
+      "처리/M1_답변대기 & 환불/RP_부분환불",
+      "환불/R10_정책 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab225c82f03a7fb6b4e",
+    "state": "closed",
+    "created_at": 1790059976198,
+    "first_opened_at": 1790060157331,
+    "opened_at": 1790062452958,
+    "closed_at": 1790063926785,
+    "tags": [
+      "문의/Q9_보험사변경",
+      "안내/A9_보험사변경"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q9_보험사변경",
+        "category": "문의",
+        "code": "Q9",
+        "name": "보험사변경",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A9_보험사변경",
+        "category": "안내",
+        "code": "A9",
+        "name": "보험사변경",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q9_보험사변경 & 안내/A9_보험사변경"
+    ]
+  },
+  {
+    "chat_id": "6ab22f366de9911f9950",
+    "state": "closed",
+    "created_at": 1790062390456,
+    "first_opened_at": 1790062724492,
+    "opened_at": 1790062724492,
+    "closed_at": 1790063879773,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "처리/M9_응답대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
+      "에스컬레이션/진행안내 & 안내/A4_지급관련",
+      "에스컬레이션/진행안내 & 처리/M9_응답대기",
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 처리/M9_응답대기",
+      "안내/A4_지급관련 & 처리/M9_응답대기"
+    ]
+  },
+  {
+    "chat_id": "6ab22a40f2bbacd1b6ae",
+    "state": "closed",
+    "created_at": 1790061121008,
+    "first_opened_at": 1790061382741,
+    "opened_at": 1790061382741,
+    "closed_at": 1790063872699,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q7_환불정책",
+      "안내/A7_환불정책",
+      "문의/Q6_환불요청",
+      "안내/A3_진행상황",
+      "안내/A4_지급관련",
+      "환불/R10_정책",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q7_환불정책",
+        "category": "문의",
+        "code": "Q7",
+        "name": "환불정책",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A7_환불정책",
+        "category": "안내",
+        "code": "A7",
+        "name": "환불정책",
+        "prefix": "A"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A3_진행상황",
+        "category": "안내",
+        "code": "A3",
+        "name": "진행상황",
+        "prefix": "A"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q7_환불정책",
+      "환불_지급확인_대기 & 안내/A7_환불정책",
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 안내/A3_진행상황",
+      "환불_지급확인_대기 & 안내/A4_지급관련",
+      "환불_지급확인_대기 & 환불/R10_정책",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "문의/Q7_환불정책 & 안내/A7_환불정책",
+      "문의/Q7_환불정책 & 문의/Q6_환불요청",
+      "문의/Q7_환불정책 & 안내/A3_진행상황",
+      "문의/Q7_환불정책 & 안내/A4_지급관련",
+      "문의/Q7_환불정책 & 환불/R10_정책",
+      "문의/Q7_환불정책 & 환불/RP_부분환불",
+      "안내/A7_환불정책 & 문의/Q6_환불요청",
+      "안내/A7_환불정책 & 안내/A3_진행상황",
+      "안내/A7_환불정책 & 안내/A4_지급관련",
+      "안내/A7_환불정책 & 환불/R10_정책",
+      "안내/A7_환불정책 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 안내/A3_진행상황",
+      "문의/Q6_환불요청 & 안내/A4_지급관련",
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "안내/A3_진행상황 & 안내/A4_지급관련",
+      "안내/A3_진행상황 & 환불/R10_정책",
+      "안내/A3_진행상황 & 환불/RP_부분환불",
+      "안내/A4_지급관련 & 환불/R10_정책",
+      "안내/A4_지급관련 & 환불/RP_부분환불",
+      "환불/R10_정책 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab2302fc75b1e90eb11",
+    "state": "closed",
+    "created_at": 1790062639822,
+    "first_opened_at": 1790062695240,
+    "opened_at": 1790062695240,
+    "closed_at": 1790063730815,
+    "tags": [
+      "문의/Q17_서류보완",
+      "처리/M9_응답대기",
+      "처리/M8_재청구"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q17_서류보완",
+        "category": "문의",
+        "code": "Q17",
+        "name": "서류보완",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "처리/M8_재청구",
+        "category": "처리",
+        "code": "M8",
+        "name": "재청구",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q17_서류보완 & 처리/M9_응답대기",
+      "문의/Q17_서류보완 & 처리/M8_재청구",
+      "처리/M9_응답대기 & 처리/M8_재청구"
+    ]
+  },
+  {
+    "chat_id": "6ab22ca2193271420d7e",
+    "state": "closed",
+    "created_at": 1790061730110,
+    "first_opened_at": 1790062763894,
+    "opened_at": 1790062763894,
+    "closed_at": 1790063642701,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q3_진행상황",
+      "안내/A3_진행상황"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q3_진행상황",
+        "category": "문의",
+        "code": "Q3",
+        "name": "진행상황",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A3_진행상황",
+        "category": "안내",
+        "code": "A3",
+        "name": "진행상황",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q3_진행상황",
+      "환불_지급확인_대기 & 안내/A3_진행상황",
+      "문의/Q3_진행상황 & 안내/A3_진행상황"
+    ]
+  },
+  {
+    "chat_id": "6ab22e518afe5aeed35b",
+    "state": "closed",
+    "created_at": 1790062161574,
+    "first_opened_at": 1790062262166,
+    "opened_at": 1790062262166,
+    "closed_at": 1790063564730,
+    "tags": [
+      "문의/Q2_서비스",
+      "안내/A2_서비스"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q2_서비스",
+        "category": "문의",
+        "code": "Q2",
+        "name": "서비스",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A2_서비스",
+        "category": "안내",
+        "code": "A2",
+        "name": "서비스",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q2_서비스 & 안내/A2_서비스"
+    ]
+  },
+  {
+    "chat_id": "6ab22df60de342fe3547",
+    "state": "closed",
+    "created_at": 1790062070062,
+    "first_opened_at": 1790062218370,
+    "opened_at": 1790062218370,
+    "closed_at": 1790062595677,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "처리/M1_답변대기",
+      "처리/M8_재청구"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "처리/M8_재청구",
+        "category": "처리",
+        "code": "M8",
+        "name": "재청구",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
+      "에스컬레이션/진행안내 & 안내/A4_지급관련",
+      "에스컬레이션/진행안내 & 처리/M1_답변대기",
+      "에스컬레이션/진행안내 & 처리/M8_재청구",
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 처리/M1_답변대기",
+      "문의/Q4_지급관련 & 처리/M8_재청구",
+      "안내/A4_지급관련 & 처리/M1_답변대기",
+      "안내/A4_지급관련 & 처리/M8_재청구",
+      "처리/M1_답변대기 & 처리/M8_재청구"
+    ]
+  },
+  {
+    "chat_id": "6ab22bf0c3bba2e27a69",
+    "state": "closed",
+    "created_at": 1790061552807,
+    "first_opened_at": 1790061806120,
+    "opened_at": 1790061806120,
+    "closed_at": 1790062886753,
+    "tags": [
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 처리/M1_답변대기"
+    ]
+  },
+  {
+    "chat_id": "6ab22ce5790442719478",
+    "state": "closed",
+    "created_at": 1790061797500,
+    "first_opened_at": 1790062034511,
+    "opened_at": 1790062034511,
+    "closed_at": 1790063797226,
+    "tags": [
+      "환불_지급확인_대기",
+      "특성/E3_중복고객"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "특성/E3_중복고객",
+        "category": "특성",
+        "code": "E3",
+        "name": "중복고객",
+        "prefix": "E"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 특성/E3_중복고객"
+    ]
+  },
+  {
+    "chat_id": "6ab224ff2c0ca11bec28",
+    "state": "closed",
+    "created_at": 1790059775186,
+    "first_opened_at": 1790060655698,
+    "opened_at": 1790061584882,
+    "closed_at": 1790062851806,
+    "tags": [
+      "진행안내/안내완료",
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "안내/A4_지급관련",
+      "처리/M9_응답대기",
+      "환불/R10_정책",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "진행안내/안내완료",
+        "category": "진행안내",
+        "code": "안내완료",
+        "name": "",
+        "prefix": "안"
+      },
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "진행안내/안내완료 & 환불_지급확인_대기",
+      "진행안내/안내완료 & 문의/Q6_환불요청",
+      "진행안내/안내완료 & 안내/A4_지급관련",
+      "진행안내/안내완료 & 처리/M9_응답대기",
+      "진행안내/안내완료 & 환불/R10_정책",
+      "진행안내/안내완료 & 환불/RP_부분환불",
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 안내/A4_지급관련",
+      "환불_지급확인_대기 & 처리/M9_응답대기",
+      "환불_지급확인_대기 & 환불/R10_정책",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 안내/A4_지급관련",
+      "문의/Q6_환불요청 & 처리/M9_응답대기",
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "안내/A4_지급관련 & 처리/M9_응답대기",
+      "안내/A4_지급관련 & 환불/R10_정책",
+      "안내/A4_지급관련 & 환불/RP_부분환불",
+      "처리/M9_응답대기 & 환불/R10_정책",
+      "처리/M9_응답대기 & 환불/RP_부분환불",
+      "환불/R10_정책 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab22711846d9fa4c9d8",
+    "state": "closed",
+    "created_at": 1790060305547,
+    "first_opened_at": 1790060593975,
+    "opened_at": 1790060593975,
+    "closed_at": 1790062246695,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/RP_부분환불",
+      "환불/R11_중복신청"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "환불_지급확인_대기 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "환불/RP_부분환불 & 환불/R11_중복신청"
+    ]
+  },
+  {
+    "chat_id": "6ab228cae573e3543fe5",
+    "state": "closed",
+    "created_at": 1790060746944,
+    "first_opened_at": 1790061019076,
+    "opened_at": 1790061019076,
+    "closed_at": 1790062842766,
+    "tags": [
+      "환불_지급불가_사유확인",
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급불가_사유확인",
+        "category": "기타",
+        "code": "환불_지급불가_사유확인",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급불가_사유확인 & 문의/Q6_환불요청",
+      "환불_지급불가_사유확인 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 처리/M1_답변대기"
+    ]
+  },
+  {
+    "chat_id": "6ab22b5f40f28287ea81",
+    "state": "closed",
+    "created_at": 1790061407271,
+    "first_opened_at": 1790061744066,
+    "opened_at": 1790061744066,
+    "closed_at": 1790062633746,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q3_진행상황",
+      "안내/A3_진행상황"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q3_진행상황",
+        "category": "문의",
+        "code": "Q3",
+        "name": "진행상황",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A3_진행상황",
+        "category": "안내",
+        "code": "A3",
+        "name": "진행상황",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q3_진행상황",
+      "에스컬레이션/진행안내 & 안내/A3_진행상황",
+      "문의/Q3_진행상황 & 안내/A3_진행상황"
+    ]
+  },
+  {
+    "chat_id": "6ab2281006b294ceb2ea",
+    "state": "closed",
+    "created_at": 1790060560034,
+    "first_opened_at": 1790060892522,
+    "opened_at": 1790060892522,
+    "closed_at": 1790062522744,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "처리/M8_재청구"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M8_재청구",
+        "category": "처리",
+        "code": "M8",
+        "name": "재청구",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
+      "에스컬레이션/진행안내 & 안내/A4_지급관련",
+      "에스컬레이션/진행안내 & 처리/M8_재청구",
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 처리/M8_재청구",
+      "안내/A4_지급관련 & 처리/M8_재청구"
+    ]
+  },
+  {
+    "chat_id": "6ab22995e8a9403863d3",
+    "state": "closed",
+    "created_at": 1790060949959,
+    "first_opened_at": 1790061343715,
+    "opened_at": 1790061343715,
+    "closed_at": 1790062372727,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q9_보험사변경",
+      "처리/M9_응답대기",
+      "처리/M3_보험사변경"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q9_보험사변경",
+        "category": "문의",
+        "code": "Q9",
+        "name": "보험사변경",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "처리/M3_보험사변경",
+        "category": "처리",
+        "code": "M3",
+        "name": "보험사변경",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q9_보험사변경",
+      "환불_지급확인_대기 & 처리/M9_응답대기",
+      "환불_지급확인_대기 & 처리/M3_보험사변경",
+      "문의/Q9_보험사변경 & 처리/M9_응답대기",
+      "문의/Q9_보험사변경 & 처리/M3_보험사변경",
+      "처리/M9_응답대기 & 처리/M3_보험사변경"
+    ]
+  },
+  {
+    "chat_id": "6ab22a86efeea7bfbe4c",
+    "state": "closed",
+    "created_at": 1790061190988,
+    "first_opened_at": 1790061300243,
+    "opened_at": 1790061300243,
+    "closed_at": 1790061671285,
+    "tags": [
+      "문의/Q17_서류보완",
+      "안내/A17_서류보완",
+      "환불/R6_서류보완",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q17_서류보완",
+        "category": "문의",
+        "code": "Q17",
+        "name": "서류보완",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A17_서류보완",
+        "category": "안내",
+        "code": "A17",
+        "name": "서류보완",
+        "prefix": "A"
+      },
+      {
+        "raw": "환불/R6_서류보완",
+        "category": "환불",
+        "code": "R6",
+        "name": "서류보완",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q17_서류보완 & 안내/A17_서류보완",
+      "문의/Q17_서류보완 & 환불/R6_서류보완",
+      "문의/Q17_서류보완 & 환불/RP_부분환불",
+      "안내/A17_서류보완 & 환불/R6_서류보완",
+      "안내/A17_서류보완 & 환불/RP_부분환불",
+      "환불/R6_서류보완 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab226d02c881b1d2d50",
+    "state": "closed",
+    "created_at": 1790060240187,
+    "first_opened_at": 1790060351985,
+    "opened_at": 1790060351985,
+    "closed_at": 1790061575752,
+    "tags": [
+      "문의/Q11_병명변경",
+      "처리/M4_병명변경"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q11_병명변경",
+        "category": "문의",
+        "code": "Q11",
+        "name": "병명변경",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M4_병명변경",
+        "category": "처리",
+        "code": "M4",
+        "name": "병명변경",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q11_병명변경 & 처리/M4_병명변경"
+    ]
+  },
+  {
+    "chat_id": "6ab228e6f0dbbb249877",
+    "state": "closed",
+    "created_at": 1790060774999,
+    "first_opened_at": 1790060895285,
+    "opened_at": 1790060895285,
+    "closed_at": 1790061985721,
+    "tags": [
+      "문의/Q9_보험사변경",
+      "처리/M9_응답대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q9_보험사변경",
+        "category": "문의",
+        "code": "Q9",
+        "name": "보험사변경",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q9_보험사변경 & 처리/M9_응답대기"
+    ]
+  },
+  {
+    "chat_id": "6ab228f4ef3794d68192",
+    "state": "closed",
+    "created_at": 1790060788986,
+    "first_opened_at": 1790061081183,
+    "opened_at": 1790061081183,
+    "closed_at": 1790061972804,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/R11_중복신청",
+      "환불/R5_지급불가항목",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R5_지급불가항목",
+        "category": "환불",
+        "code": "R5",
+        "name": "지급불가항목",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R11_중복신청",
+      "환불_지급확인_대기 & 환불/R5_지급불가항목",
+      "환불_지급확인_대기 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/R5_지급불가항목",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R11_중복신청 & 환불/R5_지급불가항목",
+      "환불/R11_중복신청 & 환불/RT_전체환불",
+      "환불/R5_지급불가항목 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab22925544ea76ddda6",
+    "state": "closed",
+    "created_at": 1790060837351,
+    "first_opened_at": 1790060933353,
+    "opened_at": 1790060933353,
+    "closed_at": 1790061836764,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
+      "에스컬레이션/진행안내 & 안내/A4_지급관련",
+      "에스컬레이션/진행안내 & 처리/M1_답변대기",
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 처리/M1_답변대기",
+      "안내/A4_지급관련 & 처리/M1_답변대기"
+    ]
+  },
+  {
+    "chat_id": "6ab22590ef96dbca213c",
+    "state": "closed",
+    "created_at": 1790059920988,
+    "first_opened_at": 1790060262881,
+    "opened_at": 1790060262881,
+    "closed_at": 1790061814692,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기",
+      "환불/R10_정책",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 처리/M1_답변대기",
+      "환불_지급확인_대기 & 환불/R10_정책",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "처리/M1_답변대기 & 환불/R10_정책",
+      "처리/M1_답변대기 & 환불/RP_부분환불",
+      "환불/R10_정책 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab222f3845253b9045f",
+    "state": "closed",
+    "created_at": 1790059251549,
+    "first_opened_at": 1790059395621,
+    "opened_at": 1790059395621,
+    "closed_at": 1790061158762,
+    "tags": [
+      "문의/Q6_환불요청",
+      "환불/R3_변심",
+      "환불/RP_부분환불",
+      "처리/M1_답변대기",
+      "환불/R10_정책"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R3_변심",
+        "category": "환불",
+        "code": "R3",
+        "name": "변심",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 환불/R3_변심",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "환불/R3_변심 & 환불/RP_부분환불",
+      "환불/R3_변심 & 처리/M1_답변대기",
+      "환불/R3_변심 & 환불/R10_정책",
+      "환불/RP_부분환불 & 처리/M1_답변대기",
+      "환불/RP_부분환불 & 환불/R10_정책",
+      "처리/M1_답변대기 & 환불/R10_정책"
+    ]
+  },
+  {
+    "chat_id": "6ab228b4182586474474",
+    "state": "closed",
+    "created_at": 1790060724104,
+    "first_opened_at": 1790060874825,
+    "opened_at": 1790060874825,
+    "closed_at": 1790061719759,
+    "tags": [
+      "문의/Q17_서류보완",
+      "처리/M9_응답대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q17_서류보완",
+        "category": "문의",
+        "code": "Q17",
+        "name": "서류보완",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q17_서류보완 & 처리/M9_응답대기"
+    ]
+  },
+  {
+    "chat_id": "6ab227738bfe2c1d5ddd",
+    "state": "closed",
+    "created_at": 1790060403579,
+    "first_opened_at": 1790060716542,
+    "opened_at": 1790060716542,
+    "closed_at": 1790061672742,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
+      "에스컬레이션/진행안내 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 안내/A4_지급관련"
+    ]
+  },
+  {
+    "chat_id": "6ab2286808e38d471ed9",
+    "state": "closed",
+    "created_at": 1790060648043,
+    "first_opened_at": 1790060825080,
+    "opened_at": 1790060825080,
+    "closed_at": 1790061144617,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "처리/M9_응답대기",
+      "환불/R11_중복신청",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 처리/M9_응답대기",
+      "환불_지급확인_대기 & 환불/R11_중복신청",
+      "환불_지급확인_대기 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 처리/M9_응답대기",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "처리/M9_응답대기 & 환불/R11_중복신청",
+      "처리/M9_응답대기 & 환불/RT_전체환불",
+      "환불/R11_중복신청 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab2286f79cfc336cd7f",
+    "state": "closed",
+    "created_at": 1790060655506,
+    "first_opened_at": 1790060768366,
+    "opened_at": 1790060768366,
+    "closed_at": 1790060994274,
+    "tags": [
+      "환불_지급불가_사유확인",
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기",
+      "환불/R11_중복신청",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급불가_사유확인",
+        "category": "기타",
+        "code": "환불_지급불가_사유확인",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급불가_사유확인 & 문의/Q6_환불요청",
+      "환불_지급불가_사유확인 & 처리/M1_답변대기",
+      "환불_지급불가_사유확인 & 환불/R11_중복신청",
+      "환불_지급불가_사유확인 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "처리/M1_답변대기 & 환불/R11_중복신청",
+      "처리/M1_답변대기 & 환불/RT_전체환불",
+      "환불/R11_중복신청 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab1d7b0c7b13abee5da",
+    "state": "closed",
+    "created_at": 1790039984825,
+    "first_opened_at": 1790042499586,
+    "opened_at": 1790049957577,
+    "closed_at": 1790061510747,
+    "tags": [
+      "진행안내/안내완료",
+      "환불_지급불가_사유확인",
+      "처리/M1_답변대기",
+      "문의/Q6_환불요청",
+      "환불/R11_중복신청",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "진행안내/안내완료",
+        "category": "진행안내",
+        "code": "안내완료",
+        "name": "",
+        "prefix": "안"
+      },
+      {
+        "raw": "환불_지급불가_사유확인",
+        "category": "기타",
+        "code": "환불_지급불가_사유확인",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "진행안내/안내완료 & 환불_지급불가_사유확인",
+      "진행안내/안내완료 & 처리/M1_답변대기",
+      "진행안내/안내완료 & 문의/Q6_환불요청",
+      "진행안내/안내완료 & 환불/R11_중복신청",
+      "진행안내/안내완료 & 환불/RT_전체환불",
+      "환불_지급불가_사유확인 & 처리/M1_답변대기",
+      "환불_지급불가_사유확인 & 문의/Q6_환불요청",
+      "환불_지급불가_사유확인 & 환불/R11_중복신청",
+      "환불_지급불가_사유확인 & 환불/RT_전체환불",
+      "처리/M1_답변대기 & 문의/Q6_환불요청",
+      "처리/M1_답변대기 & 환불/R11_중복신청",
+      "처리/M1_답변대기 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R11_중복신청 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab1bbc9f039b8315d02",
+    "state": "closed",
+    "created_at": 1790032841990,
+    "first_opened_at": 1790060564839,
+    "opened_at": 1790060564839,
+    "closed_at": 1790061475869,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q3_진행상황",
+      "안내/A3_진행상황"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q3_진행상황",
+        "category": "문의",
+        "code": "Q3",
+        "name": "진행상황",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A3_진행상황",
+        "category": "안내",
+        "code": "A3",
+        "name": "진행상황",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q3_진행상황",
+      "에스컬레이션/진행안내 & 안내/A3_진행상황",
+      "문의/Q3_진행상황 & 안내/A3_진행상황"
+    ]
+  },
+  {
+    "chat_id": "6ab22696eecc7b068bd6",
+    "state": "closed",
+    "created_at": 1790060182984,
+    "first_opened_at": 1790060471399,
+    "opened_at": 1790060471399,
+    "closed_at": 1790061339796,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q17_서류보완",
+      "처리/M8_재청구"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q17_서류보완",
+        "category": "문의",
+        "code": "Q17",
+        "name": "서류보완",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M8_재청구",
+        "category": "처리",
+        "code": "M8",
+        "name": "재청구",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q17_서류보완",
+      "에스컬레이션/진행안내 & 처리/M8_재청구",
+      "문의/Q17_서류보완 & 처리/M8_재청구"
+    ]
+  },
+  {
+    "chat_id": "6ab226b3aaeff85c3325",
+    "state": "closed",
+    "created_at": 1790060211706,
+    "first_opened_at": 1790060311264,
+    "opened_at": 1790060311264,
+    "closed_at": 1790060683349,
+    "tags": [
+      "진행안내/확인서안내",
+      "진행안내/안내완료"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "진행안내/확인서안내",
+        "category": "진행안내",
+        "code": "확인서안내",
+        "name": "",
+        "prefix": "확"
+      },
+      {
+        "raw": "진행안내/안내완료",
+        "category": "진행안내",
+        "code": "안내완료",
+        "name": "",
+        "prefix": "안"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "진행안내/확인서안내 & 진행안내/안내완료"
+    ]
+  },
+  {
+    "chat_id": "6ab2260768be7810b63b",
+    "state": "closed",
+    "created_at": 1790060039434,
+    "first_opened_at": 1790060245704,
+    "opened_at": 1790060245704,
+    "closed_at": 1790061090726,
+    "tags": [
+      "문의/Q2_서비스",
+      "안내/A2_서비스"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q2_서비스",
+        "category": "문의",
+        "code": "Q2",
+        "name": "서비스",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A2_서비스",
+        "category": "안내",
+        "code": "A2",
+        "name": "서비스",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q2_서비스 & 안내/A2_서비스"
+    ]
+  },
+  {
+    "chat_id": "6ab2200d362f1bb63cfc",
+    "state": "closed",
+    "created_at": 1790058509233,
+    "first_opened_at": 1790058812162,
+    "opened_at": 1790058812162,
+    "closed_at": 1790060329756,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/R11_중복신청",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R11_중복신청",
+      "환불_지급확인_대기 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R11_중복신청 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab22259950dcceddf7c",
+    "state": "closed",
+    "created_at": 1790059097614,
+    "first_opened_at": 1790059193997,
+    "opened_at": 1790059193997,
+    "closed_at": 1790060320905,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/R8_실손미가입",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R8_실손미가입",
+        "category": "환불",
+        "code": "R8",
+        "name": "실손미가입",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R8_실손미가입",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R8_실손미가입",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "환불/R8_실손미가입 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab2248f5b0e01e08785",
+    "state": "closed",
+    "created_at": 1790059663378,
+    "first_opened_at": 1790059960973,
+    "opened_at": 1790059960973,
+    "closed_at": 1790060628742,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/R1_기타",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R1_기타",
+      "환불_지급확인_대기 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R1_기타",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R1_기타 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab2230a986de6f4ee16",
+    "state": "closed",
+    "created_at": 1790059274630,
+    "first_opened_at": 1790059446907,
+    "opened_at": 1790059446907,
+    "closed_at": 1790059936032,
+    "tags": [
+      "환불_지급확인_대기",
+      "환불/RT_전체환불",
+      "문의/Q6_환불요청",
+      "환불/R8_실손미가입",
+      "환불/R11_중복신청",
+      "환불/R1_기타"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R8_실손미가입",
+        "category": "환불",
+        "code": "R8",
+        "name": "실손미가입",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 환불/RT_전체환불",
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R8_실손미가입",
+      "환불_지급확인_대기 & 환불/R11_중복신청",
+      "환불_지급확인_대기 & 환불/R1_기타",
+      "환불/RT_전체환불 & 문의/Q6_환불요청",
+      "환불/RT_전체환불 & 환불/R8_실손미가입",
+      "환불/RT_전체환불 & 환불/R11_중복신청",
+      "환불/RT_전체환불 & 환불/R1_기타",
+      "문의/Q6_환불요청 & 환불/R8_실손미가입",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/R1_기타",
+      "환불/R8_실손미가입 & 환불/R11_중복신청",
+      "환불/R8_실손미가입 & 환불/R1_기타",
+      "환불/R11_중복신청 & 환불/R1_기타"
+    ]
+  },
+  {
+    "chat_id": "6ab220a73e4d9fda9644",
+    "state": "closed",
+    "created_at": 1790058663261,
+    "first_opened_at": 1790059372360,
+    "opened_at": 1790059372360,
+    "closed_at": 1790059645362,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/R4_보험사오선택",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R4_보험사오선택",
+        "category": "환불",
+        "code": "R4",
+        "name": "보험사오선택",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R4_보험사오선택",
+      "환불_지급확인_대기 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R4_보험사오선택",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R4_보험사오선택 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab211a1811263d6155a",
+    "state": "closed",
+    "created_at": 1790054817536,
+    "first_opened_at": 1790054865732,
+    "opened_at": 1790054865732,
+    "closed_at": 1790059630690,
+    "tags": [
+      "특성/E4_유선요청",
+      "처리/M9_응답대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "특성/E4_유선요청",
+        "category": "특성",
+        "code": "E4",
+        "name": "유선요청",
+        "prefix": "E"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "특성/E4_유선요청 & 처리/M9_응답대기"
+    ]
+  },
+  {
+    "chat_id": "6ab2130092d45a1e1119",
+    "state": "closed",
+    "created_at": 1790055168605,
+    "first_opened_at": 1790055318002,
+    "opened_at": 1790055318002,
+    "closed_at": 1790059480568,
+    "tags": [
+      "환불_지급불가_사유확인",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "환불/RT_전체환불",
+      "환불/R1_기타"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급불가_사유확인",
+        "category": "기타",
+        "code": "환불_지급불가_사유확인",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급불가_사유확인 & 문의/Q4_지급관련",
+      "환불_지급불가_사유확인 & 안내/A4_지급관련",
+      "환불_지급불가_사유확인 & 환불/RT_전체환불",
+      "환불_지급불가_사유확인 & 환불/R1_기타",
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 환불/RT_전체환불",
+      "문의/Q4_지급관련 & 환불/R1_기타",
+      "안내/A4_지급관련 & 환불/RT_전체환불",
+      "안내/A4_지급관련 & 환불/R1_기타",
+      "환불/RT_전체환불 & 환불/R1_기타"
+    ]
+  },
+  {
+    "chat_id": "6ab2226173f9034ad184",
+    "state": "closed",
+    "created_at": 1790059105482,
+    "first_opened_at": 1790059197298,
+    "opened_at": 1790059197298,
+    "closed_at": 1790059472125,
+    "tags": [
+      "문의/Q9_보험사변경",
+      "안내/A9_보험사변경"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q9_보험사변경",
+        "category": "문의",
+        "code": "Q9",
+        "name": "보험사변경",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A9_보험사변경",
+        "category": "안내",
+        "code": "A9",
+        "name": "보험사변경",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q9_보험사변경 & 안내/A9_보험사변경"
+    ]
+  },
+  {
+    "chat_id": "6ab20fc71f8f25402463",
+    "state": "closed",
+    "created_at": 1790054343135,
+    "first_opened_at": 1790059158425,
+    "opened_at": 1790059158425,
+    "closed_at": 1790060049785,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/R5_지급불가항목",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R5_지급불가항목",
+        "category": "환불",
+        "code": "R5",
+        "name": "지급불가항목",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R5_지급불가항목",
+      "환불_지급확인_대기 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R5_지급불가항목",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R5_지급불가항목 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab21fe4a028a0ab8258",
+    "state": "closed",
+    "created_at": 1790058468661,
+    "first_opened_at": 1790058617585,
+    "opened_at": 1790058617585,
+    "closed_at": 1790060045729,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "처리/M8_재청구"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M8_재청구",
+        "category": "처리",
+        "code": "M8",
+        "name": "재청구",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
+      "에스컬레이션/진행안내 & 안내/A4_지급관련",
+      "에스컬레이션/진행안내 & 처리/M8_재청구",
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 처리/M8_재청구",
+      "안내/A4_지급관련 & 처리/M8_재청구"
+    ]
+  },
+  {
+    "chat_id": "6ab21b31557b2ad79ffd",
+    "state": "closed",
+    "created_at": 1790057265354,
+    "first_opened_at": 1790057449664,
+    "opened_at": 1790059055793,
+    "closed_at": 1790060036864,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "처리/M9_응답대기",
+      "환불/R10_정책",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M9_응답대기",
+        "category": "처리",
+        "code": "M9",
+        "name": "응답대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 처리/M9_응답대기",
+      "환불_지급확인_대기 & 환불/R10_정책",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 처리/M9_응답대기",
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "처리/M9_응답대기 & 환불/R10_정책",
+      "처리/M9_응답대기 & 환불/RP_부분환불",
+      "환불/R10_정책 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab2211c16e471140071",
+    "state": "closed",
+    "created_at": 1790058780098,
+    "first_opened_at": 1790058886527,
+    "opened_at": 1790058886527,
+    "closed_at": 1790059382453,
+    "tags": [
+      "처리/M1_답변대기",
+      "문의/Q6_환불요청",
+      "환불/R8_실손미가입",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R8_실손미가입",
+        "category": "환불",
+        "code": "R8",
+        "name": "실손미가입",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "처리/M1_답변대기 & 문의/Q6_환불요청",
+      "처리/M1_답변대기 & 환불/R8_실손미가입",
+      "처리/M1_답변대기 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R8_실손미가입",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "환불/R8_실손미가입 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab2213e7dad9c9e1ede",
+    "state": "closed",
+    "created_at": 1790058814519,
+    "first_opened_at": 1790059062790,
+    "opened_at": 1790059062790,
+    "closed_at": 1790059351468,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/RT_전체환불",
+      "환불/R5_지급불가항목"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R5_지급불가항목",
+        "category": "환불",
+        "code": "R5",
+        "name": "지급불가항목",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/RT_전체환불",
+      "환불_지급확인_대기 & 환불/R5_지급불가항목",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R5_지급불가항목",
+      "환불/RT_전체환불 & 환불/R5_지급불가항목"
+    ]
+  },
+  {
+    "chat_id": "6ab20e41e180dfed1434",
+    "state": "closed",
+    "created_at": 1790053953931,
+    "first_opened_at": 1790058843378,
+    "opened_at": 1790058843378,
+    "closed_at": 1790059330714,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/R10_정책",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R10_정책",
+      "환불_지급확인_대기 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "환불/R10_정책 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab21ed860edf571e370",
+    "state": "closed",
+    "created_at": 1790058200402,
+    "first_opened_at": 1790058497177,
+    "opened_at": 1790058497177,
+    "closed_at": 1790059665748,
+    "tags": [
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "처리/M1_답변대기",
+      "문의/Q6_환불요청",
+      "환불/R8_실손미가입",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R8_실손미가입",
+        "category": "환불",
+        "code": "R8",
+        "name": "실손미가입",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 처리/M1_답변대기",
+      "문의/Q4_지급관련 & 문의/Q6_환불요청",
+      "문의/Q4_지급관련 & 환불/R8_실손미가입",
+      "문의/Q4_지급관련 & 환불/RT_전체환불",
+      "안내/A4_지급관련 & 처리/M1_답변대기",
+      "안내/A4_지급관련 & 문의/Q6_환불요청",
+      "안내/A4_지급관련 & 환불/R8_실손미가입",
+      "안내/A4_지급관련 & 환불/RT_전체환불",
+      "처리/M1_답변대기 & 문의/Q6_환불요청",
+      "처리/M1_답변대기 & 환불/R8_실손미가입",
+      "처리/M1_답변대기 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R8_실손미가입",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R8_실손미가입 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab21e4c4437391eee0e",
+    "state": "closed",
+    "created_at": 1790058060286,
+    "first_opened_at": 1790058110611,
+    "opened_at": 1790058110611,
+    "closed_at": 1790059662745,
+    "tags": [
+      "문의/Q6_환불요청",
+      "처리/M10_재탐색",
+      "환불/R8_실손미가입",
+      "환불/RT_전체환불",
+      "문의/Q18_타채널",
+      "안내/A18_타채널"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M10_재탐색",
+        "category": "처리",
+        "code": "M10",
+        "name": "재탐색",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R8_실손미가입",
+        "category": "환불",
+        "code": "R8",
+        "name": "실손미가입",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "문의/Q18_타채널",
+        "category": "문의",
+        "code": "Q18",
+        "name": "타채널",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A18_타채널",
+        "category": "안내",
+        "code": "A18",
+        "name": "타채널",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 처리/M10_재탐색",
+      "문의/Q6_환불요청 & 환불/R8_실손미가입",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 문의/Q18_타채널",
+      "문의/Q6_환불요청 & 안내/A18_타채널",
+      "처리/M10_재탐색 & 환불/R8_실손미가입",
+      "처리/M10_재탐색 & 환불/RT_전체환불",
+      "처리/M10_재탐색 & 문의/Q18_타채널",
+      "처리/M10_재탐색 & 안내/A18_타채널",
+      "환불/R8_실손미가입 & 환불/RT_전체환불",
+      "환불/R8_실손미가입 & 문의/Q18_타채널",
+      "환불/R8_실손미가입 & 안내/A18_타채널",
+      "환불/RT_전체환불 & 문의/Q18_타채널",
+      "환불/RT_전체환불 & 안내/A18_타채널",
+      "문의/Q18_타채널 & 안내/A18_타채널"
+    ]
+  },
+  {
+    "chat_id": "6ab21ef22eea3485445e",
+    "state": "closed",
+    "created_at": 1790058226199,
+    "first_opened_at": 1790058416335,
+    "opened_at": 1790058416335,
+    "closed_at": 1790059625714,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기",
+      "환불/R10_정책",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 처리/M1_답변대기",
+      "환불_지급확인_대기 & 환불/R10_정책",
+      "환불_지급확인_대기 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "처리/M1_답변대기 & 환불/R10_정책",
+      "처리/M1_답변대기 & 환불/RT_전체환불",
+      "환불/R10_정책 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab220cf54ac180275fc",
+    "state": "closed",
+    "created_at": 1790058703353,
+    "first_opened_at": 1790058748402,
+    "opened_at": 1790058748402,
+    "closed_at": 1790059637008,
+    "tags": [
+      "유선IVR",
+      "특성/E3_중복고객"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "유선IVR",
+        "category": "기타",
+        "code": "유선IVR",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "특성/E3_중복고객",
+        "category": "특성",
+        "code": "E3",
+        "name": "중복고객",
+        "prefix": "E"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "유선IVR & 특성/E3_중복고객"
+    ]
+  },
+  {
+    "chat_id": "6ab219203d4c1bcdb171",
+    "state": "closed",
+    "created_at": 1790056736258,
+    "first_opened_at": 1790057428200,
+    "opened_at": 1790057428200,
+    "closed_at": 1790058914638,
+    "tags": [
+      "문의/Q6_환불요청",
+      "환불/R10_정책",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "환불/R10_정책 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab21ac7d9ada1d7ed96",
+    "state": "closed",
+    "created_at": 1790057159896,
+    "first_opened_at": 1790057642589,
+    "opened_at": 1790057642589,
+    "closed_at": 1790058871983,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "환불/R1_기타",
+      "환불/RT_전체환불",
+      "특성/E2_불만"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "특성/E2_불만",
+        "category": "특성",
+        "code": "E2",
+        "name": "불만",
+        "prefix": "E"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 환불/R1_기타",
+      "환불_지급확인_대기 & 환불/RT_전체환불",
+      "환불_지급확인_대기 & 특성/E2_불만",
+      "문의/Q6_환불요청 & 환불/R1_기타",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 특성/E2_불만",
+      "환불/R1_기타 & 환불/RT_전체환불",
+      "환불/R1_기타 & 특성/E2_불만",
+      "환불/RT_전체환불 & 특성/E2_불만"
+    ]
+  },
+  {
+    "chat_id": "6ab21d8f9cb14854fb0d",
+    "state": "closed",
+    "created_at": 1790057871648,
+    "first_opened_at": 1790058158033,
+    "opened_at": 1790058158033,
+    "closed_at": 1790058857235,
+    "tags": [
+      "문의/Q1_서비스신청",
+      "안내/A1_서비스신청"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q1_서비스신청",
+        "category": "문의",
+        "code": "Q1",
+        "name": "서비스신청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A1_서비스신청",
+        "category": "안내",
+        "code": "A1",
+        "name": "서비스신청",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q1_서비스신청 & 안내/A1_서비스신청"
+    ]
+  },
+  {
+    "chat_id": "6ab211f736b08f240af9",
+    "state": "closed",
+    "created_at": 1790054903229,
+    "first_opened_at": 1790055109401,
+    "opened_at": 1790055109401,
+    "closed_at": 1790058841814,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
+      "에스컬레이션/진행안내 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 안내/A4_지급관련"
+    ]
+  },
+  {
+    "chat_id": "6ab21a67cc31d592281f",
+    "state": "closed",
+    "created_at": 1790057063876,
+    "first_opened_at": 1790057139888,
+    "opened_at": 1790058777231,
+    "closed_at": 1790059431735,
+    "tags": [
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "처리/M8_재청구"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M8_재청구",
+        "category": "처리",
+        "code": "M8",
+        "name": "재청구",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 처리/M8_재청구",
+      "안내/A4_지급관련 & 처리/M8_재청구"
+    ]
+  },
+  {
+    "chat_id": "6ab2109202a67eb49d38",
+    "state": "closed",
+    "created_at": 1790054546017,
+    "first_opened_at": 1790054771956,
+    "opened_at": 1790057914125,
+    "closed_at": 1790059426746,
+    "tags": [
+      "문의/Q6_환불요청",
+      "환불/R11_중복신청",
+      "환불/RP_부분환불",
+      "안내/A3_진행상황",
+      "특성/E2_불만"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "안내/A3_진행상황",
+        "category": "안내",
+        "code": "A3",
+        "name": "진행상황",
+        "prefix": "A"
+      },
+      {
+        "raw": "특성/E2_불만",
+        "category": "특성",
+        "code": "E2",
+        "name": "불만",
+        "prefix": "E"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 안내/A3_진행상황",
+      "문의/Q6_환불요청 & 특성/E2_불만",
+      "환불/R11_중복신청 & 환불/RP_부분환불",
+      "환불/R11_중복신청 & 안내/A3_진행상황",
+      "환불/R11_중복신청 & 특성/E2_불만",
+      "환불/RP_부분환불 & 안내/A3_진행상황",
+      "환불/RP_부분환불 & 특성/E2_불만",
+      "안내/A3_진행상황 & 특성/E2_불만"
+    ]
+  },
+  {
+    "chat_id": "6ab21ee1a920c1639e5d",
+    "state": "closed",
+    "created_at": 1790058209698,
+    "first_opened_at": 1790058269169,
+    "opened_at": 1790058269169,
+    "closed_at": 1790059400764,
+    "tags": [
+      "문의/Q6_환불요청",
+      "환불/R1_기타",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 환불/R1_기타",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R1_기타 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab21ca398ae2d442e9f",
+    "state": "closed",
+    "created_at": 1790057635629,
+    "first_opened_at": 1790058473997,
+    "opened_at": 1790058473997,
+    "closed_at": 1790059375741,
+    "tags": [
+      "진행안내/안내완료",
+      "환불_지급불가_사유확인",
+      "문의/Q6_환불요청",
+      "환불/R11_중복신청",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "진행안내/안내완료",
+        "category": "진행안내",
+        "code": "안내완료",
+        "name": "",
+        "prefix": "안"
+      },
+      {
+        "raw": "환불_지급불가_사유확인",
+        "category": "기타",
+        "code": "환불_지급불가_사유확인",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "진행안내/안내완료 & 환불_지급불가_사유확인",
+      "진행안내/안내완료 & 문의/Q6_환불요청",
+      "진행안내/안내완료 & 환불/R11_중복신청",
+      "진행안내/안내완료 & 환불/RT_전체환불",
+      "환불_지급불가_사유확인 & 문의/Q6_환불요청",
+      "환불_지급불가_사유확인 & 환불/R11_중복신청",
+      "환불_지급불가_사유확인 & 환불/RT_전체환불",
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R11_중복신청 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab21409b0076d3b52dc",
+    "state": "closed",
+    "created_at": 1790055433727,
+    "first_opened_at": 1790055721019,
+    "opened_at": 1790055721019,
+    "closed_at": 1790058705832,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 처리/M1_답변대기"
+    ]
+  },
+  {
+    "chat_id": "6ab219cba170f0e7a161",
+    "state": "closed",
+    "created_at": 1790056907669,
+    "first_opened_at": 1790056993369,
+    "opened_at": 1790056993369,
+    "closed_at": 1790058691851,
+    "tags": [
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기",
+      "환불/R1_기타",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 환불/R1_기타",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "처리/M1_답변대기 & 환불/R1_기타",
+      "처리/M1_답변대기 & 환불/RT_전체환불",
+      "환불/R1_기타 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab21f154cf588e90706",
+    "state": "closed",
+    "created_at": 1790058261321,
+    "first_opened_at": 1790058506790,
+    "opened_at": 1790058506790,
+    "closed_at": 1790058749879,
+    "tags": [
+      "문의/Q16_신청확인",
+      "안내/A16_신청확인"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q16_신청확인",
+        "category": "문의",
+        "code": "Q16",
+        "name": "신청확인",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A16_신청확인",
+        "category": "안내",
+        "code": "A16",
+        "name": "신청확인",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q16_신청확인 & 안내/A16_신청확인"
+    ]
+  },
+  {
+    "chat_id": "6ab219050e35d6b03fe4",
+    "state": "closed",
+    "created_at": 1790056709065,
+    "first_opened_at": 1790057209488,
+    "opened_at": 1790057209488,
+    "closed_at": 1790058683605,
+    "tags": [
+      "진행안내/확인서안내",
+      "진행안내/안내완료",
+      "에스컬레이션/진행안내",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련",
+      "처리/M8_재청구"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "진행안내/확인서안내",
+        "category": "진행안내",
+        "code": "확인서안내",
+        "name": "",
+        "prefix": "확"
+      },
+      {
+        "raw": "진행안내/안내완료",
+        "category": "진행안내",
+        "code": "안내완료",
+        "name": "",
+        "prefix": "안"
+      },
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M8_재청구",
+        "category": "처리",
+        "code": "M8",
+        "name": "재청구",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "진행안내/확인서안내 & 진행안내/안내완료",
+      "진행안내/확인서안내 & 에스컬레이션/진행안내",
+      "진행안내/확인서안내 & 문의/Q4_지급관련",
+      "진행안내/확인서안내 & 안내/A4_지급관련",
+      "진행안내/확인서안내 & 처리/M8_재청구",
+      "진행안내/안내완료 & 에스컬레이션/진행안내",
+      "진행안내/안내완료 & 문의/Q4_지급관련",
+      "진행안내/안내완료 & 안내/A4_지급관련",
+      "진행안내/안내완료 & 처리/M8_재청구",
+      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
+      "에스컬레이션/진행안내 & 안내/A4_지급관련",
+      "에스컬레이션/진행안내 & 처리/M8_재청구",
+      "문의/Q4_지급관련 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 처리/M8_재청구",
+      "안내/A4_지급관련 & 처리/M8_재청구"
+    ]
+  },
+  {
     "chat_id": "6ab219ec354279f2d5d7",
     "state": "closed",
     "created_at": 1790056940224,
@@ -1327,6 +5506,161 @@
       "문의/Q17_서류보완 & 안내/A17_서류보완",
       "문의/Q17_서류보완 & 처리/M8_재청구",
       "안내/A17_서류보완 & 처리/M8_재청구"
+    ]
+  },
+  {
+    "chat_id": "6ab21e08a5721a989eba",
+    "state": "closed",
+    "created_at": 1790057992683,
+    "first_opened_at": 1790058174778,
+    "opened_at": 1790058174778,
+    "closed_at": 1790059202768,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q8_환불이후",
+      "안내/A8_환불이후"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q8_환불이후",
+        "category": "문의",
+        "code": "Q8",
+        "name": "환불이후",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A8_환불이후",
+        "category": "안내",
+        "code": "A8",
+        "name": "환불이후",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "김태훈 매니저",
+    "assignee_id": "565238",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q8_환불이후",
+      "에스컬레이션/진행안내 & 안내/A8_환불이후",
+      "문의/Q8_환불이후 & 안내/A8_환불이후"
+    ]
+  },
+  {
+    "chat_id": "6ab21e5c1b946a468b6b",
+    "state": "closed",
+    "created_at": 1790058076119,
+    "first_opened_at": 1790058184251,
+    "opened_at": 1790058184251,
+    "closed_at": 1790059165715,
+    "tags": [
+      "문의/Q6_환불요청",
+      "환불/R11_중복신청",
+      "환불/RT_전체환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RT_전체환불",
+      "환불/R11_중복신청 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab215d73241a834f2d2",
+    "state": "closed",
+    "created_at": 1790055895210,
+    "first_opened_at": 1790056100315,
+    "opened_at": 1790058427575,
+    "closed_at": 1790059140759,
+    "tags": [
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기",
+      "환불/R5_지급불가항목",
+      "환불/RP_부분환불",
+      "환불/R3_변심"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      },
+      {
+        "raw": "환불/R5_지급불가항목",
+        "category": "환불",
+        "code": "R5",
+        "name": "지급불가항목",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R3_변심",
+        "category": "환불",
+        "code": "R3",
+        "name": "변심",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 환불/R5_지급불가항목",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R3_변심",
+      "처리/M1_답변대기 & 환불/R5_지급불가항목",
+      "처리/M1_답변대기 & 환불/RP_부분환불",
+      "처리/M1_답변대기 & 환불/R3_변심",
+      "환불/R5_지급불가항목 & 환불/RP_부분환불",
+      "환불/R5_지급불가항목 & 환불/R3_변심",
+      "환불/RP_부분환불 & 환불/R3_변심"
     ]
   },
   {
@@ -1382,6 +5716,193 @@
       "문의/Q6_환불요청 & 환불/RP_부분환불",
       "문의/Q6_환불요청 & 환불/R11_중복신청",
       "환불/RP_부분환불 & 환불/R11_중복신청"
+    ]
+  },
+  {
+    "chat_id": "6ab21e726a411fe96733",
+    "state": "closed",
+    "created_at": 1790058098441,
+    "first_opened_at": 1790058161463,
+    "opened_at": 1790058161463,
+    "closed_at": 1790059095709,
+    "tags": [
+      "문의/Q2_서비스",
+      "안내/A2_서비스",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q2_서비스",
+        "category": "문의",
+        "code": "Q2",
+        "name": "서비스",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A2_서비스",
+        "category": "안내",
+        "code": "A2",
+        "name": "서비스",
+        "prefix": "A"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q2_서비스 & 안내/A2_서비스",
+      "문의/Q2_서비스 & 처리/M1_답변대기",
+      "안내/A2_서비스 & 처리/M1_답변대기"
+    ]
+  },
+  {
+    "chat_id": "6ab21cdf73f09baec667",
+    "state": "closed",
+    "created_at": 1790057695480,
+    "first_opened_at": 1790058133725,
+    "opened_at": 1790058133725,
+    "closed_at": 1790059007795,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김로빈 매니저",
+    "assignee_id": "667753",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "환불_지급확인_대기 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 처리/M1_답변대기"
+    ]
+  },
+  {
+    "chat_id": "6ab21d9b3841b70698e5",
+    "state": "closed",
+    "created_at": 1790057883236,
+    "first_opened_at": 1790058067594,
+    "opened_at": 1790058067594,
+    "closed_at": 1790059000027,
+    "tags": [
+      "문의/Q6_환불요청",
+      "환불/R11_중복신청",
+      "환불/RP_부분환불"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/R11_중복신청",
+        "category": "환불",
+        "code": "R11",
+        "name": "중복신청",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "조윤조 매니저",
+    "assignee_id": "609327",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 환불/R11_중복신청",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "환불/R11_중복신청 & 환불/RP_부분환불"
+    ]
+  },
+  {
+    "chat_id": "6ab21aae77ded0d84809",
+    "state": "closed",
+    "created_at": 1790057134496,
+    "first_opened_at": 1790057319194,
+    "opened_at": 1790057319194,
+    "closed_at": 1790058828733,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q6_환불요청",
+      "환불/RP_부분환불",
+      "환불/R10_정책"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "환불/RP_부분환불",
+        "category": "환불",
+        "code": "RP",
+        "name": "부분환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R10_정책",
+        "category": "환불",
+        "code": "R10",
+        "name": "정책",
+        "prefix": "R"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "에스컬레이션/진행안내 & 문의/Q6_환불요청",
+      "에스컬레이션/진행안내 & 환불/RP_부분환불",
+      "에스컬레이션/진행안내 & 환불/R10_정책",
+      "문의/Q6_환불요청 & 환불/RP_부분환불",
+      "문의/Q6_환불요청 & 환불/R10_정책",
+      "환불/RP_부분환불 & 환불/R10_정책"
     ]
   },
   {
@@ -1476,6 +5997,86 @@
       "문의/Q6_환불요청 & 환불/R1_기타",
       "문의/Q6_환불요청 & 환불/RT_전체환불",
       "환불/R1_기타 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab217c44fc669ce54bc",
+    "state": "closed",
+    "created_at": 1790056388332,
+    "first_opened_at": 1790056581327,
+    "opened_at": 1790056581327,
+    "closed_at": 1790058755713,
+    "tags": [
+      "환불_지급확인_대기",
+      "문의/Q18_타채널",
+      "안내/A18_타채널",
+      "환불/RT_전체환불",
+      "환불/R1_기타",
+      "문의/Q6_환불요청"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q18_타채널",
+        "category": "문의",
+        "code": "Q18",
+        "name": "타채널",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A18_타채널",
+        "category": "안내",
+        "code": "A18",
+        "name": "타채널",
+        "prefix": "A"
+      },
+      {
+        "raw": "환불/RT_전체환불",
+        "category": "환불",
+        "code": "RT",
+        "name": "전체환불",
+        "prefix": "R"
+      },
+      {
+        "raw": "환불/R1_기타",
+        "category": "환불",
+        "code": "R1",
+        "name": "기타",
+        "prefix": "R"
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 문의/Q18_타채널",
+      "환불_지급확인_대기 & 안내/A18_타채널",
+      "환불_지급확인_대기 & 환불/RT_전체환불",
+      "환불_지급확인_대기 & 환불/R1_기타",
+      "환불_지급확인_대기 & 문의/Q6_환불요청",
+      "문의/Q18_타채널 & 안내/A18_타채널",
+      "문의/Q18_타채널 & 환불/RT_전체환불",
+      "문의/Q18_타채널 & 환불/R1_기타",
+      "문의/Q18_타채널 & 문의/Q6_환불요청",
+      "안내/A18_타채널 & 환불/RT_전체환불",
+      "안내/A18_타채널 & 환불/R1_기타",
+      "안내/A18_타채널 & 문의/Q6_환불요청",
+      "환불/RT_전체환불 & 환불/R1_기타",
+      "환불/RT_전체환불 & 문의/Q6_환불요청",
+      "환불/R1_기타 & 문의/Q6_환불요청"
     ]
   },
   {
@@ -1800,50 +6401,6 @@
     ]
   },
   {
-    "chat_id": "6ab21b31557b2ad79ffd",
-    "state": "closed",
-    "created_at": 1790057265354,
-    "first_opened_at": 1790057449664,
-    "opened_at": 1790057449664,
-    "closed_at": 1790058405712,
-    "tags": [
-      "환불_지급확인_대기",
-      "문의/Q6_환불요청",
-      "처리/M9_응답대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급확인_대기",
-        "category": "기타",
-        "code": "환불_지급확인_대기",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M9_응답대기",
-        "category": "처리",
-        "code": "M9",
-        "name": "응답대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김동아 매니저",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "환불_지급확인_대기 & 문의/Q6_환불요청",
-      "환불_지급확인_대기 & 처리/M9_응답대기",
-      "문의/Q6_환불요청 & 처리/M9_응답대기"
-    ]
-  },
-  {
     "chat_id": "6ab2184fa57a4ae41ea9",
     "state": "closed",
     "created_at": 1790056527683,
@@ -1940,40 +6497,6 @@
       "문의/Q6_환불요청 & 환불/R5_지급불가항목",
       "문의/Q6_환불요청 & 환불/RT_전체환불",
       "환불/R5_지급불가항목 & 환불/RT_전체환불"
-    ]
-  },
-  {
-    "chat_id": "6ab21a67cc31d592281f",
-    "state": "closed",
-    "created_at": 1790057063876,
-    "first_opened_at": 1790057139888,
-    "opened_at": 1790057139888,
-    "closed_at": 1790058309746,
-    "tags": [
-      "문의/Q4_지급관련",
-      "안내/A4_지급관련"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q4_지급관련",
-        "category": "문의",
-        "code": "Q4",
-        "name": "지급관련",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A4_지급관련",
-        "category": "안내",
-        "code": "A4",
-        "name": "지급관련",
-        "prefix": "A"
-      }
-    ],
-    "assignee": "김태훈 매니저",
-    "assignee_id": "565238",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q4_지급관련 & 안내/A4_지급관련"
     ]
   },
   {
@@ -2323,61 +6846,6 @@
       "안내/A4_지급관련 & 환불/R8_실손미가입",
       "안내/A4_지급관련 & 환불/RT_전체환불",
       "환불/R8_실손미가입 & 환불/RT_전체환불"
-    ]
-  },
-  {
-    "chat_id": "6ab1e30cc42bfbc7aa3e",
-    "state": "closed",
-    "created_at": 1790042892810,
-    "first_opened_at": 1790043540663,
-    "opened_at": 1790043540663,
-    "closed_at": 1790057436629,
-    "tags": [
-      "환불_지급불가_사유확인",
-      "문의/Q4_지급관련",
-      "안내/A4_지급관련",
-      "처리/M1_답변대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급불가_사유확인",
-        "category": "기타",
-        "code": "환불_지급불가_사유확인",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "문의/Q4_지급관련",
-        "category": "문의",
-        "code": "Q4",
-        "name": "지급관련",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A4_지급관련",
-        "category": "안내",
-        "code": "A4",
-        "name": "지급관련",
-        "prefix": "A"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "환불_지급불가_사유확인 & 문의/Q4_지급관련",
-      "환불_지급불가_사유확인 & 안내/A4_지급관련",
-      "환불_지급불가_사유확인 & 처리/M1_답변대기",
-      "문의/Q4_지급관련 & 안내/A4_지급관련",
-      "문의/Q4_지급관련 & 처리/M1_답변대기",
-      "안내/A4_지급관련 & 처리/M1_답변대기"
     ]
   },
   {
@@ -4530,6 +8998,40 @@
       "문의/Q6_환불요청 & 환불/R10_정책",
       "문의/Q6_환불요청 & 환불/RT_전체환불",
       "환불/R10_정책 & 환불/RT_전체환불"
+    ]
+  },
+  {
+    "chat_id": "6ab211e755ad286a42bb",
+    "state": "closed",
+    "created_at": 1790054887375,
+    "first_opened_at": 1790054989328,
+    "opened_at": 1790054989328,
+    "closed_at": 1790059634346,
+    "tags": [
+      "환불_지급확인_대기",
+      "특성/E3_중복고객"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급확인_대기",
+        "category": "기타",
+        "code": "환불_지급확인_대기",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "특성/E3_중복고객",
+        "category": "특성",
+        "code": "E3",
+        "name": "중복고객",
+        "prefix": "E"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급확인_대기 & 특성/E3_중복고객"
     ]
   },
   {
@@ -12047,858 +16549,6 @@
       "안내/A3_진행상황 & 문의/Q1_서비스신청",
       "안내/A3_진행상황 & 안내/A1_서비스신청",
       "문의/Q1_서비스신청 & 안내/A1_서비스신청"
-    ]
-  },
-  {
-    "chat_id": "6ab1d669945109f71cc4",
-    "state": "closed",
-    "created_at": 1790039657612,
-    "first_opened_at": 1790039773644,
-    "opened_at": 1790039773644,
-    "closed_at": 1790040693765,
-    "tags": [
-      "문의/Q17_서류보완",
-      "안내/A17_서류보완",
-      "처리/M9_응답대기",
-      "환불/R6_서류보완",
-      "환불/RT_전체환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q17_서류보완",
-        "category": "문의",
-        "code": "Q17",
-        "name": "서류보완",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A17_서류보완",
-        "category": "안내",
-        "code": "A17",
-        "name": "서류보완",
-        "prefix": "A"
-      },
-      {
-        "raw": "처리/M9_응답대기",
-        "category": "처리",
-        "code": "M9",
-        "name": "응답대기",
-        "prefix": "M"
-      },
-      {
-        "raw": "환불/R6_서류보완",
-        "category": "환불",
-        "code": "R6",
-        "name": "서류보완",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RT_전체환불",
-        "category": "환불",
-        "code": "RT",
-        "name": "전체환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "김동아 매니저",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q17_서류보완 & 안내/A17_서류보완",
-      "문의/Q17_서류보완 & 처리/M9_응답대기",
-      "문의/Q17_서류보완 & 환불/R6_서류보완",
-      "문의/Q17_서류보완 & 환불/RT_전체환불",
-      "안내/A17_서류보완 & 처리/M9_응답대기",
-      "안내/A17_서류보완 & 환불/R6_서류보완",
-      "안내/A17_서류보완 & 환불/RT_전체환불",
-      "처리/M9_응답대기 & 환불/R6_서류보완",
-      "처리/M9_응답대기 & 환불/RT_전체환불",
-      "환불/R6_서류보완 & 환불/RT_전체환불"
-    ]
-  },
-  {
-    "chat_id": "6ab1d72148edf88b0790",
-    "state": "closed",
-    "created_at": 1790039841306,
-    "first_opened_at": 1790039896812,
-    "opened_at": 1790039896812,
-    "closed_at": 1790040667734,
-    "tags": [
-      "문의/Q6_환불요청",
-      "처리/M1_답변대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김동아 매니저",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 처리/M1_답변대기"
-    ]
-  },
-  {
-    "chat_id": "6ab1d6a5bdc7dd8260b6",
-    "state": "closed",
-    "created_at": 1790039717783,
-    "first_opened_at": 1790039816791,
-    "opened_at": 1790039816791,
-    "closed_at": 1790040060883,
-    "tags": [
-      "특성/E3_중복고객",
-      "특성/E4_유선요청"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "특성/E3_중복고객",
-        "category": "특성",
-        "code": "E3",
-        "name": "중복고객",
-        "prefix": "E"
-      },
-      {
-        "raw": "특성/E4_유선요청",
-        "category": "특성",
-        "code": "E4",
-        "name": "유선요청",
-        "prefix": "E"
-      }
-    ],
-    "assignee": "김로빈 매니저",
-    "assignee_id": "667753",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "특성/E3_중복고객 & 특성/E4_유선요청"
-    ]
-  },
-  {
-    "chat_id": "6ab1d5e902a56d915a76",
-    "state": "closed",
-    "created_at": 1790039529016,
-    "first_opened_at": 1790039698869,
-    "opened_at": 1790039698869,
-    "closed_at": 1790040610750,
-    "tags": [
-      "에스컬레이션/진행안내",
-      "문의/Q4_지급관련",
-      "안내/A4_지급관련",
-      "처리/M1_답변대기",
-      "문의/Q6_환불요청",
-      "환불/R1_기타",
-      "환불/RT_전체환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "에스컬레이션/진행안내",
-        "category": "에스컬레이션",
-        "code": "진행안내",
-        "name": "",
-        "prefix": "진"
-      },
-      {
-        "raw": "문의/Q4_지급관련",
-        "category": "문의",
-        "code": "Q4",
-        "name": "지급관련",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A4_지급관련",
-        "category": "안내",
-        "code": "A4",
-        "name": "지급관련",
-        "prefix": "A"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "환불/R1_기타",
-        "category": "환불",
-        "code": "R1",
-        "name": "기타",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RT_전체환불",
-        "category": "환불",
-        "code": "RT",
-        "name": "전체환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "김로빈 매니저",
-    "assignee_id": "667753",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
-      "에스컬레이션/진행안내 & 안내/A4_지급관련",
-      "에스컬레이션/진행안내 & 처리/M1_답변대기",
-      "에스컬레이션/진행안내 & 문의/Q6_환불요청",
-      "에스컬레이션/진행안내 & 환불/R1_기타",
-      "에스컬레이션/진행안내 & 환불/RT_전체환불",
-      "문의/Q4_지급관련 & 안내/A4_지급관련",
-      "문의/Q4_지급관련 & 처리/M1_답변대기",
-      "문의/Q4_지급관련 & 문의/Q6_환불요청",
-      "문의/Q4_지급관련 & 환불/R1_기타",
-      "문의/Q4_지급관련 & 환불/RT_전체환불",
-      "안내/A4_지급관련 & 처리/M1_답변대기",
-      "안내/A4_지급관련 & 문의/Q6_환불요청",
-      "안내/A4_지급관련 & 환불/R1_기타",
-      "안내/A4_지급관련 & 환불/RT_전체환불",
-      "처리/M1_답변대기 & 문의/Q6_환불요청",
-      "처리/M1_답변대기 & 환불/R1_기타",
-      "처리/M1_답변대기 & 환불/RT_전체환불",
-      "문의/Q6_환불요청 & 환불/R1_기타",
-      "문의/Q6_환불요청 & 환불/RT_전체환불",
-      "환불/R1_기타 & 환불/RT_전체환불"
-    ]
-  },
-  {
-    "chat_id": "6ab1d5cc0e33c1419ff5",
-    "state": "closed",
-    "created_at": 1790039500063,
-    "first_opened_at": 1790039644870,
-    "opened_at": 1790039644870,
-    "closed_at": 1790040475795,
-    "tags": [
-      "환불_지급확인_대기",
-      "문의/Q6_환불요청",
-      "처리/M1_답변대기",
-      "환불/R5_지급불가항목",
-      "환불/RT_전체환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급확인_대기",
-        "category": "기타",
-        "code": "환불_지급확인_대기",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      },
-      {
-        "raw": "환불/R5_지급불가항목",
-        "category": "환불",
-        "code": "R5",
-        "name": "지급불가항목",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RT_전체환불",
-        "category": "환불",
-        "code": "RT",
-        "name": "전체환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "조윤조 매니저",
-    "assignee_id": "609327",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "환불_지급확인_대기 & 문의/Q6_환불요청",
-      "환불_지급확인_대기 & 처리/M1_답변대기",
-      "환불_지급확인_대기 & 환불/R5_지급불가항목",
-      "환불_지급확인_대기 & 환불/RT_전체환불",
-      "문의/Q6_환불요청 & 처리/M1_답변대기",
-      "문의/Q6_환불요청 & 환불/R5_지급불가항목",
-      "문의/Q6_환불요청 & 환불/RT_전체환불",
-      "처리/M1_답변대기 & 환불/R5_지급불가항목",
-      "처리/M1_답변대기 & 환불/RT_전체환불",
-      "환불/R5_지급불가항목 & 환불/RT_전체환불"
-    ]
-  },
-  {
-    "chat_id": "6ab1d49d7deed1369e35",
-    "state": "closed",
-    "created_at": 1790039197524,
-    "first_opened_at": 1790039331744,
-    "opened_at": 1790039331744,
-    "closed_at": 1790039867774,
-    "tags": [
-      "에스컬레이션/진행안내",
-      "문의/Q16_신청확인",
-      "안내/A16_신청확인"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "에스컬레이션/진행안내",
-        "category": "에스컬레이션",
-        "code": "진행안내",
-        "name": "",
-        "prefix": "진"
-      },
-      {
-        "raw": "문의/Q16_신청확인",
-        "category": "문의",
-        "code": "Q16",
-        "name": "신청확인",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A16_신청확인",
-        "category": "안내",
-        "code": "A16",
-        "name": "신청확인",
-        "prefix": "A"
-      }
-    ],
-    "assignee": "조윤조 매니저",
-    "assignee_id": "609327",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "에스컬레이션/진행안내 & 문의/Q16_신청확인",
-      "에스컬레이션/진행안내 & 안내/A16_신청확인",
-      "문의/Q16_신청확인 & 안내/A16_신청확인"
-    ]
-  },
-  {
-    "chat_id": "6ab1d28de975253e430e",
-    "state": "closed",
-    "created_at": 1790038669963,
-    "first_opened_at": 1790039510658,
-    "opened_at": 1790039510658,
-    "closed_at": 1790040306758,
-    "tags": [
-      "진행안내/안내완료",
-      "환불_지급확인_대기",
-      "문의/Q6_환불요청",
-      "환불/R11_중복신청",
-      "환불/RT_전체환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "진행안내/안내완료",
-        "category": "진행안내",
-        "code": "안내완료",
-        "name": "",
-        "prefix": "안"
-      },
-      {
-        "raw": "환불_지급확인_대기",
-        "category": "기타",
-        "code": "환불_지급확인_대기",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "환불/R11_중복신청",
-        "category": "환불",
-        "code": "R11",
-        "name": "중복신청",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RT_전체환불",
-        "category": "환불",
-        "code": "RT",
-        "name": "전체환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "조윤조 매니저",
-    "assignee_id": "609327",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "진행안내/안내완료 & 환불_지급확인_대기",
-      "진행안내/안내완료 & 문의/Q6_환불요청",
-      "진행안내/안내완료 & 환불/R11_중복신청",
-      "진행안내/안내완료 & 환불/RT_전체환불",
-      "환불_지급확인_대기 & 문의/Q6_환불요청",
-      "환불_지급확인_대기 & 환불/R11_중복신청",
-      "환불_지급확인_대기 & 환불/RT_전체환불",
-      "문의/Q6_환불요청 & 환불/R11_중복신청",
-      "문의/Q6_환불요청 & 환불/RT_전체환불",
-      "환불/R11_중복신청 & 환불/RT_전체환불"
-    ]
-  },
-  {
-    "chat_id": "6ab1d400b5da2b58bcde",
-    "state": "closed",
-    "created_at": 1790039040752,
-    "first_opened_at": 1790039431376,
-    "opened_at": 1790039431376,
-    "closed_at": 1790040267793,
-    "tags": [
-      "진행안내/확인서안내",
-      "진행안내/안내완료",
-      "문의/Q4_지급관련",
-      "안내/A4_지급관련",
-      "처리/M8_재청구"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "진행안내/확인서안내",
-        "category": "진행안내",
-        "code": "확인서안내",
-        "name": "",
-        "prefix": "확"
-      },
-      {
-        "raw": "진행안내/안내완료",
-        "category": "진행안내",
-        "code": "안내완료",
-        "name": "",
-        "prefix": "안"
-      },
-      {
-        "raw": "문의/Q4_지급관련",
-        "category": "문의",
-        "code": "Q4",
-        "name": "지급관련",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A4_지급관련",
-        "category": "안내",
-        "code": "A4",
-        "name": "지급관련",
-        "prefix": "A"
-      },
-      {
-        "raw": "처리/M8_재청구",
-        "category": "처리",
-        "code": "M8",
-        "name": "재청구",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김동아 매니저",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "진행안내/확인서안내 & 진행안내/안내완료",
-      "진행안내/확인서안내 & 문의/Q4_지급관련",
-      "진행안내/확인서안내 & 안내/A4_지급관련",
-      "진행안내/확인서안내 & 처리/M8_재청구",
-      "진행안내/안내완료 & 문의/Q4_지급관련",
-      "진행안내/안내완료 & 안내/A4_지급관련",
-      "진행안내/안내완료 & 처리/M8_재청구",
-      "문의/Q4_지급관련 & 안내/A4_지급관련",
-      "문의/Q4_지급관련 & 처리/M8_재청구",
-      "안내/A4_지급관련 & 처리/M8_재청구"
-    ]
-  },
-  {
-    "chat_id": "6ab1d44d13145e2d6ef1",
-    "state": "closed",
-    "created_at": 1790039117084,
-    "first_opened_at": 1790039477592,
-    "opened_at": 1790039477592,
-    "closed_at": 1790040254719,
-    "tags": [
-      "진행안내/안내완료",
-      "문의/Q8_환불이후",
-      "안내/A8_환불이후"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "진행안내/안내완료",
-        "category": "진행안내",
-        "code": "안내완료",
-        "name": "",
-        "prefix": "안"
-      },
-      {
-        "raw": "문의/Q8_환불이후",
-        "category": "문의",
-        "code": "Q8",
-        "name": "환불이후",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A8_환불이후",
-        "category": "안내",
-        "code": "A8",
-        "name": "환불이후",
-        "prefix": "A"
-      }
-    ],
-    "assignee": "김로빈 매니저",
-    "assignee_id": "667753",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "진행안내/안내완료 & 문의/Q8_환불이후",
-      "진행안내/안내완료 & 안내/A8_환불이후",
-      "문의/Q8_환불이후 & 안내/A8_환불이후"
-    ]
-  },
-  {
-    "chat_id": "6ab1d38be3051d7f1f19",
-    "state": "closed",
-    "created_at": 1790038923935,
-    "first_opened_at": 1790039441424,
-    "opened_at": 1790039441424,
-    "closed_at": 1790039610504,
-    "tags": [
-      "환불_지급확인_대기",
-      "문의/Q6_환불요청",
-      "환불/R11_중복신청",
-      "환불/RP_부분환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급확인_대기",
-        "category": "기타",
-        "code": "환불_지급확인_대기",
-        "name": "",
-        "prefix": ""
-      },
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "환불/R11_중복신청",
-        "category": "환불",
-        "code": "R11",
-        "name": "중복신청",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RP_부분환불",
-        "category": "환불",
-        "code": "RP",
-        "name": "부분환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "환불_지급확인_대기 & 문의/Q6_환불요청",
-      "환불_지급확인_대기 & 환불/R11_중복신청",
-      "환불_지급확인_대기 & 환불/RP_부분환불",
-      "문의/Q6_환불요청 & 환불/R11_중복신청",
-      "문의/Q6_환불요청 & 환불/RP_부분환불",
-      "환불/R11_중복신청 & 환불/RP_부분환불"
-    ]
-  },
-  {
-    "chat_id": "6ab1d52021dca38d6522",
-    "state": "closed",
-    "created_at": 1790039328143,
-    "first_opened_at": 1790039373774,
-    "opened_at": 1790039373774,
-    "closed_at": 1790039545864,
-    "tags": [
-      "문의/Q17_서류보완",
-      "안내/A17_서류보완",
-      "환불/R6_서류보완",
-      "환불/RT_전체환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q17_서류보완",
-        "category": "문의",
-        "code": "Q17",
-        "name": "서류보완",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A17_서류보완",
-        "category": "안내",
-        "code": "A17",
-        "name": "서류보완",
-        "prefix": "A"
-      },
-      {
-        "raw": "환불/R6_서류보완",
-        "category": "환불",
-        "code": "R6",
-        "name": "서류보완",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RT_전체환불",
-        "category": "환불",
-        "code": "RT",
-        "name": "전체환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "조윤조 매니저",
-    "assignee_id": "609327",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q17_서류보완 & 안내/A17_서류보완",
-      "문의/Q17_서류보완 & 환불/R6_서류보완",
-      "문의/Q17_서류보완 & 환불/RT_전체환불",
-      "안내/A17_서류보완 & 환불/R6_서류보완",
-      "안내/A17_서류보완 & 환불/RT_전체환불",
-      "환불/R6_서류보완 & 환불/RT_전체환불"
-    ]
-  },
-  {
-    "chat_id": "6ab1d3e72ab7a3fb5da3",
-    "state": "closed",
-    "created_at": 1790039015182,
-    "first_opened_at": 1790039284696,
-    "opened_at": 1790039284696,
-    "closed_at": 1790040115730,
-    "tags": [
-      "에스컬레이션/진행안내",
-      "문의/Q4_지급관련",
-      "안내/A4_지급관련",
-      "처리/M8_재청구"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "에스컬레이션/진행안내",
-        "category": "에스컬레이션",
-        "code": "진행안내",
-        "name": "",
-        "prefix": "진"
-      },
-      {
-        "raw": "문의/Q4_지급관련",
-        "category": "문의",
-        "code": "Q4",
-        "name": "지급관련",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A4_지급관련",
-        "category": "안내",
-        "code": "A4",
-        "name": "지급관련",
-        "prefix": "A"
-      },
-      {
-        "raw": "처리/M8_재청구",
-        "category": "처리",
-        "code": "M8",
-        "name": "재청구",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김로빈 매니저",
-    "assignee_id": "667753",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
-      "에스컬레이션/진행안내 & 안내/A4_지급관련",
-      "에스컬레이션/진행안내 & 처리/M8_재청구",
-      "문의/Q4_지급관련 & 안내/A4_지급관련",
-      "문의/Q4_지급관련 & 처리/M8_재청구",
-      "안내/A4_지급관련 & 처리/M8_재청구"
-    ]
-  },
-  {
-    "chat_id": "6ab1d40b5385c5b2c6c5",
-    "state": "closed",
-    "created_at": 1790039051349,
-    "first_opened_at": 1790039210891,
-    "opened_at": 1790039210891,
-    "closed_at": 1790040090866,
-    "tags": [
-      "에스컬레이션/진행안내",
-      "문의/Q17_서류보완",
-      "안내/A17_서류보완",
-      "처리/M9_응답대기",
-      "환불/R6_서류보완",
-      "환불/RP_부분환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "에스컬레이션/진행안내",
-        "category": "에스컬레이션",
-        "code": "진행안내",
-        "name": "",
-        "prefix": "진"
-      },
-      {
-        "raw": "문의/Q17_서류보완",
-        "category": "문의",
-        "code": "Q17",
-        "name": "서류보완",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A17_서류보완",
-        "category": "안내",
-        "code": "A17",
-        "name": "서류보완",
-        "prefix": "A"
-      },
-      {
-        "raw": "처리/M9_응답대기",
-        "category": "처리",
-        "code": "M9",
-        "name": "응답대기",
-        "prefix": "M"
-      },
-      {
-        "raw": "환불/R6_서류보완",
-        "category": "환불",
-        "code": "R6",
-        "name": "서류보완",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RP_부분환불",
-        "category": "환불",
-        "code": "RP",
-        "name": "부분환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "김동아 매니저",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "에스컬레이션/진행안내 & 문의/Q17_서류보완",
-      "에스컬레이션/진행안내 & 안내/A17_서류보완",
-      "에스컬레이션/진행안내 & 처리/M9_응답대기",
-      "에스컬레이션/진행안내 & 환불/R6_서류보완",
-      "에스컬레이션/진행안내 & 환불/RP_부분환불",
-      "문의/Q17_서류보완 & 안내/A17_서류보완",
-      "문의/Q17_서류보완 & 처리/M9_응답대기",
-      "문의/Q17_서류보완 & 환불/R6_서류보완",
-      "문의/Q17_서류보완 & 환불/RP_부분환불",
-      "안내/A17_서류보완 & 처리/M9_응답대기",
-      "안내/A17_서류보완 & 환불/R6_서류보완",
-      "안내/A17_서류보완 & 환불/RP_부분환불",
-      "처리/M9_응답대기 & 환불/R6_서류보완",
-      "처리/M9_응답대기 & 환불/RP_부분환불",
-      "환불/R6_서류보완 & 환불/RP_부분환불"
-    ]
-  },
-  {
-    "chat_id": "6ab1d3dec1c01382acff",
-    "state": "closed",
-    "created_at": 1790039006800,
-    "first_opened_at": 1790039065020,
-    "opened_at": 1790039065020,
-    "closed_at": 1790039415557,
-    "tags": [
-      "문의/Q3_진행상황",
-      "안내/A3_진행상황"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q3_진행상황",
-        "category": "문의",
-        "code": "Q3",
-        "name": "진행상황",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A3_진행상황",
-        "category": "안내",
-        "code": "A3",
-        "name": "진행상황",
-        "prefix": "A"
-      }
-    ],
-    "assignee": "김로빈 매니저",
-    "assignee_id": "667753",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q3_진행상황 & 안내/A3_진행상황"
-    ]
-  },
-  {
-    "chat_id": "6ab1d418779c7fb99c80",
-    "state": "closed",
-    "created_at": 1790039064494,
-    "first_opened_at": 1790039107958,
-    "opened_at": 1790039107958,
-    "closed_at": 1790039919728,
-    "tags": [
-      "문의/Q17_서류보완",
-      "안내/A17_서류보완",
-      "환불/R6_서류보완",
-      "환불/RT_전체환불"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q17_서류보완",
-        "category": "문의",
-        "code": "Q17",
-        "name": "서류보완",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A17_서류보완",
-        "category": "안내",
-        "code": "A17",
-        "name": "서류보완",
-        "prefix": "A"
-      },
-      {
-        "raw": "환불/R6_서류보완",
-        "category": "환불",
-        "code": "R6",
-        "name": "서류보완",
-        "prefix": "R"
-      },
-      {
-        "raw": "환불/RT_전체환불",
-        "category": "환불",
-        "code": "RT",
-        "name": "전체환불",
-        "prefix": "R"
-      }
-    ],
-    "assignee": "김로빈 매니저",
-    "assignee_id": "667753",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q17_서류보완 & 안내/A17_서류보완",
-      "문의/Q17_서류보완 & 환불/R6_서류보완",
-      "문의/Q17_서류보완 & 환불/RT_전체환불",
-      "안내/A17_서류보완 & 환불/R6_서류보완",
-      "안내/A17_서류보완 & 환불/RT_전체환불",
-      "환불/R6_서류보완 & 환불/RT_전체환불"
     ]
   }
 ]
