@@ -1,36 +1,80 @@
 [
   {
-    "chat_id": "6abf633cde6e3a162e46",
+    "chat_id": "6abf4ddf44d76e99b526",
     "state": "opened",
-    "created_at": 1790927676916,
-    "first_opened_at": 1790928586319,
-    "opened_at": 1790928586319,
-    "closed_at": null,
+    "created_at": 1790922207287,
+    "first_opened_at": 1790922350545,
+    "opened_at": 1790938271220,
+    "closed_at": 1790923527783,
     "tags": [
-      "진행안내/안내완료",
-      "에스컬레이션/진행안내"
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기"
     ],
     "parsed_tags": [
       {
-        "raw": "진행안내/안내완료",
-        "category": "진행안내",
-        "code": "안내완료",
-        "name": "",
-        "prefix": "안"
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
       },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "문의/Q6_환불요청 & 처리/M1_답변대기"
+    ]
+  },
+  {
+    "chat_id": "6abf4978baa78071af12",
+    "state": "opened",
+    "created_at": 1790921080769,
+    "first_opened_at": 1790921210445,
+    "opened_at": 1790931527372,
+    "closed_at": 1790923463562,
+    "tags": [
+      "에스컬레이션/진행안내",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련"
+    ],
+    "parsed_tags": [
       {
         "raw": "에스컬레이션/진행안내",
         "category": "에스컬레이션",
         "code": "진행안내",
         "name": "",
         "prefix": "진"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
       }
     ],
     "assignee": "남규민 매니저",
     "assignee_id": "668885",
     "channel_id": "183570",
     "tag_combinations": [
-      "진행안내/안내완료 & 에스컬레이션/진행안내"
+      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
+      "에스컬레이션/진행안내 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 안내/A4_지급관련"
     ]
   },
   {
@@ -78,30 +122,6 @@
     ],
     "assignee": null,
     "assignee_id": null,
-    "channel_id": "183570",
-    "tag_combinations": []
-  },
-  {
-    "chat_id": "6abf4541153892fcfe8a",
-    "state": "opened",
-    "created_at": 1790920001093,
-    "first_opened_at": 1790920135716,
-    "opened_at": 1790929577236,
-    "closed_at": 1790929556804,
-    "tags": [
-      "환불_지급불가_사유확인"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "환불_지급불가_사유확인",
-        "category": "기타",
-        "code": "환불_지급불가_사유확인",
-        "name": "",
-        "prefix": ""
-      }
-    ],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
     "channel_id": "183570",
     "tag_combinations": []
   },
@@ -248,6 +268,95 @@
     "assignee_id": "565238",
     "channel_id": "183570",
     "tag_combinations": []
+  },
+  {
+    "chat_id": "6abf633cde6e3a162e46",
+    "state": "closed",
+    "created_at": 1790927676916,
+    "first_opened_at": 1790928586319,
+    "opened_at": 1790928586319,
+    "closed_at": 1790933308471,
+    "tags": [
+      "진행안내/안내완료",
+      "에스컬레이션/진행안내",
+      "문의/Q4_지급관련",
+      "안내/A4_지급관련"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "진행안내/안내완료",
+        "category": "진행안내",
+        "code": "안내완료",
+        "name": "",
+        "prefix": "안"
+      },
+      {
+        "raw": "에스컬레이션/진행안내",
+        "category": "에스컬레이션",
+        "code": "진행안내",
+        "name": "",
+        "prefix": "진"
+      },
+      {
+        "raw": "문의/Q4_지급관련",
+        "category": "문의",
+        "code": "Q4",
+        "name": "지급관련",
+        "prefix": "Q"
+      },
+      {
+        "raw": "안내/A4_지급관련",
+        "category": "안내",
+        "code": "A4",
+        "name": "지급관련",
+        "prefix": "A"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "진행안내/안내완료 & 에스컬레이션/진행안내",
+      "진행안내/안내완료 & 문의/Q4_지급관련",
+      "진행안내/안내완료 & 안내/A4_지급관련",
+      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
+      "에스컬레이션/진행안내 & 안내/A4_지급관련",
+      "문의/Q4_지급관련 & 안내/A4_지급관련"
+    ]
+  },
+  {
+    "chat_id": "6abf4541153892fcfe8a",
+    "state": "closed",
+    "created_at": 1790920001093,
+    "first_opened_at": 1790920135716,
+    "opened_at": 1790929577236,
+    "closed_at": 1790932137396,
+    "tags": [
+      "환불_지급불가_사유확인",
+      "문의/Q6_환불요청"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급불가_사유확인",
+        "category": "기타",
+        "code": "환불_지급불가_사유확인",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      }
+    ],
+    "assignee": "남규민 매니저",
+    "assignee_id": "668885",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급불가_사유확인 & 문의/Q6_환불요청"
+    ]
   },
   {
     "chat_id": "6abf6417cedb5fc84f2e",
@@ -3392,50 +3501,6 @@
     ]
   },
   {
-    "chat_id": "6abf4978baa78071af12",
-    "state": "closed",
-    "created_at": 1790921080769,
-    "first_opened_at": 1790921210445,
-    "opened_at": 1790921210445,
-    "closed_at": 1790923463562,
-    "tags": [
-      "에스컬레이션/진행안내",
-      "문의/Q4_지급관련",
-      "안내/A4_지급관련"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "에스컬레이션/진행안내",
-        "category": "에스컬레이션",
-        "code": "진행안내",
-        "name": "",
-        "prefix": "진"
-      },
-      {
-        "raw": "문의/Q4_지급관련",
-        "category": "문의",
-        "code": "Q4",
-        "name": "지급관련",
-        "prefix": "Q"
-      },
-      {
-        "raw": "안내/A4_지급관련",
-        "category": "안내",
-        "code": "A4",
-        "name": "지급관련",
-        "prefix": "A"
-      }
-    ],
-    "assignee": "남규민 매니저",
-    "assignee_id": "668885",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "에스컬레이션/진행안내 & 문의/Q4_지급관련",
-      "에스컬레이션/진행안내 & 안내/A4_지급관련",
-      "문의/Q4_지급관련 & 안내/A4_지급관련"
-    ]
-  },
-  {
     "chat_id": "6abf4f5017b8d46cadd7",
     "state": "closed",
     "created_at": 1790922576104,
@@ -3599,40 +3664,6 @@
       "처리/M9_응답대기 & 환불/R4_보험사오선택",
       "처리/M9_응답대기 & 환불/RT_전체환불",
       "환불/R4_보험사오선택 & 환불/RT_전체환불"
-    ]
-  },
-  {
-    "chat_id": "6abf4ddf44d76e99b526",
-    "state": "closed",
-    "created_at": 1790922207287,
-    "first_opened_at": 1790922350545,
-    "opened_at": 1790922350545,
-    "closed_at": 1790923527783,
-    "tags": [
-      "문의/Q6_환불요청",
-      "처리/M1_답변대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김동아 매니저",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 처리/M1_답변대기"
     ]
   },
   {
