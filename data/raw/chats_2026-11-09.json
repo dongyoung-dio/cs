@@ -1,15 +1,13 @@
 [
   {
-    "chat_id": "6af16eaf430a2c8523a6",
+    "chat_id": "6aed32e9cbd8b23390ff",
     "state": "opened",
-    "created_at": 1794207407279,
-    "first_opened_at": 1794207504855,
-    "opened_at": 1794214843800,
-    "closed_at": 1794209201792,
+    "created_at": 1793929961839,
+    "first_opened_at": 1794238440697,
+    "opened_at": 1794238440697,
+    "closed_at": null,
     "tags": [
-      "환불_지급불가_사유확인",
-      "문의/Q6_환불요청",
-      "처리/M1_답변대기"
+      "환불_지급불가_사유확인"
     ],
     "parsed_tags": [
       {
@@ -18,7 +16,25 @@
         "code": "환불_지급불가_사유확인",
         "name": "",
         "prefix": ""
-      },
+      }
+    ],
+    "assignee": null,
+    "assignee_id": null,
+    "channel_id": "183570",
+    "tag_combinations": []
+  },
+  {
+    "chat_id": "6af17878a9fd3756e2ac",
+    "state": "opened",
+    "created_at": 1794209912701,
+    "first_opened_at": 1794210018420,
+    "opened_at": 1794230194017,
+    "closed_at": 1794213014781,
+    "tags": [
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
       {
         "raw": "문의/Q6_환불요청",
         "category": "문의",
@@ -38,8 +54,6 @@
     "assignee_id": "636057",
     "channel_id": "183570",
     "tag_combinations": [
-      "환불_지급불가_사유확인 & 문의/Q6_환불요청",
-      "환불_지급불가_사유확인 & 처리/M1_답변대기",
       "문의/Q6_환불요청 & 처리/M1_답변대기"
     ]
   },
@@ -129,6 +143,50 @@
       "에스컬레이션/진행안내 & 문의/Q16_신청확인",
       "에스컬레이션/진행안내 & 안내/A16_신청확인",
       "문의/Q16_신청확인 & 안내/A16_신청확인"
+    ]
+  },
+  {
+    "chat_id": "6af16eaf430a2c8523a6",
+    "state": "closed",
+    "created_at": 1794207407279,
+    "first_opened_at": 1794207504855,
+    "opened_at": 1794214843800,
+    "closed_at": 1794218517789,
+    "tags": [
+      "환불_지급불가_사유확인",
+      "문의/Q6_환불요청",
+      "처리/M1_답변대기"
+    ],
+    "parsed_tags": [
+      {
+        "raw": "환불_지급불가_사유확인",
+        "category": "기타",
+        "code": "환불_지급불가_사유확인",
+        "name": "",
+        "prefix": ""
+      },
+      {
+        "raw": "문의/Q6_환불요청",
+        "category": "문의",
+        "code": "Q6",
+        "name": "환불요청",
+        "prefix": "Q"
+      },
+      {
+        "raw": "처리/M1_답변대기",
+        "category": "처리",
+        "code": "M1",
+        "name": "답변대기",
+        "prefix": "M"
+      }
+    ],
+    "assignee": "김동아 매니저",
+    "assignee_id": "636057",
+    "channel_id": "183570",
+    "tag_combinations": [
+      "환불_지급불가_사유확인 & 문의/Q6_환불요청",
+      "환불_지급불가_사유확인 & 처리/M1_답변대기",
+      "문의/Q6_환불요청 & 처리/M1_답변대기"
     ]
   },
   {
@@ -787,40 +845,6 @@
       "안내/A4_지급관련 & 처리/M1_답변대기",
       "안내/A4_지급관련 & 처리/M8_재청구",
       "처리/M1_답변대기 & 처리/M8_재청구"
-    ]
-  },
-  {
-    "chat_id": "6af17878a9fd3756e2ac",
-    "state": "closed",
-    "created_at": 1794209912701,
-    "first_opened_at": 1794210018420,
-    "opened_at": 1794210018420,
-    "closed_at": 1794213014781,
-    "tags": [
-      "문의/Q6_환불요청",
-      "처리/M1_답변대기"
-    ],
-    "parsed_tags": [
-      {
-        "raw": "문의/Q6_환불요청",
-        "category": "문의",
-        "code": "Q6",
-        "name": "환불요청",
-        "prefix": "Q"
-      },
-      {
-        "raw": "처리/M1_답변대기",
-        "category": "처리",
-        "code": "M1",
-        "name": "답변대기",
-        "prefix": "M"
-      }
-    ],
-    "assignee": "김동아 매니저",
-    "assignee_id": "636057",
-    "channel_id": "183570",
-    "tag_combinations": [
-      "문의/Q6_환불요청 & 처리/M1_답변대기"
     ]
   },
   {
